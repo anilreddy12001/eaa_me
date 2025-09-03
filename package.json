@@ -6,7 +6,7 @@
   "homepage": "energy-analytics",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --watch",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
