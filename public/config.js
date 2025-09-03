@@ -1,7 +1,7 @@
 env = 'dev';
 mode = 'cg_p1';
-vm48_ip="http://10.51.108.48:5199";//For testing on vm without deployment
-dev="http://10.246.88.61:32769";
+vm48_ip="http://gooogle.in";//For testing on vm without deployment
+dev="http://google.com";
 dev_ip = dev;//http://10.246.88.61:32769 //http://10.51.109.90:5000, 48vm: http://10.51.108.48:5199
 
 //http://10.246.88.61:32769/energyanalytics/api/v1/filter/data
@@ -26,7 +26,7 @@ keycloak_ip_qa = "http://192.168.41.132:8080/auth";
 keycloak_realm_qa = "CGRealm-qa";
 keycloak_ip_prod = "http://192.168.41.154:8080/auth";
 keycloak_realm_prod = "CGRealm";
-builtAt = '26apr2025 1515hrs';
+builtAt = '04sep2025 0014hrs';
 config = {
     ENV: env,
     builtAt: builtAt,

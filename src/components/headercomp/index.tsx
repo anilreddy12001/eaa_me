@@ -1589,7 +1589,7 @@ console.log("locationtype:", locationType);
   return (
     <header className="header-wrapper">
       <div className="left-header">
-        <div className='app-title'>Green <br/> Hub</div>
+        <div className='app-title'>Green Hub</div>
       </div>
 
       <div className="middle-header">

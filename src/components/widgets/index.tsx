@@ -104,7 +104,7 @@ setActiveWidget(e);
       
       return   <div style={{height: '12vh', width: '6vw'}}>
         < div className={activeWidget=='Emission Reduction'?'CarbonEmission activeWidget':'CarbonEmission'} onClick={event=>clickHandler("Emission Reduction")} style={{height: '12vh'}}>
-        <WidgetCard  value={e.data!='None'?e.data:'0'} label=" Scope 1 & 2 emission reduction 93% Vs baseline 2019" 
+        <WidgetCard  value={e.data!='None'?e.data:'0'} label=" Scope 1 & 2" 
        
 unit="tCo2"  />
         {/* <div className='co2value'>{parseFloat(e.data).toFixed(1)}</div>

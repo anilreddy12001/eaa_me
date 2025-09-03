@@ -128,15 +128,16 @@ const Dashboard = (props) => {
     useEffect(() => {
          props.sendDataToParent(activeWidget);
         }, [activeWidget]);
-
+{/*Scope 1 & 2 
+emission reduction 93% Vs baseline 2019*/}
   
   return (
 <div  className="dashboard" style={{ display: 'flex', gap: '16px',     justifyContent: 'space-evenly', position: 'relative',bottom:'8px'}}>
-<div style={{cursor:'pointer'}} className={activeWidget=='Energy Consumption'?'activeWidget':''}onClick={event=>{clickHandler("Energy Consumption")}} ><CircularProgress value1={props.listOfwidgets[0]&&parseFloat(props.listOfwidgets[0].data).toFixed(2)}   value={70} unit="GWh" label="Energy Consumption reduced 41% Vs 2019 Baseline" imageSrc={energyImg} gradientId="energyGradient" gradientColors={gradients.energy}/></div>
+<div style={{cursor:'pointer'}} className={activeWidget=='Energy Consumption'?'activeWidget':''}onClick={event=>{clickHandler("Energy Consumption")}} ><CircularProgress value1={props.listOfwidgets[0]&&parseFloat(props.listOfwidgets[0].data).toFixed(2)}   value={70} unit="GWh" label="Energy Consumption" imageSrc={energyImg} gradientId="energyGradient" gradientColors={gradients.energy}/></div>
 <div style={{cursor:'pointer'}}className={activeWidget=='Water Consumption'?'activeWidget':'eneryProgressStyle' } onClick={event=>{clickHandler("Water Consumption")}} ><CircularProgress value={67} value1={props.listOfwidgets[1]&&parseFloat(props.listOfwidgets[1].data).toFixed(2)} unit="MGal" label="Water" imageSrc={waterImg} gradientId="waterGradient" gradientColors={gradients.water} /></div>
-<div style={{cursor:'pointer'}} className={activeWidget=='Renewable Energy'?'activeWidget':''}onClick={event=>{clickHandler("Renewable Energy")}} ><CircularProgress value={69} value1={props.listOfwidgets[2] && parseFloat(props.listOfwidgets[2].data).toFixed(2)} unit="GWh" label="Renewable Energy 100% Vs 2019 Baseline" imageSrc={renewableImg} gradientId="renewableGradient" gradientColors={gradients.renewable} /></div>
-<div style={{cursor:'pointer'}} className={activeWidget=='Emission Reduction'?'activeWidget':''} onClick={event=>{clickHandler("Emission Reduction")}} ><CircularProgress value={66} value1={props && props.listOfwidgets && props.listOfwidgets.length>0 && props.listOfwidgets[3] && props.listOfwidgets[3].data &&parseFloat(props.listOfwidgets[3].data).toFixed(2).replace(/\.00$/, '')} unit={<span>tCo<sub>2</sub><sub>e</sub></span>}     label=" Scope 1 & 2 
-emission reduction 93% Vs baseline 2019" 
+<div style={{cursor:'pointer'}} className={activeWidget=='Renewable Energy'?'activeWidget':''}onClick={event=>{clickHandler("Renewable Energy")}} ><CircularProgress value={69} value1={props.listOfwidgets[2] && parseFloat(props.listOfwidgets[2].data).toFixed(2)} unit="GWh" label="Renewable Energy" imageSrc={renewableImg} gradientId="renewableGradient" gradientColors={gradients.renewable} /></div>
+<div style={{cursor:'pointer'}} className={activeWidget=='Emission Reduction'?'activeWidget':''} onClick={event=>{clickHandler("Emission Reduction")}} ><CircularProgress value={66} value1={props && props.listOfwidgets && props.listOfwidgets.length>0 && props.listOfwidgets[3] && props.listOfwidgets[3].data &&parseFloat(props.listOfwidgets[3].data).toFixed(2).replace(/\.00$/, '')} unit={<span>tCo<sub>2</sub><sub>e</sub></span>}     label="Scope 1&2"
+ 
         imageSrc={EmissionImg} gradientId="emissionGradient" gradientColors={gradients.emission}  counterClockwise={true}/></div>
 </div>
   );
