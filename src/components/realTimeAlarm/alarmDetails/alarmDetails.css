@@ -1,0 +1,118 @@
+.alarm-details-container {
+  background-color: rgba(
+    82,
+    185,
+    185,
+    0.3
+  ); /* Set your desired background color */
+  color: #ffffff; /* Ensure text color is readable */
+  padding: 2px 15px; /* Add padding if needed */
+  margin-bottom: 0.5rem;
+}
+
+.alarm-details-title {
+  color: #00ffff;
+  margin-bottom: 0.5rem;
+}
+.lineHeightStyle {
+  line-height: 0.9rem;
+  margin-top: 0.3rem;
+  display: inline-block;
+}
+.recommendations {
+  padding-top: 0.2rem;
+}
+.recommendationValue{
+  max-height: calc(100vh - 29rem);
+  overflow-y: auto;
+}
+.lineHeightRecommendation{
+  line-height: 1rem;
+  display: inline-block;
+}
+.details-wrapper,
+.alarm-summary-wrapper {
+  width: 100%;
+}
+.alarm-details-table .alarm-details-key {
+  margin-bottom: 0.2rem;
+}
+.recommendationCol {
+  margin-top: 0.3rem;
+}
+
+.alarm-details-value span {
+  font-weight: bold;
+}
+.alarm-details-value span {
+  font-weight: lighter;
+}
+.alarmDetailsTable,
+.alarmSummaryTable {
+  display: table;
+  width: 100%;
+}
+.alarmSummaryTable {
+  margin-top: -1.2rem;
+}
+.breadcrumb-alarmDetails .breadcrumb {
+  color: #ffffff; /* Set the text color to white */
+  border-radius: 0.25rem;
+}
+
+.ant-breadcrumb-separator {
+  color: #9f9c9c !important;
+}
+
+.breadcrumb-alarmDetails .breadcrumb a {
+  color: #ffffff; /* Set the link color to white */
+}
+
+.breadcrumb-alarmDetails .breadcrumb a {
+  font-size: 0.75rem; /* 12px/14px */
+  color: #ffffff; /* Set the link color to white */
+}
+
+.breadcrumb-alarmDetails .breadcrumb .inactive {
+  color: #b0b0b0; /* Inactive color */
+}
+
+.breadcrumb-alarmDetails .breadcrumb .activeBreadcrumb {
+  color: #ffffff; /* Active color */
+}
+
+.detail-row {
+  display: flex;
+}
+.detail-row span {
+  font-size: 12px;
+}
+
+.detail-item,
+.summary-item {
+  display: table-row;
+}
+
+.detail-item strong,
+.summary-item strong {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.detail-item span,
+.summary-item span {
+  display: table-cell;
+}
+
+.colon {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.divider {
+  border-left: 1px solid gray;
+  height: 10rem;
+  margin-right: 0.5rem;
+  margin-top: -1rem;
+}

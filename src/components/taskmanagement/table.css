@@ -1,0 +1,324 @@
+ 
+
+
+.taskManagement{
+    margin: 0rem -0.25rem;
+  }
+  .taskManagement .label {
+    font-size: 0.875rem; /* 12px */
+    color: #ffffff;
+    background-color: rgba(82, 185, 185, 0.3);
+    padding: 0.25rem 0.5rem; /* 4px 8px */
+    border-radius: 0.25rem; /* 4px */
+    margin-right: 0.5rem; /* 8px */
+  }
+  
+  
+  .taskManagement .label {
+    text-align: center;
+    display: flex;
+    justify-content: space-around; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    flex: 1; /* Take up equal space */
+    margin: 0rem; /* 8px */
+  }
+  .stats-box {
+    width: 100%;
+    margin: 0rem 0.2rem;
+  }
+  
+  .taskManagement .label-value {
+    font-size: 1.375rem; /* 22px */
+    font-weight: bold;
+  }
+  
+  
+  .taskManagement .activeAlarm span {
+    color: #ff0000; /* Cyan */
+  }
+  
+  .taskManagement .assigned span {
+    color: #1e90ff; /* Blue */
+  }
+  
+  .taskManagement .in-progress span {
+    color: #ff8c00; /* Green */
+  }
+  
+  .taskManagement .completed span {
+    color: #00ff0a; /* Amber */
+  }
+  
+  .taskManagement .pending span {
+    color: #ffd700; /* Amber */
+  }
+  
+  .taskManagement .search-box .ant-input-affix-wrapper {
+    background-color: transparent;
+    border: 0.031rem solid #ffffff;
+    border-radius: 0.313rem !important;
+    height: 2.5rem;
+  }
+  
+  .taskManagement .search-box .ant-input {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .taskManagement .search-box .ant-input::placeholder {
+    color: #9f9c9c;
+    font-size: 0.7rem;
+  }
+  
+  .taskManagement .search-box .ant-input-prefix {
+    color: #ffffff;
+  }
+  
+  .task-management-table .search-box button {
+    display: none;
+  }
+  
+  .task-management-table .marginBottom {
+    margin-bottom: 0.5rem;
+  }
+  .task-management-table .alarm-row{
+    cursor: pointer;
+    min-height: calc(100vh / 20); /* Set a minimum height based on screen size */
+  }
+  .task-management-table .alarm-row:hover{
+    position: relative;
+     z-index: 1;
+     box-shadow:0px 0px 4px 2px #0A8120/* Updated box-shadow to apply to all four sides */
+    }
+    .task-management-table .alarm-row:first-child{
+    margin-top: 0.3rem;
+  }
+  .task-management-table .alarm-header,
+  .task-management-table .alarm-row {
+    display: flex;
+    align-items: center;
+    width: 99%;
+    margin: 0 auto;
+    background-color: rgba(
+      82,
+      185,
+      185,
+      0.3
+    ); /* Ensure the row background is white */
+    color: #ffffff;
+  }
+  
+  .task-management-table .alarm-header {
+    background-color: #088282;
+    font-size: 0.75rem; /* 12px/14px */
+    border-radius: 0.313rem;
+  }
+  
+  .task-management-table .alarm-row {
+    font-size: 0.625rem;
+    border-radius: 0.125rem;
+  }
+  
+  .task-management-table .styleAlarmStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 43px;
+    width: 100%;
+    font-size: 0.688rem;
+    opacity: 1;
+    padding: 0.125rem 0rem;
+  }
+  
+  .yellow {
+    background: #b59c15;
+  }
+  
+  .orange {
+    background: #ff8c00;
+  }
+  .blue {
+    background: #1e90ff;
+  }
+  .green {
+    background: #32cd32;
+  }
+  .statusCell {
+    display: flex;
+    align-items: center;
+  }
+  .task-management-table .alarm-cell {
+    flex: 1;
+    padding: 0.3rem;
+    text-align: center;
+    line-height: 0.9rem;
+  }
+  
+  .leftAligned {
+    text-align: left;
+  }
+  
+  .task-management-table .styleEquipment{
+    flex-basis: 1rem;
+  }
+  .task-management-table .styleAlarmSummary{
+    flex-basis: 10rem;
+  }
+  .task-management-table .styledateAndTime{
+    flex-basis: 3rem !important;
+  }
+  
+  .task-management-table .spacer-row {
+    height: 0.3rem; /* Adjust the height as needed */
+    background-color: black;
+  }
+  .task-management-table .spacer-row:first-child,.task-management-table .spacer-row:last-child{
+    display: none;
+  }
+  .task-management-table .table-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .task-management-table .alarm-table{
+    height: calc(100vh - 148px);
+  }
+  .task-management-table .alarm-table-body {
+    height: calc(100vh - 236px); /* Set a fixed height for the table body */
+    overflow-y: auto; /* Add vertical scroll for overflow */
+  
+  }
+  .task-management-table .styleAlarmStatusLabel{
+    text-transform: capitalize;
+  }
+  .task-management-table .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:0.7rem;
+  }
+  
+  .task-management-table .pagination-info {
+    font-size: 0.75rem; /* 14px */
+    color: #ffffff;
+    margin-right: 1rem; /* Add some space between the info and the selector */
+  }
+  
+  .task-management-table .page-size-selector {
+    border: 0.063rem solid #ffffff;
+    min-width: 6.25rem; /* Ensure the dropdown has a minimum width */
+  }
+  
+  .ant-select-selector {
+    background-color: #ffffff; /* Set background color to white */
+    color: #000000; /* Set text color to black */
+    border: 0.063rem solid #ffffff !important; /* Set border color to white */
+    border-radius: 0.25rem; /* Set border radius */
+  }
+  
+  .ant-select-dropdown {
+    background-color: #ffffff; /* Set dropdown background color to white */
+    color: #000000; /* Set dropdown text color to black */
+  }
+  
+  .ant-select-item-option {
+    color: #000000; /* Set option text color to black */
+  }
+  
+  .ant-select-item-option-selected {
+    background-color: #e6f7ff; /* Set selected option background color */
+    color: #000000; /* Set selected option text color */
+  }
+  
+  .ant-select-selector {
+    border: 0.063rem solid #ffffff;
+  }
+  
+  .ant-pagination-item {
+    background-color: transparent !important; /* Set pagination item background to transparent */
+  }
+  
+  .ant-pagination-item a {
+    color: #ffffff !important; /* Set pagination item text color to white */
+  }
+  
+  .ant-pagination-item-active {
+    border: none !important;
+    border-radius: 0.188rem !important;
+    background-color: #0a8120 !important; /* Set active pagination item background color */
+  }
+  
+  .ant-pagination-item-active a {
+    color: #ffffff !important; /* Set active pagination item text color */
+  }
+  
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    color: #ffffff !important; /* Set prev/next icons color to white */
+    border: none !important; /* Set prev/next icons border color to white */
+  }
+  
+  .ant-pagination-prev .ant-pagination-item-link:hover,
+  .ant-pagination-next .ant-pagination-item-link:hover {
+    color: #ffffff !important; /* Ensure hover state color is also white */
+  }
+  
+   
+  
+   
+  .StuatusFilter-container .ant-btn{
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .taskManagement .breadcrumb a {
+      font-size: 0.625rem; /* 10px */
+    }
+  
+    .task-management-table .alarm-cell {
+      font-size: 0.625rem; /* 10px */
+    }
+  
+    .label {
+      font-size: 0.625rem; /* 10px */
+      padding: 0.5rem; /* 8px */
+      white-space: normal; /* Allow text to wrap */
+    }
+  
+    .taskManagement .label-value {
+      font-size: 1.25rem; /* 20px */
+    }
+  }
+  
+  @media (min-width: 2000px) { 
+    .taskManagement {
+      padding: 2rem;
+    }
+  
+    .task-management-table .alarm-cell {
+      padding: 0.6rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+   
+    .alarm-table-body {
+      height: calc(100vh - 312px);
+      overflow-y: auto;
+  }
+  
+    .pagination-info {
+      font-size: 1.25rem;
+    }
+   
+    .stats-box {
+      width: 100%; /* Make the stats-box take the full width */
+    }
+    .StuatusFilter-container .ant-btn{
+      width: 100%;
+    }  
+  }
+  
+  .alarmErrorMessageDiv{
+  margin-top: 5px;
+  }
+  

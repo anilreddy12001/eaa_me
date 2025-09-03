@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="748" height="417" viewBox="0 0 748 417">
+  <defs>
+    <filter id="Rectangle_1822" x="0" y="0" width="748" height="417" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11.5" result="blur"/>
+      <feFlood flood-color="aqua"/>
+      <feComposite operator="in" in2="blur"/>
+    </filter>
+    <filter id="Rectangle_1822-2" x="0" y="0" width="748" height="417" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="aqua" flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="1.481" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2db189"/>
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.375" stop-color="#16a45e"/>
+      <stop offset="1" stop-color="#8ef175"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <filter id="Rectangle_1780" x="76.5" y="76.5" width="594.742" height="263.301" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#28a3b7"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_5476" data-name="Group 5476" transform="translate(22281.5 24666.5)">
+    <rect id="Rectangle_2877" data-name="Rectangle 2877" width="577" height="246" transform="translate(-22196 -24584)" fill="#fff"/>
+    <g id="Group_5475" data-name="Group 5475" transform="translate(-22826 -24870)">
+      <g id="Group_3848" data-name="Group 3848" transform="translate(-630)">
+        <g data-type="innerShadowGroup">
+          <g transform="matrix(1, 0, 0, 1, 1174.5, 203.5)" filter="url(#Rectangle_1822)">
+            <g id="Rectangle_1822-3" data-name="Rectangle 1822" transform="translate(85.5 82.5)" fill="none" stroke="#75d65b" stroke-width="8">
+              <rect width="577" height="246" rx="17" stroke="none"/>
+              <rect x="4" y="4" width="569" height="238" rx="13" fill="none"/>
+            </g>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 1174.5, 203.5)" filter="url(#Rectangle_1822-2)">
+            <rect id="Rectangle_1822-4" data-name="Rectangle 1822" width="577" height="246" rx="17" transform="translate(85.5 82.5)" fill="#fff"/>
+          </g>
+          <g id="Rectangle_1822-5" data-name="Rectangle 1822" transform="translate(1260 286)" fill="none" stroke="#75d65b" stroke-width="8">
+            <rect width="577" height="246" rx="17" stroke="none"/>
+            <rect x="4" y="4" width="569" height="238" rx="13" fill="none"/>
+          </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 1174.5, 203.5)" filter="url(#Rectangle_1780)">
+          <rect id="Rectangle_1780-2" data-name="Rectangle 1780" width="245.3" height="576.743" rx="18" transform="translate(662.24 82.5) rotate(90)" opacity="0.58" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

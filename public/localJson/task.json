@@ -1,0 +1,66 @@
+{
+    "task": [
+        {
+            "alarmId": 328,
+            "buildingName": "Kakddu",
+            "comments": null,
+            "equipmentName": "AEID-107",
+            "escalationLevel": null,
+            "feedback": "Good",
+            "lastStatusTimeStamp": "Wed, 23 Apr 2025 21:28:39",
+            "taskAssignedDate": "Wed, 23 Apr 2025 18:03:17",
+            "taskDesc": "lorem ipsum textd umy lorem ipsum context lorem",
+            "taskId": "ECC-TKT-163",
+            "taskPriority": "Medium",
+            "taskStatus": "assigned"
+        },
+        {
+            "alarmId": 329,
+            "buildingName": "Kakddu",
+            "comments": null,
+            "equipmentName": "AEID-107",
+            "escalationLevel": null,
+            "feedback": null,
+            "lastStatusTimeStamp": "Wed, 23 Apr 2025 18:04:11",
+            "taskAssignedDate": "Wed, 23 Apr 2025 18:03:17",
+            "taskDesc": "lorem ipsum textd umy lorem ipsum context lorem",
+            "taskId": "ECC-TKT-162",
+            "taskPriority": "Medium",
+            "taskStatus": "completed"
+        },
+        {
+            "alarmId": 320,
+            "buildingName": "Kakddu",
+            "comments": null,
+            "equipmentName": "AEID-107",
+            "escalationLevel": null,
+            "feedback": null,
+            "lastStatusTimeStamp": null,
+            "taskAssignedDate": "Wed, 23 Apr 2025 18:04:52",
+            "taskDesc": "lorem ipsum textd umy lorem ipsum context lorem",
+            "taskId": "ECC-TKT-165",
+            "taskPriority": "Medium",
+            "taskStatus": "pending"
+        },
+        {
+            "alarmId": 330,
+            "buildingName": "Kakddu",
+            "comments": "this is completed",
+            "equipmentName": "AEID-107",
+            "escalationLevel": null,
+            "feedback": "excellent",
+            "lastStatusTimeStamp": "Thu, 24 Apr 2025 08:36:27",
+            "taskAssignedDate": "Wed, 23 Apr 2025 18:03:17",
+            "taskDesc": "lorem ipsum textd umy lorem ipsum context lorem",
+            "taskId": "ECC-TKT-161",
+            "taskPriority": "Medium",
+            "taskStatus": "completed"
+        }
+    ],
+    "taskSummary": {
+        "assigned": 1,
+        "completed": 2,
+        "inProgress": 0,
+        "pending": 1
+    }
+}

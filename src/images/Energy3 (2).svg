@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.538" height="35.754" viewBox="0 0 19.538 35.754">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1bc384"/>
+      <stop offset="0.271" stop-color="#1c9ba9"/>
+      <stop offset="0.597" stop-color="#1f54ed"/>
+      <stop offset="1" stop-color="#680080"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_5335" data-name="Group 5335" transform="translate(-66.146 -1749)">
+    <path id="bolt_24dp_5F6368_FILL0_wght400_GRAD0_opsz24" d="M164.5-849.751l9.425-14.415h-6.436l1.542-10.927-8.708,14.1h7.166Zm-2.416,5.505,3.838-15.507h-8.564L170.929-880h0l-1.895,14.594H176.9l-14.812,21.16ZM166.651-863.771Z" transform="translate(-91.216 2629)" fill="url(#linear-gradient)"/>
+    <path id="bolt_24dp_5F6368_FILL0_wght400_GRAD0_opsz24-2" data-name="bolt_24dp_5F6368_FILL0_wght400_GRAD0_opsz24" d="M164.5-849.751l9.425-14.415h-6.436l1.542-10.927-8.708,14.1h7.166Zm-2.416,5.505,3.838-15.507h-8.564L170.929-880h0l-1.895,14.594H176.9l-14.812,21.16ZM166.651-863.771Z" transform="translate(-91.216 2629)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

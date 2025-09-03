@@ -1,0 +1,27 @@
+
+.breadcrumb-row .breadcrumb {
+    color: #ffffff !important; /* Set the text color to white */
+    border-radius: 0.25rem;
+    margin-left:0.25rem;
+  }
+  
+  .breadcrumb-row .ant-breadcrumb-separator {
+    color: #9f9c9c ;
+  }
+  
+  .breadcrumb-row .breadcrumb a {
+    color: #ffffff ; /* Set the link color to white */
+  }
+  
+  .breadcrumb-row .breadcrumb a {
+    font-size: 0.75rem; /* 12px/14px */
+    color: #ffffff; /* Set the link color to white */
+  }
+  
+  .breadcrumb-row .breadcrumb .inactive {
+    color: #b0b0b0; /* Inactive color */
+  }
+  
+  .breadcrumb-row .breadcrumb .activeBreadcrumb {
+    color: #ffffff; /* Active color */
+  }

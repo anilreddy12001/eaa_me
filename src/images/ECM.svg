@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="529.309" height="111.628" viewBox="0 0 529.309 111.628">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33d4a3"/>
+      <stop offset="0.304" stop-color="#2dacb1"/>
+      <stop offset="1" stop-color="#2986c0"/>
+      <stop offset="1" stop-color="#2466cf"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2946" data-name="Group 2946" transform="translate(-14.422 -1805.001)">
+    <line id="Line_1586" data-name="Line 1586" x2="529.309" transform="translate(14.422 1915.629)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="developer_board_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M136.507-727.93a7.049,7.049,0,0,1-5.194-2.083,7.049,7.049,0,0,1-2.083-5.194v-57.516a7.048,7.048,0,0,1,2.083-5.193A7.048,7.048,0,0,1,136.507-800h57.517a7.047,7.047,0,0,1,5.192,2.083,7.048,7.048,0,0,1,2.083,5.193v9.7h6.93v4.5H201.3v12.3h6.93v4.5H201.3v12.3h6.93v4.5H201.3v9.7a7.049,7.049,0,0,1-2.083,5.194,7.048,7.048,0,0,1-5.192,2.083Zm0-4.5h57.517a2.648,2.648,0,0,0,1.905-.866,2.65,2.65,0,0,0,.866-1.907v-57.516a2.649,2.649,0,0,0-.866-1.906,2.649,2.649,0,0,0-1.905-.866H136.507a2.652,2.652,0,0,0-1.907.866,2.649,2.649,0,0,0-.866,1.906v57.516a2.65,2.65,0,0,0,.866,1.907A2.652,2.652,0,0,0,136.507-732.434Zm9.7-12.474H164.4v-13.687H146.208Zm24.427-28.932h13.687v-9.182H170.635Zm-24.427,9.009H164.4v-18.191H146.208Zm24.427,19.923h13.687v-22.7H170.635Zm-36.9-50.588v0Z" transform="translate(-94.23 2605.001)" fill="url(#linear-gradient)"/>
+    <text id="ECM_Measures" data-name="ECM Measures" transform="translate(249 1852.001)" fill="#fff" font-size="31" font-family="Helvetica"><tspan x="-106.805" y="0">ECM Measures</tspan></text>
+    <path id="chevron_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24_1_" data-name="chevron_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 (1)" d="M329.815-707.2,320-717.013,322.987-720l12.8,12.8-12.8,12.8L320-697.384Z" transform="translate(-196 1513.001) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

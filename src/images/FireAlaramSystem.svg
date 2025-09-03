@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="255.281" height="37" viewBox="0 0 255.281 37">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_248" data-name="Rectangle 248" width="73.228" height="6.312" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Path_1237" data-name="Path 1237" d="M36.614,0C56.835,0,73.228,1.413,73.228,3.156S56.835,6.312,36.614,6.312,0,4.9,0,3.156,16.393,0,36.614,0" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b4ffac"/>
+      <stop offset="0.004" stop-color="#b4ffac"/>
+      <stop offset="0.999"/>
+      <stop offset="1"/>
+    </radialGradient>
+    <clipPath id="clip-path-5">
+      <rect id="Rectangle_248-2" data-name="Rectangle 248" width="127.342" height="6.312" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <path id="Path_1237-2" data-name="Path 1237" d="M63.671,0c35.164,0,63.671,1.413,63.671,3.156S98.836,6.312,63.671,6.312,0,4.9,0,3.156,28.507,0,63.671,0" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1038" data-name="Group 1038" transform="translate(-17.206 -158.874)">
+    <g id="Group_973" data-name="Group 973" transform="translate(-262.153 77.545)">
+      <g id="Rectangle_399" data-name="Rectangle 399" transform="translate(279.359 83.329)" fill="#233121" stroke="#b4ffac" stroke-width="2">
+        <rect width="246" height="32" rx="4" stroke="none"/>
+        <rect x="1" y="1" width="244" height="30" rx="3" fill="none"/>
+      </g>
+      <g id="Group_971" data-name="Group 971" transform="translate(461.412 112.017)">
+        <g id="Group_673" data-name="Group 673" clip-path="url(#clip-path)">
+          <g id="Group_672" data-name="Group 672" transform="translate(0 0)">
+            <g id="Group_671" data-name="Group 671" clip-path="url(#clip-path)">
+              <g id="Group_670" data-name="Group 670" transform="translate(0 0)" style="mix-blend-mode: color-dodge;isolation: isolate">
+                <g id="Group_669" data-name="Group 669" transform="translate(0 0)">
+                  <g id="Group_668" data-name="Group 668" clip-path="url(#clip-path)">
+                    <g id="Group_667" data-name="Group 667" transform="translate(0 0)">
+                      <g id="Group_666" data-name="Group 666" clip-path="url(#clip-path-4)">
+                        <rect id="Rectangle_245" data-name="Rectangle 245" width="73.228" height="6.312" transform="translate(0 0)" fill="url(#radial-gradient)"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Group_972" data-name="Group 972" transform="translate(280.307 81.329)">
+        <g id="Group_673-2" data-name="Group 673" clip-path="url(#clip-path-5)">
+          <g id="Group_672-2" data-name="Group 672" transform="translate(0 0)">
+            <g id="Group_671-2" data-name="Group 671" clip-path="url(#clip-path-5)">
+              <g id="Group_670-2" data-name="Group 670" transform="translate(0 0)" style="mix-blend-mode: color-dodge;isolation: isolate">
+                <g id="Group_669-2" data-name="Group 669" transform="translate(0 0)">
+                  <g id="Group_668-2" data-name="Group 668" clip-path="url(#clip-path-5)">
+                    <g id="Group_667-2" data-name="Group 667" transform="translate(0 0)">
+                      <g id="Group_666-2" data-name="Group 666" clip-path="url(#clip-path-8)">
+                        <rect id="Rectangle_245-2" data-name="Rectangle 245" width="127.342" height="6.312" transform="translate(0 0)" fill="url(#radial-gradient)"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text id="Space" transform="translate(56.847 182.545)" fill="#b4ffac" font-size="16" font-family="Helvetica"><tspan x="-25" y="0">Fire Alaram System</tspan></text>
+    <path id="bolt_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M240.882-816.274l5.271-6.315h-4.074l.738-5.78-4.711,6.8h3.539Zm-1.422,2.734,1.019-7.012H236.15l7.619-10.988h.47l-1,7.933h5.092l-8.4,10.067ZM242.13-822.334Z" transform="translate(-1.272 999.585)" fill="#b4ffac"/>
+  </g>
+</svg>

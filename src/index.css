@@ -1,0 +1,1058 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial;
+  background-color: #000000;
+  overflow: hidden;
+  /* Hide scrollbars */
+
+}
+
+.chatbot {
+  background-image: url('./images/chatbot.png');
+}
+
+.digitalTwin {
+  background-image: url('./images/digitaltwin.png');
+}
+
+#overLayWidget {
+
+  padding: 5px;
+  top: 174px;
+  right: 10px;
+  width: 23%;
+
+  background-color: #000000;
+  /* box-shadow: 7px 5px 50px antiquewhite; */
+
+  border: 0px solid #c7c7c7ba;
+  border-radius: 15px;
+  z-index: 1;
+  color: #4df39c;
+  text-align: center;
+
+  height: 78vh;
+  width: 24vw;
+
+
+  div {}
+}
+
+.ant-select-selector {
+  cursor: text;
+  /* right: 24px; */
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+ 
+
+  /* Adjust width as needed */
+  border-radius: 5px !important;
+  /* Add border radius */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #01b1b1 !important; 
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #005D5D !important;
+  /* Match your scrollbar thumb color */
+  border-radius: 5px !important;
+  /* Add border radius */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #4b6363 !important;
+  /* Match your scrollbar track color */
+  border-radius: 5px !important;
+  /* Add border radius */
+}
+
+#react-unity-webgl-canvas-2 {
+  /*position:fixed;*/
+}
+
+.recharts-wrapper {
+  position: absolute !important;
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  max-width: none !important;
+}
+
+.ant-select-selection__placeholder {
+  color: rgb(98, 255, 0);
+}
+
+.ant-select-selection-placeholder {
+  color: #636363;
+}
+
+.ant-select-selector {
+  background-color: #000000 !important;
+  color: #717171 !important;
+  border-radius: 0px !important;
+  border: 0px solid #40b97a !important;
+
+  .ant-select-selection-wrap>.ant-select-selection-placeholder {
+    color: rgb(104, 104, 104) !important;
+  }
+
+  .ant-select-selection-wrap>.ant-select-selection-search>input {
+    color: rgb(107, 105, 105) !important;
+  }
+}
+
+.min-h-screen.bg-gray-100 {
+  min-height: unset;
+  height: 99vh !important;
+}
+
+.bg-gray-900 {
+  width: 100%;
+  /*100%, 60vw*/
+  height: 78vh;
+}
+
+.ant-select-item-option-content {
+  color: #ffffff;
+  text-align: left;
+  width:100%;
+}
+
+
+
+.ant-menu-item,
+.ant-menu-submenu {
+
+  /* padding-left: 24px;
+    border: 2px solid green;
+    border-radius: 0px!important; */
+  span {
+    color: #b4ffac
+  }
+
+  span span {
+    color: #b4ffac;
+  }
+}
+
+.ant-menu .ant-menu-submenu-arrow {
+  position: absolute;
+  display: none;
+  top: 50%;
+  inset-inline-end: 16px;
+  width: 10px;
+}
+
+
+#react-unity-webgl-canvas-2 {
+  /*position:fixed;*/
+  /*display: none;*/
+}
+
+.recharts-wrapper {
+  position: absolute !important;
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  max-width: none !important;
+}
+
+.header-section {
+  /* background-image: url(/src/images/borderimage.png); */
+  /* background-size: contain; */
+  /* background-repeat: repeat-x; */
+  display: flex;
+  /* padding-top:1px; */
+  background-Color: #0A8120 !important;
+  /* background-position:bottom ; */
+
+  /* background-image: linear-gradient(to bottom, black, black, black, black, black,black,black,black,black,black, #696EF3EB, #7C00F9,); */
+  /* border-bottom:3.5px solid #6033D2;    */
+  color: #b4ffac;
+  justify-content: Space-Between;
+
+}
+
+
+/* .test{
+    background-image: url(/src/images/borderimage.png); 
+    background-size: 100 100;
+    background-repeat:repeat-x ;
+    color:red;
+    margin-top: 60px;
+} */
+
+
+.ctext {
+  position: relative;
+  bottom: 28px;
+  left: 60px;
+  color: green;
+
+}
+
+.widgetWrapper {
+  /*	 display: flex;
+    top: 2vh;
+    width: 72%;
+    border: 1px solid #ffffff;
+    position: relative;
+    z-index: 1;
+    height: 218px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    left: 90px;
+    justify-content: center;
+  align-items: center;
+
+ */
+}
+
+/* .widgetWrapper{
+    display: flex;
+    top: 15vh;
+    width: 55%;
+    border: 1px solid #ffffff;
+    position: relative;
+    z-index: 1;
+    height: 218px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    left: 60px;
+    justify-content: center;
+    align-items: center;
+ } */
+
+.widgetWrapper {
+  display: flex
+  ;
+      justify-content: center;
+      position: relative;
+      /* gap: 20px; */
+      height: -32px;
+      /* right: 261px; */
+      margin-top: -6px;
+      /* width: 862px; */
+      top: 20px;
+      height: 16vh;
+      width: 24vw;
+      left: -23px;
+}
+
+.CarbonEmission {
+
+  background-image: url('/src/images/carbon-emission-widget.svg');
+  position: relative;
+  background-repeat: no-repeat;
+  /* padding: 65px; */
+  /* top: -4px; */
+  bottom: 6px;
+  height: 110px;
+  width: 85px;
+  /* right: 4px; */
+  left: 28px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.activeWidget{
+   /* box-shadow: inset 0px 1px 15px 5px #2892ff00;  */
+   
+   filter: drop-shadow(0px 0px 18px  #009530);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+-webkit-transition: scale 0.5s;
+transition: scale 0.5s;
+scale:1.05;
+}
+
+
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  /* Important to keep structure */
+}
+
+/* .CarbonEmission{
+    
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: black;
+ } */
+.icon-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: cyan;
+}
+
+/* Icon Styling */
+.icon {
+  /* background-image: url('/src/images/RenewableEnergy.svg'); */
+  font-size: 24px;
+  /* Adjust icon size */
+  color: rgb(28, 173, 173);
+  /* Icon color */
+  position: relative;
+  top: 10px;
+  filter: drop-shadow(0px 0px 8px rgba(28, 173, 173, 0.8));
+  /* Neon Glow */
+  transition: filter 0.3s ease-in-out;
+}
+
+
+
+
+.RenewableEnergy {
+  background-image: url('/src/images/renewable-energy-widget.svg');
+  position: relative;
+  background-repeat: no-repeat;
+ scale:1.12;
+  height: 110px;
+  /* width: 63px; */
+  width: 77px;
+  left: 24px;
+  bottom: 3px;
+
+  /* left: 27px; */
+  /* left: -28px; */
+  background-size: contain;
+  /* background-color: #3434344a; */
+  /* border-radius: 15px; */
+  /* color: #4df39c; */
+  cursor: pointer;
+}
+
+
+
+.rtext {
+  position: absolute;
+  top: 107px;
+  left: 166px;
+  color: green;
+
+}
+
+.renewableEnergyvalue {
+  position: relative;
+  left: -58px;
+  font-size: clamp(16px, 1.2cqw, 40px);
+  font-weight: bold;
+  color: #92d15a;
+  top: -68px;
+}
+
+.renewableEnergyUnit {
+
+  position: relative;
+  left: -57px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #92d15a;
+  top: -78px;
+}
+
+.waterConsumption {
+  background-image: url('/src/images/water-consumption-widget.svg');
+  position: relative;
+  background-repeat: no-repeat;
+  /* padding: 65px; */
+  height: 110px;
+  width: 77px;
+  left: 16px;
+  bottom: 3px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.TotalConsumption {
+  background-image: url('/src/images/energy-consumption-widget.svg');
+  position: relative;
+  background-repeat: no-repeat;
+  /* padding: 65px; */
+  height: 110px;
+  width: 77px;
+  left: 7px;
+  bottom: 3px;
+  /* width: 63px; */
+  /* left: 27px; */
+  background-size: contain;
+ 
+  cursor: pointer;
+}
+
+.ttext {
+  position: absolute;
+  top: 107px;
+  left: 139px;
+  color: green;
+
+
+}
+
+.totalConsumptionvalue {
+  position: relative;
+  left: -71px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #92d15a;
+  top: -68px;
+}
+
+.totalConsumptionUnit {
+  position: relative;
+  left: -57px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #92d15a;
+  top: -78px;
+}
+
+.testing {
+  border: 1px solid black;
+  width: 12px;
+  height: 10px;
+}
+
+#root {
+  background-color: darkslategrey;
+}
+
+.logo {
+  background-image: url('/src/images/capgemini.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 369px;
+    height: 36px;
+    position: relative;
+    right: -53px;
+    padding: 17px;
+    top: 2px;
+    margin: 3px;
+}
+
+.anticon {
+  margin: 5px;
+}
+
+.dropdownDiv>.locationFilterdropdown {}
+
+.dropdownDiv .ant-select-selector {
+  border: none !important;
+  background-color: #0A8120 !important;
+}
+
+.dropdownDiv {
+  /* border:1px solid rgb(33, 171, 56); */
+  border-left: 2px solid #f1f3f3;
+ 
+
+
+  /* border-bottom: 5px solid; */
+}
+
+.dropdownDiv {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4px;
+
+
+}
+
+
+.ant-select-item.ant-select-item-option {
+  background-color: black !important;
+  border-radius: 1px;
+}
+
+.ant-select-item.ant-select-item-option:hover {
+  background-color:#0d2a3d !important;
+  border-radius: 0px;
+}
+
+.leftSideBar {
+  background-image: url('/src/images/leftsidebar-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 500px;
+
+  z-index: 1;
+  height: 90vh;
+  /* Ensure it spans the full height of the viewport */
+  /* height:580px; */
+  overflow: scroll;
+
+  overflow-x: hidden;
+  /* scrollbar-width: thin;
+    scrollbar-color: #50bc3d #f0f0f0; */
+
+
+}
+
+.leftSideBar::-webkit-scrollbar {
+  width: 8px;
+  /* Adjust width as needed */
+  border-radius: 5px !important;
+  /* Add border radius */
+}
+
+.leftSideBar::-webkit-scrollbar-thumb {
+  background-color: #316262;
+  /* Match your scrollbar thumb color */
+  border-radius: 5px !important;
+  /* Add border radius */
+}
+
+.leftSideBar::-webkit-scrollbar-track {
+  background-color: #1dace5;
+  /* Match your scrollbar track color */
+  border-radius: 5px !important;
+  /* Add border radius */
+}
+
+.unityWrapper {
+
+  width: 58vw;
+  height: 78vh;
+  margin-left: 10px;
+  top: 141px;
+  border: 0px solid #ffffff;
+}
+
+.globe-frame {
+  width: 500px;
+  height: 500px;
+  filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.8));
+  border-radius: 50%;
+  /* Ensures a circular glow */
+}
+
+
+.glow-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  /* Adjust as needed */
+  height: 500px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Optional: for better contrast */
+  box-shadow: 0px 0px 20px 5px rgba(0, 255, 255, 0.8), 0px 0px 40px 10px rgba(0, 255, 255, 0.6);
+  animation: neonGlow 1.5s infinite alternate ease-in-out;
+}
+
+.co2Unit {
+  position: relative;
+  left: -59px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9bd26b;
+  top: -34px;
+}
+
+.co2value {
+  position: relative;
+  left: -59px;
+  font-size: clamp(16px, 1.2cqw, 40px);
+  font-weight: bold;
+  color: #92d15a;
+  top: -28px;
+
+}
+
+.dropdownIcon {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #50bc3d;
+  z-index: 10;
+}
+
+.format-date {
+  position: relative;
+    top: -3px;
+    left: -18px;
+    font-size: 12px;
+
+}
+
+.format-time {
+  position: relative;
+  top: -3px;
+  left: -3px;
+  font-size: 12px;
+}
+.slash{
+  position: relative;
+  left: -9px;
+  top: -4px;
+}
+.timeCurrent {
+  color: white;
+  position: relative;
+  right: 88px;
+  top: 34px;
+  font-size: 12px;
+}
+
+.anychart-credits-text {
+  display: none !important;
+}
+
+.anychart-credits-logo {
+  display: none !important;
+}
+
+.avatarClass {
+  position: relative;
+  left: 83px;
+  padding-top: 3px;
+}
+
+.chartWrapper {
+  border-bottom: 0px solid #8e8e8e;
+  /* background-image: linear-gradient(to left bottom, #000000, #271b23, #1e1c1f, #161014, #2a4c73); */
+  padding-top: 25px;
+  background-image: url('./images/bargraph-bg.svg');
+  padding-right: 13px;
+  /* padding-bottom: 10px; */
+  padding-bottom: 23px;
+  position: relative;
+  top: -42px;
+  margin-top: 37px;
+  width: 25.5vw;
+  margin-bottom: -19px;
+  height: 36%;
+  left: -19px;
+
+}
+.donutWrapper{
+  border-bottom: 0px solid #8e8e8e;
+  /* background-image: linear-gradient(to left bottom, #000000, #271b23, #1e1c1f, #161014, #2a4c73); */
+  /* padding: 3px; */
+  background-image: url('./images/bargraph-bg.svg');
+  position: relative;
+  margin-top: -34px;
+  width: 25.5vw;
+  height: 45%;
+  left: -19px;
+}
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  background-color: #000;
+
+  color: white;
+
+  text-align: center;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+.app-container {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 100vh;
+
+}
+
+.chart-wrapper {
+
+  position: relative;
+
+  display: inline-block;
+
+}
+
+/* Outer Neon Glow Effect */
+
+.neon-outer-ring {
+
+  filter: drop-shadow(0px 0px 8px rgba(0, 191, 255, 1));
+
+  opacity: 0.7;
+
+}
+
+/* Inner Solid Circle */
+
+.inner-circle {
+
+  transition: all 0.3s ease-in-out;
+
+}
+
+/* Overlay Smaller Circle with Depth Effect */
+
+.overlay-circle {
+
+  transition: all 0.3s ease-in-out;
+
+  opacity: 0.9;
+
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.6));
+  /* Adds depth */
+
+}
+
+
+.filterLabel {
+  font-size: 12px;
+  color: white;
+  position: relative;
+  /* left: -38px; */
+  left: 10px;
+  top: 1px;
+  text-align: left;
+}
+.filterLabel-daterange{
+  font-size: 12px;
+  color:white;
+  position: relative;
+  /* left: -38px; */
+  left: 10px;
+  top: 1px;
+  text-align: left;
+}
+ /* .city-dropdown{
+  margin-left: 10px !important;
+  
+} */
+.dropdownDiv.city-dropdown {
+  font-size: 14px;
+  font-weight: bold;
+  left: -42px;
+  color: #ff0000; /* Example: red placeholder text */
+}
+
+.dropdownDiv {
+  .ant-select-selection-item {
+    color: white;
+    background-color: #0A8120;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    /* left: -20px; */
+    white-space: nowrap;           /* Prevent text from wrapping to the next line */
+    overflow: hidden;              /* Hide overflow text */
+    text-overflow: ellipsis;       /* Add ellipsis for overflowed text */
+    max-width: 8vw;               /* Ensure it stays within the container width */
+    display: inline-block;         /* Make the container inline for the text */
+    position: relative;          /* Ensure it's constrained within the container */
+}
+.ant-select .ant-select-arrow {
+  display: none!important;
+}
+}
+.dropdownDiv.ant-select-selector{
+  background-color: #0A8120;
+}
+
+.dropdownDiv.ant-select-selection-item:hover {
+  overflow: visible;         /* Make the text visible on hover */
+  white-space: normal;       /* Allow wrapping on hover */
+  text-overflow: unset;      /* Remove ellipsis on hover */
+  /* Optionally, add a tooltip for better UX */
+  position: relative;
+}
+.dropdownDiv-daterange{
+
+
+.ant-select-selection-item{
+  text-align: left;
+  color: white;
+  font-size: 13px;
+  }
+  .ant-select-selector{
+    background-color: #0A8120 !important;
+  }
+  .ant-select .ant-select-arrow {
+    display: none!important;
+  }
+}
+.dropdownDiv-daterange{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4px;
+  border-left: 2px solid #f1f3f3;
+  border-right: 2px solid #f1f3f3;
+}
+.dropdownIcon {
+  position: absolute;
+  right: 10%;
+  top: 53%;
+  font-Size: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+  color: B4FFAC;
+}
+
+.energyAnalytics {
+  background-image: url('/src/images/EnergyAnalytics.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  /* font-size: 36px; */
+  top: 10px;
+  right: -12px;
+  width: 250px;
+  height: 30px;
+  padding: 26px;
+  margin: 7px;
+
+
+}
+
+.resourcePageClass {
+  text-align: center;
+}
+
+.dateRange.ant-select-selection-item {
+  color: #B4FFAC !important;
+}
+.filterLabel-daterange.ant-select-selection-item{
+  left: -10px;
+}
+
+.noofCountry {
+  background-image: url(/src/images/resources.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  width: 197px;
+  height: 45px;
+  border: 1px solid black;
+  top: 0px;
+  right: -6px;
+
+}
+
+.wid-value {
+  /* font-size: 7px;
+    
+    position: relative;
+    top: 32px;
+    right: 0px;
+    color: white; */
+
+    font-size: 7px;
+    position: relative;
+    top: 45px;
+    right: 0px;
+    color: white;
+}
+
+.wid-label {
+  font-size: 6px;
+  color: white;
+  position: relative;
+  top: 65px;
+  padding-right: 4px;
+
+}
+
+.wid-label1 {
+  font-size: 6px;
+  color: white;
+  position: relative;
+  top: 65px;
+  padding-right: 4px;
+
+}
+
+.widget-unit {
+  font-size: 8px;
+  position: relative;
+  color: white;
+  top: -3px;
+
+}
+
+.wid-unit {
+  font-size: 14px;
+  color: #00FFFF;
+}
+
+.wid-card {
+  color: black;
+  text-align: center;
+}
+
+.ant-layout-sider-trigger {
+  display: none;
+}
+
+.ant-select-dropdown css-dev-only-do-not-override-1htoz2s ant-select-dropdown-placement-bottomLeft {
+  /* border-radius: 4px; */
+}
+
+.ant-layout-sider {
+  max-width: none !important;
+}
+
+
+.unityWrapperModal div div .ant-modal-content .ant-modal-close {
+  top: 0px;
+  inset-inline-end: 1px;
+  color: #ffffff;
+}
+
+.unityWrapperModal div div .ant-modal-content {
+  /*background-image:  linear-gradient(to bottom, #696EF2, #FE00FE, #fe00ff, black, #fe00ff, #696EF3, #7C00F9);*/
+  background-image: linear-gradient(to bottom, black, black);
+  width: 90vw !important;
+  height: 90vh !important;
+}
+
+.datePickerWrapperModal div div .ant-modal-content .ant-modal-close {
+  top: 0px;
+  inset-inline-end: 1px;
+  color: #ffffff;
+}
+
+.datePickerWrapperModal div div .ant-modal-content {
+  /*background-image:  linear-gradient(to bottom, #696EF2, #FE00FE, #fe00ff, black, #fe00ff, #696EF3, #7C00F9);*/
+  height: 5.525rem;
+  position: absolute;
+  background: transparent;
+  right: -50%;
+  top: -62px;
+}
+
+.cgchartTitle {
+  font-size: 0.625rem;
+    text-align: left;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+}
+.cgViewGraphWrapper {
+  display: inline-block; /* Or block based on your requirement */
+  padding-left: 10px; /* Add any other styles specific to the wrapper */
+}
+
+.cgViewGraphLink{
+ /* background-image: url(/src/images/viewgraphImg.svg);  */
+ /* background-image: url(/src/images/emission-wid.svg);  */
+ 
+ background-size: contain;
+ background-repeat: no-repeat;
+ cursor: pointer;
+ /* border-bottom: 1px solid #00ffff; */
+ color:#00FFFF;
+ position: relative;
+ top: -10px;
+ font-size: 10px;
+ left: 127px;
+
+
+}
+
+
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.chart-container {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.canvas{
+  box-sizing: border-box;
+  display: block;
+  height: 91px ;
+  padding-top: 25px ;
+  padding-right: 13px;
+  padding-bottom: 10px;
+  width: 320px ;
+
+}
+#barChartId{
+  box-sizing: border-box;
+  display: block;
+  height: 91px;
+  padding-top: 25px;
+  padding-right: 13px;
+  padding-bottom: 10px;
+  width: 320px;
+}
+.glow {   transition: stroke 0.4s ease-in-out;  
+   filter: drop-shadow(0px 0px 12px rgba(0, 255, 255, 0.6)); /* Soft Glow */} /* Stronger Hover Effect */.progress-container:hover .glow {   filter: drop-shadow(0px 0px 16px rgba(0, 255, 255, 1)),    
+   drop-shadow(0px 0px 20px rgba(255, 0, 255, 0.8)); }
+   .ant-modal-body{
+    height:75vh;
+    position:relative;
+    
+   }
+   .ant-modal-content{
+    /* width: 1047px; */
+    position: relative;
+    /* left: 202px; */
+    /* height: 638px; */
+    top: -37px;
+   }
+
+   .canvasjs-chart-credit{
+    display:none!important;
+   }
+
+   .clockComponent{
+    position:relative;
+    left:20px;
+   }
+
+   .widgetLabelClass{
+    max-width: 90px;
+    word-wrap: break-word;
+  
+   }

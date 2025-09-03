@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.731" height="17.808" viewBox="0 0 9.731 17.808">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1bc384"/>
+      <stop offset="0.271" stop-color="#1c9ba9"/>
+      <stop offset="0.597" stop-color="#1f54ed"/>
+      <stop offset="1" stop-color="#680080"/>
+    </linearGradient>
+  </defs>
+  <path id="bolt_24dp_5F6368_FILL0_wght400_GRAD0_opsz24" d="M160.919-864.934l4.694-7.18h-3.206l.768-5.442-4.337,7.023h3.569Zm-1.2,2.742,1.911-7.723h-4.265L164.119-880h0l-.944,7.269h3.917l-7.377,10.539ZM161.988-871.917Z" transform="translate(-157.361 880)" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,29 @@
+/* expandedChart.css */
+.custom-modal-body .ant-modal-content {
+    padding: 0px;
+    border-radius: 0px;
+    background-color: #000000; /* Set the background color to black */
+  }
+  
+  .custom-modal-body .ant-modal-header {
+    background-color: rgba(82, 185, 185, 0.30); ; /* Optional: Set the header background color to black */
+    border-bottom: none; /* Optional: Remove the border */
+  }
+  
+  .custom-modal-body .ant-modal-body {
+    background-color: rgba(82, 185, 185, 0.30); /* Set the modal body background color to black */
+    color: white; /* Optional: Set text color to white for better contrast */
+  }
+
+  .custom-modal-body .recharts-legend-wrapper{
+    bottom: -20px !important;
+  }
+
+  .custom-modal-body .ant-modal-close,.custom-modal-body .ant-modal-close:hover{
+    color: white; /* Set the close button color to white */
+  }
+
+  .custom-modal-body .recharts-legend-wrapper ul{
+    justify-content: center;
+    margin-bottom: -3rem;
+  }

@@ -1,0 +1,407 @@
+.configLinks{
+cursor:pointer;
+}
+.configLogoText{
+  
+   
+}
+#root{
+    font-family: arial;
+}
+#configWorkArea{
+    
+    width: 75vw;
+label{
+    color: #e8e8e8;
+}
+input{
+    color:#e8e8e8;
+    background-color: #001529;
+    border-radius: 0px;
+}
+
+textarea{
+    color:#e8e8e8;
+    background-color: #001529;
+}
+
+
+
+.ant-select-arrow {
+    display: flex !important;
+    color:#ffffff;
+}
+
+}
+
+.projectDropdown .ant-select-selector {
+    background-color: #001529 !important;
+    color: #717171 !important;
+    border-radius: 0px !important;
+    border: 1px solid #717171 !important;
+}
+
+.createLocationDropdowns .ant-select-selector {
+    background-color: #001529 !important;
+    color: #717171 !important;
+    border-radius: 0px !important;
+    border: 1px solid #717171 !important;
+    width:30vw;
+}
+.configReplaceDeviceSuggestionWrapper
+{
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.replaceDeviceTypeDropdown .ant-select-selector {
+    background-color: #001529 !important;
+    color: #717171 !important;
+    border-radius: 0px !important;
+    border: 1px solid #717171 !important;
+    width:30%;
+}
+
+.deleteEquipmentDropdowns .ant-select-selector {
+    background-color: #001529 !important;
+    color: #717171 !important;
+    border-radius: 0px !important;
+    border: 1px solid #717171 !important;
+}
+ .configTestDiv{
+background: linear-gradient(45deg, #6B4AEF, #83B6F9, #DBE3FF, #7D9DF7, #7870F7);
+    background-clip: text;
+    font-size:3em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: gradient_anim 5s ease infinite;
+
+}
+.configLogoText span{
+position: relative;
+top: 0px;
+font-size: 1.3rem;
+    background: linear-gradient(45deg, #aeda72, #83B6F9, #DBE3FF, #7D9DF7, #8cffac);
+    background: #ffffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: gradient_anim 100s ease infinite;
+}
+
+.configHomeClass span{
+    position: relative;
+    top: 0px;   
+}
+
+.ant-menu-dark.ant-menu-horizontal{
+background-color: #0a8120;
+}
+
+@keyframes gradient_anim{
+0% {
+    background-position: 0 0;
+}
+
+50% {
+    background-position: 100% 0;
+}
+100% {
+    background-position: 0 0;
+}
+}
+.projectDeleteModal{
+    color: white;
+    background-color: darkslategray;
+
+div div .ant-modal-body{
+    height: 60%;
+    position: relative;
+    color:#000000;
+    
+   }
+
+   div .ant-modal-content{
+    width: 35vw;
+    position: relative;
+    left: 0px;
+    height: 146px;
+    top: -37px;
+    .ant-modal-footer{
+        display: flex;
+    }
+   }
+}
+
+
+.regionTreeClass li{
+  border-top:1px solid #c4c4c4;
+    margin-left:5px
+}
+
+.countryTreeClass li{
+    border-top:1px solid #575757;
+    margin-left:10px
+}
+.cityTreeClass li{
+    border-top:1px solid #585858;
+    margin-left:15px
+}
+
+.campusTreeClass li{
+    border-top:1px solid #646464;
+    margin-left:20px
+}
+
+.buildingTreeClass li{
+    border-top:1px solid #6d6d6d;
+    margin-left:25px
+}
+.equipmentTreeClass li{
+    border-top:1px solid #bcbcbc;
+    margin-left:30px
+}
+.nodeTextConfigTool{
+    background-color: #001529;
+}
+.configIndividualLayoutClass{
+padding: 0 24px 24px;
+background-color:#001529;
+
+}
+
+.configContextMenuDiv{
+    position: fixed;
+    background-color: #dededec9;
+    color: #000000;
+    padding: 5px;
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.configTreeContainer::-webkit-scrollbar {
+    width: 6px!important;
+}
+
+.configTreeContainer::-webkit-scrollbar-thumb {
+    background-color: #00FFFF66 ;
+    border-radius: 9px !important;
+}
+
+.configTreeContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #00FFFFAA;
+    border-radius: 9px !important;
+}
+
+
+.configTreeContainer{ 
+    width:20vw;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: #001529;
+    color:#a9a9a9; 
+    border-radius:0px;
+    border-right:1px solid #393939;
+    padding: 4px;
+    max-height: 79vh;
+    cursor: pointer;
+}
+
+.deleteLocationsDropdowns .ant-select-selector {
+    background-color: #001529 !important;
+    color: #717171 !important;
+    border-radius: 0px !important;
+    border: 1px solid #717171 !important;
+
+}
+
+.configPointTypeSelect{
+    width: 38%;
+}
+.configPointTypeSelect .ant-select-selector{
+    background-color: #001529 !important;
+    color: #717171 !important;
+    border-radius: 0px !important;
+    border: 1px solid #717171 !important;
+    width:100%!important;
+}
+
+.configPointUnitSelect .ant-select-selector{
+    background-color: #001529 !important;
+    color: #717171 !important;
+    border-radius: 0px !important;
+    border: 1px solid #717171 !important;
+    width:100%!important;
+}
+
+.configPointUnitSelect{
+    width:38%;
+}
+
+.configVariableUnitSelect{
+    width:100%;
+    .ant-select-selector{
+        background-color: #001529 !important;
+        color: #717171 !important;
+        border-radius: 0px !important;
+        border: 1px solid #717171 !important;
+        width:100%!important;
+    }
+}
+
+.configVariableTypeSelect{
+    width:100%;
+    .ant-select-selector{
+        background-color: #001529 !important;
+        color: #717171 !important;
+        border-radius: 0px !important;
+        border: 1px solid #717171 !important;
+        width:100%!important;
+    }
+}
+
+.ruleManagementHeader{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.newButtonRuleManagement{
+    margin-left:10px;
+}
+
+.tableRuleManagement{
+    margin-left:10px;
+    margin-top:5px;
+}
+
+.valuetwo{
+ant-select-selector {
+   
+    background-color:#001529;
+   
+}
+}
+
+.rulesCreationEditWrapper{
+    display: flex;
+    padding: 5px;
+    height: 79vh;
+    .rulesCreationRightPanelWrapper{
+        display: flex;
+        width:25%;
+        border:1px solid #ffffff;
+    }
+}
+
+.custom-select{
+    width:100%;
+    .ant-select-selector{
+        background-color: #001529 !important;
+        color: #717171 !important;
+        border-radius: 0px !important;
+        border: 1px solid #717171 !important;
+        width:100%!important;
+    }
+}
+
+.locationMappingClass{
+    width:100%;
+    .ant-select-selector{
+        background-color: #001529 !important;
+        color: #717171 !important;
+        border-radius: 0px !important;
+        border: 1px solid #717171 !important;
+        width:100%!important;
+    }
+}
+
+.configHeaderAndContentwrapper{
+    padding-left: 10px;
+  width: max-content;
+  background-color: #001529;
+}
+
+.configMainHeader {
+    span{
+        color:#ffffff!important;
+    }
+
+}
+
+.rulesCreationLeftPanel{
+    width: 100%;
+
+}
+
+.ruleDescriptionsRow{
+    display:flex;
+    flex-direction:row;
+}
+.rulePropertiesDropdownsRow{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    align-content: baseline;
+    justify-content: space-between;
+}
+.rulePIDRow{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+  align-content: baseline;
+  justify-content: space-between;
+    .ant-select-selector {
+
+
+    }
+}
+.ruleEIDRow{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    align-content: baseline;
+    justify-content: space-between;
+}
+.ruleEIDRowHeading{
+    text-align: left;
+}
+.rulePropertiesHeading{
+    text-align: left; 
+}
+.rulesCreationSubmitRow{
+    text-align:right;
+}
+
+#configWorkArea > div > div > div.ant-select.ant-select-outlined.custom-select.ant-select-multiple.ant-select-show-arrow.ant-select-show-search > div > span > div > div > span > span.ant-select-selection-item-remove{
+color:#ffffff;
+}
+
+/* #configWorkArea > div > div > div.ant-select.ant-select-outlined.locationMappingClass.ant-select-multiple.ant-select-show-arrow.ant-select-show-search > div > span > div > div > span > span.ant-select-selection-item-remove{
+    color:#ffffff;
+    } */
+
+#configWorkArea > div > div > div > div > div > span > div > div > span > span.ant-select-selection-item-remove{
+    color:#ffffff;
+    }
+
+    #configWorkArea{
+        button{
+        width: 100px;
+  text-align: justify;
+  margin-top: 10px;
+        }
+    }
+
+
+
+    .ant-menu .ant-menu-submenu-title .ant-menu-item-icon{
+        float: right;
+  top: 22px;
+  position: relative;
+    }
+
+    .hiddenTextField{
+        visibility:hidden
+    }

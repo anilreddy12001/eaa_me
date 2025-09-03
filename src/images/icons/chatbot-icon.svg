@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="246.12" height="246.12" viewBox="0 0 246.12 246.12">
+  <defs>
+    <filter id="Ellipse_922" x="0" y="0" width="246.12" height="246.12" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="14" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11.5" result="blur"/>
+      <feFlood flood-color="aqua"/>
+      <feComposite operator="in" in2="blur"/>
+    </filter>
+    <filter id="Ellipse_922-2" x="0" y="0" width="246.12" height="246.12" filterUnits="userSpaceOnUse">
+      <feOffset dx="-8" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="aqua" flood-opacity="0.51" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_5786" data-name="Group 5786" transform="translate(79.5 71.5)">
+    <g id="Group_3071" data-name="Group 3071" transform="translate(0 0)">
+      <g data-type="innerShadowGroup">
+        <g transform="matrix(1, 0, 0, 1, -79.5, -71.5)" filter="url(#Ellipse_922)">
+          <g id="Ellipse_922-3" data-name="Ellipse 922" transform="translate(79.5 71.5)" fill="none" stroke="aqua" stroke-linejoin="bevel" stroke-width="2.5">
+            <circle cx="37.56" cy="37.56" r="37.56" stroke="none"/>
+            <circle cx="37.56" cy="37.56" r="36.31" fill="none"/>
+          </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -79.5, -71.5)" filter="url(#Ellipse_922-2)">
+          <circle id="Ellipse_922-4" data-name="Ellipse 922" cx="37.56" cy="37.56" r="37.56" transform="translate(79.5 71.5)" fill="#fff"/>
+        </g>
+        <g id="Ellipse_922-5" data-name="Ellipse 922" fill="none" stroke="aqua" stroke-linejoin="bevel" stroke-width="2.5">
+          <circle cx="37.56" cy="37.56" r="37.56" stroke="none"/>
+          <circle cx="37.56" cy="37.56" r="36.31" fill="none"/>
+        </g>
+      </g>
+      <circle id="Ellipse_953" data-name="Ellipse 953" cx="33.253" cy="33.253" r="33.253" transform="translate(4.486 4.486)" fill="#23bae9" opacity="0.24"/>
+      <g id="Group_2968" data-name="Group 2968" transform="translate(25.775 23.981)">
+        <path id="Path_14208" data-name="Path 14208" d="M-5652.914,8204.457c-.528-2.01,0-20.542,0-20.542a3.813,3.813,0,0,1,2.534-2.066c1.635-.187,19.416,0,19.416,0a2.438,2.438,0,0,1,1.945,2.066c.5,1.943,0,25.3,0,25.3l-6.96-3.064h-14.4A2.247,2.247,0,0,1-5652.914,8204.457Z" transform="translate(5653.148 -8181.765)" fill="#2ea4e1"/>
+        <path id="Path_14209" data-name="Path 14209" d="M-5648.212,8204.037s9.016,6.633,16.53,0" transform="translate(5651.92 -8187.3)" fill="none" stroke="#fff" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

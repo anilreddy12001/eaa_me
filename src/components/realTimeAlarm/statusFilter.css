@@ -1,0 +1,49 @@
+.ant-dropdown-menu {
+  background-color: #000000 !important;
+  border-radius: 0px !important;
+}
+
+.ant-dropdown-menu-item {
+  padding: 8px 16px;
+}
+
+.ant-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.ant-checkbox-inner {
+  border-color: green !important;
+  border-radius: 0px !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: white !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: green !important;
+}
+
+.ant-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #ffffff;
+  padding: 8px 16px;
+  cursor: pointer;
+  height: 2.5rem;
+}
+
+.StuatusFilter-container .ant-btn:hover {
+  background-color: #000000 !important;
+  border-color: #ffffff;
+  color:#ffffff !important;
+}
+
+.ant-btn .anticon {
+  margin-right: 8px;
+}

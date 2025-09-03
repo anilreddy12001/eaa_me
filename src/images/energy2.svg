@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="529.309" height="68.5" viewBox="0 0 529.309 68.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1bc384"/>
+      <stop offset="0.347" stop-color="#1c9ba9"/>
+      <stop offset="0.546" stop-color="#1f54ed"/>
+      <stop offset="0.976" stop-color="#640586"/>
+      <stop offset="1" stop-color="#680080"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2952" data-name="Group 2952" transform="translate(-14.422 -324)">
+    <line id="Line_1597" data-name="Line 1597" x2="529.309" transform="translate(14.422 391.5)" fill="none" stroke="#707070" stroke-width="2" opacity="0.3"/>
+    <text id="Energy" transform="translate(142 360)" fill="#7f7e7e" font-size="31" font-family="Helvetica"><tspan x="0" y="0">Energy</tspan></text>
+    <path id="Path_14185" data-name="Path 14185" d="M6371.3,458.363l18.408-27.963L6387,450.594h10.828l-20.194,29.424,5.225-21.656Z" transform="translate(-6310.299 -106.4)" opacity="0.54" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

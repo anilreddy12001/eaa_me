@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="249.099" height="66.942" viewBox="0 0 249.099 66.942">
+  <g id="Group_931" data-name="Group 931" transform="translate(-16.206 -925.447)">
+    <path id="Path_584" data-name="Path 584" d="M0,0V64.412H96.293l11.425-11.386h69.157V0Z" transform="translate(17.206 926.447)" fill="rgba(180,255,172,0.06)" stroke="#b4ffac" stroke-width="2"/>
+    <path id="Path_585" data-name="Path 585" d="M79.164,40.458l-8.4,8.358h62.324l8.4-8.358Z" transform="translate(48.61 943.574)" fill="#b4ffac"/>
+    <text id="ECM_Measures" data-name="ECM Measures" transform="translate(103.503 963.877)" fill="#b4ffac" font-size="16" font-family="Helvetica"><tspan x="-55" y="0">ECM Measures</tspan></text>
+    <g id="Rectangle_149" data-name="Rectangle 149" transform="translate(200.365 926.335)" fill="rgba(180,255,172,0.06)" stroke="#b4ffac" stroke-width="2">
+      <rect width="64.94" height="53.768" stroke="none"/>
+      <rect x="1" y="1" width="62.94" height="51.768" fill="none"/>
+    </g>
+    <path id="developer_board_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M132.461-768a3.13,3.13,0,0,1-2.306-.925,3.13,3.13,0,0,1-.925-2.306v-25.538a3.13,3.13,0,0,1,.925-2.306,3.13,3.13,0,0,1,2.306-.925H158a3.129,3.129,0,0,1,2.305.925,3.13,3.13,0,0,1,.925,2.306v4.307h3.077v2H161.23V-785h3.077v2H161.23v5.461h3.077v2H161.23v4.307a3.13,3.13,0,0,1-.925,2.306A3.129,3.129,0,0,1,158-768Zm0-2H158a1.176,1.176,0,0,0,.846-.385,1.176,1.176,0,0,0,.385-.846v-25.538a1.176,1.176,0,0,0-.385-.846A1.176,1.176,0,0,0,158-798H132.461a1.178,1.178,0,0,0-.847.385,1.176,1.176,0,0,0-.384.846v25.538a1.176,1.176,0,0,0,.384.846A1.178,1.178,0,0,0,132.461-770Zm4.307-5.539h8.077v-6.077h-8.077Zm10.846-12.846h6.077v-4.077h-6.077Zm-10.846,4h8.077v-8.077h-8.077Zm10.846,8.846h6.077v-10.077h-6.077ZM131.23-798v0Z" transform="translate(86.067 1737.219)" fill="#b4ffac"/>
+  </g>
+</svg>

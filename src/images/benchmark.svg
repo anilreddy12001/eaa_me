@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="249.099" height="66.942" viewBox="0 0 249.099 66.942">
+  <g id="Group_927" data-name="Group 927" transform="translate(-16.206 -587.107)">
+    <path id="Path_576" data-name="Path 576" d="M0,0V64.412H96.293l11.425-11.386h69.157V0Z" transform="translate(17.206 588.107)" fill="rgba(180,255,172,0.06)" stroke="#b4ffac" stroke-width="2"/>
+    <path id="Path_578" data-name="Path 578" d="M79.164,40.458l-8.4,8.358h62.324l8.4-8.358Z" transform="translate(48.61 605.233)" fill="#b4ffac"/>
+    <text id="Bench_Marking_KPI_s" data-name="Bench Marking KPI’s" transform="translate(102.95 625.538)" fill="#b4ffac" font-size="16" font-family="Helvetica"><tspan x="-74" y="0">Bench Marking KPI’s</tspan></text>
+    <g id="Rectangle_145" data-name="Rectangle 145" transform="translate(200.365 587.669)" fill="rgba(180,255,172,0.06)" stroke="#b4ffac" stroke-width="2">
+      <rect width="64.94" height="53.768" stroke="none"/>
+      <rect x="1" y="1" width="62.94" height="51.768" fill="none"/>
+    </g>
+    <path id="hotel_class_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M144.844-757.035l7.505-6.483,3.117.291-8.1,6.977,2.394,10.56-2.643-1.6Zm-4.123-12.742-2.1-4.962,1.2-2.95,3.433,8.149Zm-13.506,18.6,6.807-4.106,6.807,4.16-1.783-7.78,6-5.186-7.888-.7-3.134-7.348-3.133,7.293-7.888.7,6,5.24Zm-3.3,4.534,2.681-11.483-8.91-7.717,11.736-1.018,4.6-10.826,4.6,10.826,11.736,1.018-8.91,7.717,2.681,11.483-10.1-6.1ZM134.023-760.568Z" transform="translate(96.257 1376.243)" fill="#b4ffac"/>
+  </g>
+</svg>

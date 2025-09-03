@@ -1,0 +1,23 @@
+multiplierConfig = {
+  "Energy Consumption": 0.000001,
+  "water consumption": 0.264172,
+  "waste consumption": 0.001,
+  "Water Consumption Through Tanker Water": 0.264172,
+  "Water Consumption Through Ground Water": 0.264172,
+  "Building Electricity": 0.000001,
+  "Building Energy": 0.000001,
+  "EV Energy Consumption": 0.000001,
+  "Organic Waste Consumption": 0.001,
+  "E-Waste Consumption": 0.001,
+  "Real Estate Waste Consumption": 0.001,
+  "On-site Solar Energy Consumption": 0.000001,
+  "OFF-site Solar Energy Consumption": 0.000001,
+  "Diesel Energy Consumption": 0.000001,
+  "Gas Energy Consumption": 0.000001,
+  "Bio Gas Energy Consumption": 0.000001,
+  "Building Non-Renewable Energy Consumption ": 0.000001,
+  "Renewable Energy Certificate Energy Consumption": 0.000001,
+  "Green Utility Program Energy Consumption": 0.000001,
+  "Corban Emission": 1,
+  "Renewable Energy Consumption": 0.000001
+}

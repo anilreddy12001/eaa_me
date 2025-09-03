@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="529.309" height="61.5" viewBox="0 0 529.309 61.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.306" y1="0.159" x2="0.625" y2="0.955" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1bc384"/>
+      <stop offset="0.19" stop-color="#1c9ba9"/>
+      <stop offset="0.51" stop-color="#1f54ed"/>
+      <stop offset="0.99" stop-color="#680080"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.501" cy="0.501" r="0.499" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#13004d"/>
+      <stop offset="1" stop-color="#000027"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_2953" data-name="Group 2953" transform="translate(-14.422 -413)">
+    <line id="Line_1598" data-name="Line 1598" x2="529.309" transform="translate(14.422 473.5)" fill="none" stroke="#707070" stroke-width="2" opacity="0.3"/>
+    <text id="Water" transform="translate(142 444)" fill="#7f7e7e" font-size="31" font-family="Helvetica"><tspan x="0" y="0">Water</tspan></text>
+    <g id="Group_2930" data-name="Group 2930" transform="translate(60 413)" opacity="0.54">
+      <path id="Path_3545" data-name="Path 3545" d="M79.472,151.567A14.406,14.406,0,0,1,65.09,137.185c0-7.41,11.835-22.615,13.173-24.313a1.537,1.537,0,0,1,1.209-.592,1.5,1.5,0,0,1,1.209.592c1.338,1.7,13.173,16.9,13.173,24.313a14.406,14.406,0,0,1-14.382,14.382h0Zm0-35.248" transform="translate(-65.09 -112.28)" fill="url(#linear-gradient)"/>
+      <path id="Path_3546" data-name="Path 3546" d="M71.624,131.163a1.543,1.543,0,0,1-1.544-1.518,1.565,1.565,0,0,1,1.544-1.544,5.216,5.216,0,0,0,5.2-5.2,1.543,1.543,0,0,1,1.518-1.544,1.565,1.565,0,0,1,1.544,1.544,8.268,8.268,0,0,1-8.259,8.259h0Zm0,0" transform="translate(-57.241 -97.999)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+</svg>

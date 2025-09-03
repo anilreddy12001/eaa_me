@@ -1,0 +1,1643 @@
+.sidebar-icon.resource-icon{
+    width: 27px;
+    position: relative;
+    top: 12px;
+    left: 10px;
+}
+.integrated-label {
+    font-size: 12px;
+    position: relative;
+    left: 24px;
+    top: -2px;
+    text-align: left;
+    line-height: 1.2;
+    display: inline-block;
+    white-space: normal;
+    max-width: 116px;
+  }
+
+  .main-menu-label:hover {
+    color: #FFD700; /* Bright color like gold */
+    cursor: pointer; /* Make it a clickable cursor */
+  }
+  
+  /* For Submenu Label Hover */
+  .submenu-item .submenu-label:hover {
+    color: #FFD700; /* Bright color like gold for submenu labels */
+    cursor: pointer; /* Make it a clickable cursor */
+  }
+  .submenu-item.submenu-item-2.waste-submenu-class{
+   
+    border-bottom: 1px solid #707070;
+    padding-bottom: 14px;
+    position: relative;
+    top: 3px;
+    
+  }
+  .Cost-submenu-class{
+    border-bottom: 1px solid #707070;
+  }
+  .submenu-item.submenu-item-3.Occupancy-submenu-class{
+  
+    border-bottom: 1px solid #707070;
+    padding-bottom: 14px;
+    position: relative;
+    top: 3px;
+  }
+  
+  /* .submenu-item.active {
+    background-image: url('/src/images/subHighlit1.png');
+    background-size: cover;
+    background-position: center;
+  } */
+  .active{
+    background-image: url('/src/images/subHighlit1.png');
+    background-size: cover;
+    background-position: 3px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    /* transition: background-image 0.3s ease;  */
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+
+  }
+  
+  
+ 
+.sidebar-item-header{
+    /* border-bottom:1px solid white; */
+}
+.sidebar-item-header.resource-header {
+  
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+}
+
+ .sidebar-item-header.integrated-header{
+   
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.operation-header{
+  
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.aianalytics-header{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.cmms-header{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.safety-header{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.Bench-header{
+
+   padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.sustain-header{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.workflow-header{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.resource-forecating-header{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+ .sidebar-item-header.ecm-header{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+
+ }
+ .sidebar-item-header.reports-header{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #70707070;
+    height: 65px;
+ }
+
+.sidebar-label.resource-label.highlight{
+    color:rgb(21, 197, 228);
+
+}
+
+ .img-resource{
+    width:30px;
+    position: relative;
+    top: 21px;
+    width: 30px;
+    left: 10px;
+ }
+ .img-integrated{
+    width:30px;
+    position: relative;
+    top: 21px;
+    width: 30px;
+    left: 10px;
+ }
+ .img-operations{
+    position: relative;
+    top: 21px;
+    width: 30px;
+    left: 10px;
+ }
+ .img-Aianalytics{
+    position: relative;
+    top: 16px;
+    width: 30px;
+    left: 10px;
+ }
+ .img-CMMS{
+    position: relative;
+    top: 17px;
+    width: 30px;
+    left: 10px;
+ }
+ .img-Safety{
+    position: relative;
+    top: 14px;
+    width: 24px;
+    left: 15px;
+ }
+ .img-Sustainability{
+    position: relative;
+    top: 16px;
+    width: 30px;
+    left: 10px;
+ }
+ .img-energy{
+   
+    width: 15px;
+    position: relative;
+    left: 5px;
+ }
+ .img-Bench{
+    width: 31px;
+    position: relative;
+    top: 16px;
+    left: 10px;
+ }
+ .img-Workflow{
+    width: 26px;
+    position: relative;
+    top: 21px;
+    left: 10px;
+ }
+ .img-resourceforcasting{
+    position: relative;
+    top: 17px;
+    width: 30px;
+    left: 10px;
+
+ }
+ .img-ECM{
+    position: relative;
+    top: 18px;
+    width: 30px;
+    left: 10px;
+ }
+ .img-Reports{
+    position: relative;
+    top: 15px;
+    width: 30px;
+    left: 10px;
+ }
+ .img-water{
+    width: 15px;
+    position: relative;
+    left: 5px;
+ }
+ .img-waste{
+    width: 15px;
+    position: relative;
+    left: 5px;
+ }
+ .img-AQI{
+    width: 28px;
+    position: relative;
+    top: 7px;
+    left: -4px;
+ }
+ .img-space{
+    width: 23px;
+    position: relative;
+    left: -1px;
+    top: 3px;
+ }
+ .img-parking{
+    width: 27px;
+    position: relative;
+    left: -2px;
+ }
+
+ .img-Occupancy{
+    width: 24px;
+    position: relative;
+    left: -2px;
+
+ }
+ .img-Realtime{
+    width: 21px;
+    position: relative;
+    left: -1px;
+
+ }
+ .img-Dynamic{
+    width: 22px;
+    position: relative;
+    left: -1px;
+ }
+ .resource-label{
+    position: relative;
+    top: -11px;
+    font-size: 12px;
+    left: -9px;
+
+ }
+ .resource-label:hover{
+   
+    color:red;
+
+ }
+
+ /* .integrated-label{
+    position: relative;
+    top: -23px;
+    font-size: 12px;
+    left: 8px;
+
+ } */
+ .operations-label{
+    position: relative;
+    top: -6px;
+    font-size: 12px;
+    text-align: left;
+    left: -2px;
+
+ }
+ .Aianalytics-label{
+    position: relative;
+    top: -13px;
+    font-size: 12px;
+    left: 1px;
+
+ }
+ .CMMS-label{
+    position: relative;
+    top: -11px;
+    font-size: 12px;
+    left: -11px;
+ }
+ .Safety-label{
+    position: relative;
+    top: -15px;
+    font-size: 12px;
+    left: 16px;
+ }
+ .Bench-label{
+    position: relative;
+    top: -9px;
+    font-size: 12px;
+    left: 24px;
+
+ }
+ .Sustainability-label{
+    position: relative;
+    top: -14px;
+    font-size: 12px;
+    left: 20px;
+
+ }
+ .Workflow-label{
+    position: relative;
+    top: -5px;
+    font-size: 10px;
+    left: 22px;
+ }
+ .resourceforcasting-label{
+    position: relative;
+    top: -6px;
+    font-size: 12px;
+    left: 25px;
+ }
+ .ECM-label{
+    font-size: 12px;
+    position: relative;
+    left: 24px;
+    top: -2px;
+    text-align: left;
+    line-height: 1.2;
+    display: inline-block;
+    white-space: normal;
+    max-width: 116px;
+ }
+ .Reports-label{
+    position: relative;
+    top: -14px;
+    font-size: 12px;
+    left: -7px;
+ }
+ .energy-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 10px;
+
+ }
+ .water-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 10px;
+ }
+ .waste-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 10px;
+ }
+ .Space-label{
+    font-size: 11px;
+    position: relative;
+    top: 3px;
+    left: 1px;
+ }
+ .Parking-label{
+    font-size: 11px;
+    position: relative;
+    top: 4px;
+    left: -3px;
+ }
+ .AQI-label{
+    font-size: 11px;
+    position: relative;
+    top: 8px;
+    left: -3px;
+ }
+ .Occupancy-label{
+    font-size: 11px;
+    position: relative;
+    top: 2px;
+    left: 0px;
+ }
+
+ .Realtime-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 6px;
+ }
+ .Dynamic-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 5px;
+
+ }
+ .Predictive-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 2px;
+
+ }
+ .AISimulation-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+ }
+ .AIInference-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: -1px;
+
+ }
+
+ .img-Predictive{
+    width: 24px;
+    position: relative;
+    left: 1px;
+    top: 2px;
+
+ }
+ .img-AISimulation{
+    width: 24px;
+    position: relative;
+    left: 1px;
+
+ }
+ .img-AIInference{
+    width: 25px;
+    position: relative;
+    left: 1px;
+ }
+
+.img-PPM{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.PPM-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+.img-FDD{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.FDD-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+ 
+.img-MTBF{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.MTBF-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+
+.img-MTTR{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.MTTR-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+.img-RUL{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.RUL-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+.Fire-label{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+.img-FireAlaramSystem{
+    width: 25px;
+    position: relative;
+    left: 1px;
+    top: 3px;
+}
+.img-FireFighting{
+    width: 20px;
+    position: relative;
+    left: 3px;
+}
+.img-Elivator{
+    width: 25px;
+    position: relative;
+    left: -3px;
+}
+.img-Acess{
+    width: 20px;
+    position: relative;
+    left: 4px;
+}
+.img-EPI{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.img-Waterperperson{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.img-Ikw{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.img-Renewable{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.img-Scope1{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+
+.img-Scope2{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.img-Scope3{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+
+.img-RenewableEnergypercentage{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.img-Task{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+
+.img-Assest{
+    width: 25px;
+    position: relative;
+    left: 1px;
+}
+.img-Energy{
+    width: 20px;
+    position: relative;
+    left: 1px;
+}
+
+.img-Water{
+    width: 20px;
+    position: relative;
+    left: 1px;
+}
+.img-Cost{
+    width: 20px;
+    position: relative;
+    left: 1px;
+}
+
+.sidebar-label.label-light{
+    color:red;
+}
+ 
+ .leftSideBar{
+    height: 300px;
+   
+    flex-basis: 15%;
+
+}
+/* Dropdown Icon */
+.dropdown-icon {
+    font-size: 16px;
+    transition: transform 0.3s;
+  }
+   
+  .dropdown-icon.open {
+    transform: rotate(180deg);
+  }
+   
+  /* Dropdown Content */
+  .dropdown-content {
+   /* background-color: #191919;
+    border-top:2px solid white;
+    /* background-image: url(/src/images/border-bot.png); */
+    background-size: contain;
+   background-repeat: no-repeat;
+    /* padding-left: 20px; */
+    margin-top: 5px;
+    padding-left: 3px;
+  }
+   
+  /* Submenu Items */
+  .submenu-item {
+    padding: 8px 12px;
+    display: flex;
+    position: relative;
+    top: -4px;
+
+;
+    font-size: 10px;
+    align-items: center;
+    text-align:left;
+    gap: 18px;
+    /* font-size: 12px; */
+    color: white;
+    /* border-bottom: 1px solid rgb(39 37 37); */
+  }
+
+.sidebar {
+    /* width: 250px; */
+    /* background-color: #110023; */
+    /* background-image: url('/src/images/bargraph-bg.svg'); */
+    
+     padding: 10px; 
+    border-radius: 8px;
+    overflow:scroll;
+    height: 90vh;
+   
+    overflow-x:hidden;
+    /* width: 230px; */
+
+  }
+   
+  .sidebar::-webkit-scrollbar {
+    width: 6px; /* Adjust width as needed */
+    border-radius: 5px !important; /* Add border radius */
+  }
+   
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: #005D5D; /* Match your scrollbar thumb color */
+    border-radius: 5px !important; /* Add border radius */
+    
+  }
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #01b1b1; 
+  }
+   
+  .sidebar::-webkit-scrollbar-track {
+    background-color: #012222; /* Match your scrollbar track color */
+    border-radius: 5px !important; /* Add border radius */
+  }
+
+  .sidebar-item {
+   /* padding: 10px; */
+    position: relative;
+    width: 200px;
+    left: -10px;
+    top: -15px;
+    cursor: pointer;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+    transition: background 0.3s;
+    color: aliceblue;
+    
+  }
+   
+  /* .sidebar-item:hover {
+    background: #1d013b;
+    
+ 
+    
+  } */
+  .sidebar-label:hover{
+    color:white;
+
+  }
+   
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .sidebar-icon:hover{
+    color:white;
+  }
+   
+  .sidebar-icon {
+    color: #00aaff;
+    font-size: 20px;
+    height: 31px;
+    width: 27px;
+    /* height: 31px; */
+  }
+   
+  .sidebar-label {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: -38px;
+    padding-left: 5px;
+    color: #514d4d;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+  }
+   
+  /* .dropdown-content {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+  } */
+  /* Dropdown Icon */
+  .dropdown-icon {
+    font-size: 16px;
+    transition: transform 0.3s;
+  }
+   
+  .dropdown-icon.open {
+    transform: rotate(180deg);
+  }
+   
+  /* Dropdown Content */
+ 
+
+.sidebar-header{
+    /* border-bottom: 1px solid white; */
+}
+.sidebar{
+    /* position: relative; */
+    /* overflow-y: auto; */
+}
+/* .sidebar-label{
+    position: relative;
+    right: -65px;
+    top: -16px;
+    color: white;
+} */
+/* .sidebar-icon{
+    position: relative;
+    left: 14px;
+    height: 53px;
+    top: 5px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-bottom: -21px;
+} */
+.sidebar-downicon{
+    position: relative;
+    left: 9vw;
+  color: #ffffff96;
+    height: 59px;
+    top: 7px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-bottom: -21px;
+}
+.sidebar-downicon:hover{
+    color:white
+
+}
+.ant-menu-submenu-title{
+    padding-left: 10px !important;
+    /* width: 360px  !important; */
+  }
+.leftSideBar.ant-layout ant-layout-has-sider css-dev-only-do-not-override-1htoz2s.ant-layout-sider ant-layout-sider-dark ant-layout-sider-has-trigger css-dev-only-do-not-override-1htoz2s{
+    /* flex: 0 0 200px; */
+    /* max-width: 200px;
+    min-width: 200px;
+     width: 200px; */
+}
+
+.ant-menu-submenu {
+    z-index: 1000; /* Ensure the submenu is above other elements */
+}
+.sidemenuitem-wrapper{
+    display: flex;
+    flex-direction: row;
+
+}
+.sidemenuitem-wrapper{
+    border-bottom:1px solid red;
+}
+.icon-downoutlined{
+    right: 90px;
+    position: relative;
+    top: -1px;
+
+}
+.anticon.anticon-caret-down{
+    color:white;
+}
+
+.menu-text{
+    max-width: 100px;
+    overflow-wrap: break-word;
+    position: relative;
+    left: -110px;
+    top: -2px;
+    color: white;
+
+}
+.Resources{
+   
+    background-image: url(/src/images/Resource-light.svg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+    /* border-bottom: 2px solid white; */
+
+} 
+
+.menu-unselected{
+    background-image: url(/src/images/resources.svg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    width: 160px;
+    height: 57px;
+    right: 5px;
+    top:9px;
+}
+.bright-image {
+    background-color: #f39c12; /* Bright color */
+    color: white;
+    font-weight: bold;
+  }
+  .main-menu-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: rgba(255, 255, 255, 0.8);  /* Default color */
+    font-weight: normal;
+  }
+  .submenu {
+    padding-left: -14px;
+    /* margin-top: 10px; */
+    /* background-color: #21034087; */
+  }
+  .submenu-icon{
+    position: relative;
+    height: 22px;
+    width: 17px;
+    left: -7px;
+  }
+
+  .submenu-item:hover {
+    /* background-color: rgb(163, 153, 153); */
+    color:white;
+
+    /* color:white; */
+  }
+
+.sidemenuitem-wrapper.menu-selected {
+    background-color: #1890ff; /* Highlight selected menu with blue or any color */
+    color: white;
+    font-weight: bold;
+    background-image: url(/src/images/resources.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s ease;
+
+  }
+
+.integratedWork{
+    background-image: url(/src/images/IntegratedWork-light.svg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+    /* border-bottom: 1px solid white; */
+
+}
+ .menu-text-integrated{
+    max-width: 100px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    position: relative;
+    left: -114px;
+    top: 10px;
+    font-size: 10px;
+    color: white;
+    line-height: 1.2;
+}
+.icon-downoutlined-integrated{
+    right: 122px;
+    position: relative;
+    top: -2px;
+
+}
+
+
+.operations{
+    background-image: url(/src/images/Operations-light.svg); 
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+    /* border-bottom: 2px solid white; */
+
+}
+.aiAnalysis{
+    background-image: url(/src/images/AIAnalysis-light.svg);
+    /* background-image: url(/src/images/operations.svg);  */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+    /* border-bottom: 2px solid white; */
+
+
+}
+.CMMS{
+    background-image: url(/src/images/Maintenance-light.svg);
+   
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+    /* border-bottom: 2px solid white; */
+
+
+}
+
+.icon-downoutlined-cmms{
+    right: 98px;
+    position: relative;
+    top: 8px;
+
+
+}
+.safetynSecurity{
+    background-image: url(/src/images/SafetynSecurity-light.svg);
+  
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+
+}
+
+.icon-downoutlined-safety{
+    right: 98px;
+    position: relative;
+    top: 8px;
+}
+.benchMarkingKPIs{
+    background-image: url(/src/images/BenchMarkingKPI.svg);
+   
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+
+
+}
+.sustainabilityKPIs{
+    background-image: url(/src/images/SustainabilityKPI.svg);
+    /* background-image: url(/src/images/operations.svg);  */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+
+
+}
+.workFlowManagement{
+    background-image: url(/src/images/WorkflowManagement.svg);
+    
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+}
+.resourceForecasting{
+    background-image: url(/src/images/ResourceForecasting.svg);
+    /* background-image: url(/src/images/operations.svg);  */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+
+}
+.eCMMeasures{
+    background-image: url(/src/images/ecm.svg);
+    /* background-image: url(/src/images/operations.svg);  */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+  
+}
+.reports{
+    background-image: url(/src/images/Reports.svg);
+    /* background-image: url(/src/images/operations.svg);  */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 49px;
+    right: 5px;
+    top: 0px;
+
+}
+.energy{
+    background-image: url(/src/images/energy2.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+  
+    background-size: contain;
+    width: 168px;
+    height: 75px;
+    border: 1px solid black;
+    top: 0px;
+    right: 4px;
+}
+.water{
+    background-image: url(/src/images/water2.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 168px;
+    height: 75px;
+    border: 1px solid black;
+    top: 0px;
+    right: 4px;
+}
+.waste{
+    background-image: url(/src/images/waste2.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+    width: 168px;
+    height: 75px;
+    border: 1px solid black;
+    top: 0px;
+    right: 4px;
+}
+.space{
+    background-image: url(/src/images/space.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.parking{
+    background-image: url(/src/images/parking.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.aqi{
+    background-image: url(/src/images/aqi.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.realtimealarm{
+    background-image: url(/src/images/realtimealarm.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.dynamiccontrol{
+    background-image: url(/src/images/dynamic.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+  
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.aiAnlytics{
+    background-image: url(/src/images/AI\ Anlytics.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.ppm{
+    background-image: url(/src/images/PPM.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.FDD{
+    background-image: url(/src/images/fdd.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.mttb{
+    background-image: url(/src/images/MTBF.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.rul{
+    background-image: url(/src/images/rul.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.FireAlaramSystem{
+    background-image: url(/src/images/FireAlaramSystem.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.FireFighting{
+    background-image: url(/src/images/FireFighting.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.Elivator{
+    background-image: url(/src/images/Elivator.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.AxisControlSystem{
+    background-image: url(/src/images/Accesscontrolsystem.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.EPI{
+    background-image: url(/src/images/EpiEui.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+
+} 
+.occupancy{
+    background-image: url(/src/images/occupancy.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.AIinference{
+    background-image: url(/src/images/AIinference.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.MTTR{
+    background-image: url(/src/images/MTTR.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+ .WaterperPerson{
+    background-image: url(/src/images/waterperperson.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+ }
+
+ .Ikw{
+    background-image: url(/src/images/IkwTR\ &\ PUE.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+ }
+ .Renewable{
+    background-image: url(/src/images/Renewable\ energy.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+ }
+.scope1{
+    background-image: url(/src/images/scope1.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.scope2{
+    background-image: url(/src/images/scope2.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.scope3{
+    background-image: url(/src/images/scope3.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.RNEpercentage{
+    background-image: url(/src/images/renewableEnergypercentage.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.TaskManagement{
+    background-image: url(/src/images/Taskmanagement.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.Costavoided{
+    background-image: url(/src/images/Costavoided.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.Emissionavoided{
+    background-image: url(/src/images/Emission\ avoided.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.Energyresource{
+    background-image: url(/src/images/energy.png);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.waterresource{
+    background-image: url(/src/images/water.png);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.cost{
+    background-image: url(/src/images/cost.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.MRVTable{
+    background-image: url(/src/images/MRVTable.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.IssueswithRecommendation{
+    background-image: url(/src/images/Issues\ with\ Recommendation.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+.SavingSummary{
+    background-image: url(/src/images/Saving\ Summary.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+}
+
+.EnergynCost{
+    background-image: url(/src/images/Energy\ nCost.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+
+}
+.ECMReports{
+    background-image: url(/src/images/ECM\ Reports.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+
+}
+.KPIReports{
+    background-image: url(/src/images/KPI\ Reports.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+
+}
+.OperationalReports{
+    background-image: url(/src/images/Operational\ Reports.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    width: 158px;
+    height: 29px;
+    border: 1px solid black;
+    top: 0px;
+    right: 6px;
+
+}
+
+.ant-menu-item, .ant-menu-submenu-title {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px; /* Adjust for readability */
+    color: #ffffff; /* White text for contrast */
+    text-transform: capitalize;
+    height: 95px;
+   
+}
+.ant-menu-submenu-popup {
+    background-color: #001529; /* Match the sidebar color */
+    color: #ffffff; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px; /* Add padding to the submenu */
+    width: 230px; /* Adjust width to fit content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+}
+.ant-menu-item:hover, .ant-menu-submenu-title:hover {
+    background-color: #003a63; 
+    color: #00ffcc; 
+    cursor: pointer;
+}
+
+
+.ant-menu-item {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: flex-start; /* Align items horizontally */
+    padding: 10px 15px; /* Add spacing around the content */
+    height: 70px; /* Adjust height to fit larger images */
+    gap: 15px; /* Space between icon and text */
+    overflow: visible;
+}
+
+.menu{
+    height: auto;
+    overflow: visible;
+}
+.ant-menu-submenu-title{
+    height:60px !important;
+   
+}
+.ant-layout-sider{
+    min-width: 217px ;
+}
+.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger{
+width:auto !important;
+}
+.submenu-item.submenu-item-0.Space-submenu-class{
+    padding-top:10px;
+    padding-bottom:10px;
+}

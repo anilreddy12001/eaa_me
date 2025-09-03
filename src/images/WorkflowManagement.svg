@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="529.309" height="112.5" viewBox="0 0 529.309 112.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33d4a3"/>
+      <stop offset="0.304" stop-color="#2dacb1"/>
+      <stop offset="1" stop-color="#2986c0"/>
+      <stop offset="1" stop-color="#2466cf"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2944" data-name="Group 2944" transform="translate(-14.422 -1497)">
+    <line id="Line_1584" data-name="Line 1584" x2="529.309" transform="translate(14.422 1608.5)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="account_tree_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M154.053-749.316V-761.79H137.421v-41.579H124.947v12.474H100V-820h24.947v12.474h29.105V-820H179v29.105H154.053v-12.474H141.579v37.421h12.474v-12.474H179v29.105Zm-49.895-66.526v0Zm54.053,41.579v0Zm0-41.579v0Zm0,20.789h16.632v-20.789H158.211Zm0,41.579h16.632v-20.789H158.211Zm-54.053-41.579h16.632v-20.789H104.158Z" transform="translate(-65 2317)" fill="url(#linear-gradient)"/>
+    <text id="Work_Flow_Management" data-name="Work Flow Management" transform="translate(310 1543)" fill="#fff" font-size="31" font-family="Helvetica"><tspan x="-167.7" y="0">Work Flow Management</tspan></text>
+    <path id="chevron_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24_1_" data-name="chevron_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 (1)" d="M329.815-707.2,320-717.013,322.987-720l12.8,12.8-12.8,12.8L320-697.384Z" transform="translate(-196 1204) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

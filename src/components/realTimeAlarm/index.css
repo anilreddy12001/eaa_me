@@ -1,0 +1,410 @@
+ 
+
+
+.realTimeAlarm{
+  margin: 0rem -0.25rem;
+}
+.realTimeAlarm .label {
+  font-size: 0.875rem; /* 12px */
+  color: #ffffff;
+  background-color: rgba(82, 185, 185, 0.3);
+  padding: 0.25rem 0.5rem; /* 4px 8px */
+  border-radius: 0.25rem; /* 4px */
+  margin-right: 0.5rem; /* 8px */
+}
+
+
+.realTimeAlarm .label {
+  text-align: center;
+  display: flex;
+  justify-content: space-around; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  flex: 1; /* Take up equal space */
+  margin: 0rem; /* 8px */
+}
+.stats-box {
+  width: 100%;
+  margin: 0rem 0.2rem;
+}
+
+
+
+.realTimeAlarm .stats-box:first-child {
+  margin-left: 0rem;
+  padding-left: 0rem; /* Set left padding to 0 for the first label */
+}
+
+.realTimeAlarm .stats-box:last-child {
+  width: 55%;
+  margin-right: 0rem;
+  padding-right: 0rem; /* Set left padding to 0 for the first label */
+}
+
+.realTimeAlarm .label-value {
+  font-size: 1.375rem; /* 22px */
+  font-weight: bold;
+}
+
+
+.realTimeAlarm .activeAlarm span {
+  color: #ff0000; /* Cyan */
+}
+
+.realTimeAlarm .assigned span {
+  color: #1e90ff; /* Blue */
+}
+
+.realTimeAlarm .in-progress span {
+  color: #ff8c00; /* Green */
+}
+
+.realTimeAlarm .completed span {
+  color: #00ff0a; /* Amber */
+}
+
+.realTimeAlarm .pending span {
+  color: #ffd700; /* Amber */
+}
+
+.realTimeAlarm .search-box .ant-input-affix-wrapper {
+  background-color: transparent;
+  border: 0.031rem solid #ffffff;
+  border-radius: 0.313rem !important;
+  height: 2.5rem;
+}
+
+.realTimeAlarm .search-box .ant-input {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.realTimeAlarm .search-box .ant-input::placeholder {
+  color: #9f9c9c;
+  font-size: 0.7rem;
+}
+
+.realTimeAlarm .search-box .ant-input-prefix {
+  color: #ffffff;
+}
+
+.search-box button {
+  display: none;
+}
+
+.marginBottom {
+  margin-bottom: 0.5rem;
+}
+.alarm-row{
+  cursor: pointer;
+  min-height: calc(100vh / 20); /* Set a minimum height based on screen size */
+}
+.alarm-row:hover{
+  position: relative;
+   z-index: 1;
+   box-shadow:0px 0px 4px 2px #0A8120/* Updated box-shadow to apply to all four sides */
+  }
+.alarm-row:first-child{
+  margin-top: 0.3rem;
+}
+.alarm-header,
+.alarm-row {
+  display: flex;
+  align-items: center;
+  width: 99%;
+  margin: 0 auto;
+  background-color: rgba(
+    82,
+    185,
+    185,
+    0.3
+  ); /* Ensure the row background is white */
+  color: #ffffff;
+}
+
+.alarm-header {
+  background-color: #088282;
+  font-size: 0.75rem; /* 12px/14px */
+  border-radius: 0.313rem;
+}
+
+.alarm-row {
+  font-size: 0.625rem;
+  border-radius: 0.125rem;
+}
+
+.styleAlarmStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 43px;
+  width: 100%;
+  font-size: 0.688rem;
+  opacity: 1;
+  padding: 0.125rem 0rem;
+}
+
+.yellow {
+  background: #b59c15;
+}
+
+.orange {
+  background: #ff8c00;
+}
+.blue {
+  background: #1e90ff;
+}
+.green {
+  background: #32cd32;
+}
+.statusCell {
+  display: flex;
+  align-items: center;
+}
+.alarm-cell {
+  flex: 1;
+  padding: 0.3rem;
+  text-align: center;
+  line-height: 0.9rem;
+}
+
+.leftAligned {
+  text-align: left;
+}
+
+.styleEquipment{
+  flex-basis: 2rem;
+}
+.styleAlarmSummary{
+  flex-basis: 11rem;
+}
+.styledateAndTime{
+  flex-basis: 1rem;
+}
+
+.spacer-row {
+  height: 0.3rem; /* Adjust the height as needed */
+  background-color: black;
+}
+.spacer-row:first-child,.spacer-row:last-child{
+  display: none;
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+}
+.alarm-table{
+  height: calc(100vh - 148px);
+}
+.alarm-table-body {
+  height: calc(100vh - 236px); /* Set a fixed height for the table body */
+  overflow-y: auto; /* Add vertical scroll for overflow */
+
+}
+.styleAlarmStatusLabel{
+  text-transform: capitalize;
+}
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:0.7rem;
+}
+
+.pagination-info {
+  font-size: 0.75rem; /* 14px */
+  color: #ffffff;
+  margin-right: 1rem; /* Add some space between the info and the selector */
+}
+
+.page-size-selector {
+  border: 0.063rem solid #ffffff;
+  min-width: 6.25rem; /* Ensure the dropdown has a minimum width */
+}
+
+.ant-select-selector {
+  background-color: #ffffff; /* Set background color to white */
+  color: #000000; /* Set text color to black */
+  border: 0.063rem solid #ffffff !important; /* Set border color to white */
+  border-radius: 0.25rem; /* Set border radius */
+}
+
+.ant-select-dropdown {
+  background-color: #ffffff; /* Set dropdown background color to white */
+  color: #000000; /* Set dropdown text color to black */
+}
+
+.ant-select-item-option {
+  color: #000000; /* Set option text color to black */
+}
+
+.ant-select-item-option-selected {
+  background-color: #e6f7ff; /* Set selected option background color */
+  color: #000000; /* Set selected option text color */
+}
+
+.ant-select-selector {
+  border: 0.063rem solid #ffffff;
+}
+
+.ant-pagination-item {
+  background-color: transparent !important; /* Set pagination item background to transparent */
+}
+
+.ant-pagination-item a {
+  color: #ffffff !important; /* Set pagination item text color to white */
+}
+
+.ant-pagination-item-active {
+  border: none !important;
+  border-radius: 0.188rem !important;
+  background-color: #0a8120 !important; /* Set active pagination item background color */
+}
+
+.ant-pagination-item-active a {
+  color: #ffffff !important; /* Set active pagination item text color */
+}
+
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  color: #ffffff !important; /* Set prev/next icons color to white */
+  border: none !important; /* Set prev/next icons border color to white */
+}
+
+.ant-pagination-prev .ant-pagination-item-link:hover,
+.ant-pagination-next .ant-pagination-item-link:hover {
+  color: #ffffff !important; /* Ensure hover state color is also white */
+}
+
+.modalContainerRealTimeAlarm .ant-modal-content {
+  width: 31.25rem !important;
+  height: 15.625rem !important;
+  left: 0 !important;
+  border-radius: 0px !important;
+}
+.modalContainerRealTimeAlarm .ant-modal-body {
+  height: 5rem !important;
+  margin-top: 1.5rem !important;
+}
+.modalContainerRealTimeAlarm .ant-modal-title {
+  text-align: left;
+  text-decoration: underline;
+  font-size: 1.125rem;
+}
+.modalContainerRealTimeAlarm .ant-modal-content,
+.modalContainerRealTimeAlarm .ant-modal-title {
+  background-color: #0c5757 !important;
+  color: #ffffff !important;
+  font-size: 1.5rem !important;
+}
+.modalContainerRealTimeAlarm .ant-modal-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem !important;
+}
+.modalContainerRealTimeAlarm .ant-modal-close-x {
+  color: #ffffff !important;
+}
+.creatTask,
+.creatTask:hover {
+  background-color: #0a8120 !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px !important;
+}
+.createTaskButton {
+  cursor: pointer;
+  color: #00ffff;
+  text-decoration: underline;
+}
+.discardTask,
+.discardTask:hover {
+  background: transparent !important;
+  border: 0.125rem solid #0a7e1f;
+  border-radius: 8px;;
+  font-size: 1.125rem !important;
+  color: #ffffff;
+}
+.confirmationText {
+  font-size: 1.25rem !important;
+  color: #ffffff;
+}
+
+.discardText {
+  font-size: 0.875rem !important;
+}
+.confirmationText,
+.discardText {
+  text-align: center;
+}
+
+.realtimeAlam-pagination .ant-select-selector{
+  text-align: center;
+}
+.realtimeAlam-pagination .ant-select-selection-item{
+  margin-left: 13px;
+}
+.ant-select-dropdown .ant-select-item .ant-select-item-option-content{
+  text-align: center !important;
+}
+ 
+.StuatusFilter-container .ant-btn{
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .realTimeAlarm .breadcrumb a {
+    font-size: 0.625rem; /* 10px */
+  }
+
+  .alarm-cell {
+    font-size: 0.625rem; /* 10px */
+  }
+
+  .label {
+    font-size: 0.625rem; /* 10px */
+    padding: 0.5rem; /* 8px */
+    white-space: normal; /* Allow text to wrap */
+  }
+
+  .realTimeAlarm .label-value {
+    font-size: 1.25rem; /* 20px */
+  }
+}
+
+@media (min-width: 2000px) { 
+  .realTimeAlarm {
+    padding: 2rem;
+  }
+
+  .alarm-cell {
+    padding: 0.6rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+ 
+  .alarm-table-body {
+    height: calc(100vh - 312px);
+    overflow-y: auto;
+}
+
+  .pagination-info {
+    font-size: 1.25rem;
+  }
+ 
+  .stats-box {
+    width: 100%; /* Make the stats-box take the full width */
+  }
+  .StuatusFilter-container .ant-btn{
+    width: 100%;
+  }  
+}
+
+.alarmErrorMessageDiv{
+margin: 5px 10px;
+}

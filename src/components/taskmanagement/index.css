@@ -1,0 +1,342 @@
+.taskManagement {
+  margin: 0rem -0.25rem;
+}
+.taskManagement .label {
+  font-size: 0.875rem; /* 12px */
+  color: #ffffff;
+  background-color: rgba(82, 185, 185, 0.3);
+  padding: 0.25rem 0.5rem; /* 4px 8px */
+  border-radius: 0.25rem; /* 4px */
+  margin-right: 0.5rem; /* 8px */
+}
+
+.taskManagement .label {
+  text-align: center;
+  display: flex;
+  justify-content: space-around; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  flex: 1; /* Take up equal space */
+  margin: 0rem; /* 8px */
+}
+.stats-box {
+  width: 100%;
+  margin: 0rem 0.2rem;
+}
+.taskManagement .stats-row{
+  display: grid;
+  grid-template-columns: repeat(5,1fr) 96px;
+  gap: 0.5rem;
+}
+
+.taskManagement .stats-box:first-child {
+  margin-left: 0rem;
+  padding-left: 0rem; /* Set left padding to 0 for the first label */
+}
+
+.taskManagementPagination .ant-select-selector{
+  text-align: center;
+}
+.taskManagementPagination .ant-select-selection-item{
+  padding: initial;
+  margin-left: 13px;
+}
+.taskManagement .stats-box:last-child {
+  margin-right: 0rem;
+  padding-right: 0rem; /* Set left padding to 0 for the first label */
+}
+
+.taskManagement .label-value {
+  font-size: 1.375rem; /* 22px */
+  font-weight: bold;
+}
+
+.taskManagement .search-box .ant-input-affix-wrapper {
+  background-color: transparent;
+  border: 0.031rem solid #ffffff;
+  border-radius: 0.313rem !important;
+  height: 2.5rem;
+}
+
+.taskManagement .search-box .ant-input {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.taskManagement .search-box .ant-input::placeholder {
+  color: #9f9c9c;
+  font-size: 0.7rem;
+}
+
+.taskManagement .search-box .ant-input-prefix {
+  color: #ffffff;
+}
+
+.search-box button {
+  display: none;
+}
+
+.taskManagement .activeAlarm span {
+  color: #ff0000; /* Cyan */
+}
+
+.taskManagement .assigned span {
+  color: #1e90ff; /* Blue */
+}
+
+.taskManagement .in-progress span {
+  color: #ff8c00; /* Green */
+}
+
+.taskManagement .completed span {
+  color: #00ff0a; /* Amber */
+}
+
+.taskManagement .pending span {
+  color: #ffd700; /* Amber */
+}
+ 
+
+
+.addBtnPadding {
+  padding: 10px;
+}
+/* Add Comment Button */
+.addCommentBtn {
+  color: #00ffff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.taskManagement .styleAlarmStatusLabel {
+  padding: 5px 10px;
+  border-radius: 3;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #01847f;
+  width: 80px;
+}
+/* Pagination */
+.pagination-container {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.pagination .ant-pagination-item {
+  background-color: #000;
+  border-color: #444;
+  color: white;
+}
+
+.pagination .ant-pagination-item-active {
+  background-color: #01847f;
+  border-color: #01847f;
+  color: white;
+}
+
+.page-size-selector .ant-select-selector {
+  background-color: #000;
+  color: white;
+  border-color: #444;
+}
+
+.task-status-modal .ant-modal-content {
+  height: 340px;
+}
+.task-status-modal .ant-select-selection-wrap::after {
+  content: "" !important;
+  display: inline-block;
+  width: 0.8rem !important;
+  height: 0.7rem !important;
+  background-image: url("../../images/icons/dropdown-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0.5rem;
+  top: 45%;
+  transform: translateY(-50%);
+}
+.task-status-modal .ant-modal-body,
+.commentModal .ant-modal-body {
+  height: 300px;
+}
+.commentModal .ant-modal-content {
+  height: 450px;
+  width: 600px;
+}
+.commentModal.ant-modal {
+  height: 450px !important;
+}
+.task-closure-modal .ant-modal-content,
+.task-status-modal .ant-modal-content,
+.commentModal .ant-modal-content {
+  background-color: rgb(9, 89, 89);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 0px;
+}
+
+.task-closure-modal .ant-modal-close svg,
+.task-status-modal .ant-modal-close svg,
+.commentModal .ant-modal-close {
+  color: #fff;
+}
+.task-closure-modal h2.modal-title {
+  text-decoration: underline;
+  padding-bottom: 1.125rem;
+}
+.task-closure-modal h2 {
+  font-size: 1.15rem;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+.task-closure-modal p {
+  font-size: 1rem;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+.closure-modal-textarea textarea,
+.task-status-textarea textarea,
+.commentModal textarea {
+  background-color: #397676 !important;
+  border-color: #b8b4b4 !important;
+  color: #fff !important;
+  border-radius: 0px;
+}
+.closure-modal-textarea textarea::placeholder,
+.task-status-textarea textarea::placeholder,
+.commentModal textarea::placeholder {
+  color: #fff !important;
+}
+.closure-modal-textarea label {
+  font-size: 0.875rem;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+  display: block;
+}
+.closure-modal-btn .ant-btn {
+  min-width: 80px;
+}
+
+.closure-modal-btn .ant-btn-variant-solid:hover:disabled,
+.closure-modal-btn .ant-btn-variant-solid:disabled {
+  background-color: #8e8b8b !important;
+  border: none !important;
+}
+
+.closure-modal-btn .ant-btn-primary:hover {
+  background-color: green !important;
+}
+.closure-modal-btn .ant-btn-default {
+  border: 1px solid green !important;
+}
+.closure-modal-btn .ant-btn-default:hover {
+  background-color: transparent !important;
+}
+.task-closure-modal .ant-space {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.task-closure-modal .ant-space-item {
+  margin: 0 0.25rem;
+}
+.task-closure-modal .ant-space-item img {
+  width: 52px;
+  height: 52px;
+}
+.task-closure-modal .ant-space-item img:hover,
+.task-closure-modal .ant-space-item .selected img {
+  /* background-color: transparent; */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+.task-status-modal .ant-select, .task-status-modal .ant-select-selection-item {
+  width: 13rem !important;
+  cursor: pointer !important;
+
+}
+.task-status-modal .ant-select-selector {
+  background: transparent !important;
+  padding-top: 8px !important;
+}
+.task-status-select {
+  position: relative;
+}
+.task-status-select::placeholder {
+  margin-top: 5px !important;
+}
+.task-status-select label {
+  font-size: 10px;
+  position: absolute;
+  left: 12px;
+}
+
+.commentModal {
+  background-color: #004d4d;
+  color: white;
+}
+
+.commentModal .section {
+  margin-bottom: 20px;
+}
+
+.commentModal .label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.commentModal .buttonWrapper {
+  text-align: right;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.commentModal .ant-btn {
+  background-color: #0a8120 !important;
+  border-radius: 0px;
+  border: none !important;
+}
+
+.commentModal .commentHistory {
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.commentModal .commentItem {
+  background-color: #407d7d;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.commentModal .ant-modal-title {
+  text-align: left !important;
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+.commentModal .ant-modal-header {
+  background: transparent !important;
+}
+.commentModal .meta {
+  font-size: 16px !important;
+}
+.commentModal .comments {
+  font-size: 14px !important;
+}
+input,
+textarea {
+  pointer-events: auto !important;
+  z-index: 1;
+  visibility: visible;
+}
+ 
+
+ 

@@ -1,0 +1,1602 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    height: 100vh;
+}
+
+@media screen and (min-width: 1366px) {
+    .graph-header {
+        top: 120px !important;
+    }
+}
+
+/* header styles starts here */
+
+.header-wrapper {
+    width: 100vw;
+    /* Full viewport width */
+    height: 3.125rem;
+    /* Fixed header height */
+    background-color: #0A8120;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-header,
+.right-header {
+    width: 15.5vw;
+    /* 15% of viewport width */
+    padding: 0 0.875rem;
+}
+
+.left-header .app-title {
+    font-size: 1.125rem;
+    position: relative;
+    text-align: left;
+}
+
+.left-header .app-title::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 20px;
+    background: url('./images/icons/title-logo.svg') no-repeat;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    right: 8px;
+    margin: auto;
+}
+
+.middle-header {
+    width: 69vw;
+    /* 70% of viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-header .dropdown-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    /* Distribute the items evenly */
+    width: 100%;
+    /* Take up all available space */
+    padding: 0;
+    margin: 0;
+}
+
+.middle-header .dropdown-list {
+    flex: 1;
+    position: relative;
+}
+
+.middle-header .dropdown-wrapper .dropdown-list::before,
+.middle-header .dropdown-wrapper .dropdown-list:last-child:after {
+    content: '';
+    width: 0.0781rem;
+    height: calc(3.125rem - 0.0513rem);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.middle-header .dropdown-wrapper:first-child .dropdown-list::before {
+    width: 0.0844rem;
+}
+
+.middle-header .dropdown-wrapper .dropdown-list:last-child::after {
+    width: 0.0844rem;
+    left: unset;
+    right: 0;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.right-header .app-logo {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-size: 0.5625rem;
+    text-align: left;
+}
+
+.right-header .app-logo img {
+    width: 123px;
+    height: 27px;
+}
+
+.right-header .app-logo span {
+    font-size: 0.6225rem;
+    padding-top: 0.0625rem;
+    letter-spacing: 0.125px;
+}
+
+.app-avatar {
+    width: 2.125rem;
+    height: 2.125rem;
+    font-size: 1rem;
+    background-color: rgb(253, 227, 207);
+    color: rgb(245, 106, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.875rem;
+    cursor: pointer;
+}
+
+/* header styles ends here */
+
+.body-wrapper {
+    display: flex;
+    width: 100vw;
+    /* Full width */
+    background-color: #000;
+    height: calc(100vh - 3.125rem);
+    /* Remaining height after header */
+}
+
+.left-wrapper,
+.right-wrapper {
+    height: calc(100vh - 3.125rem);
+    color: #FFFFFF;
+}
+
+.left-wrapper {
+    width: 15.5vw;
+    overflow-y: auto;
+    margin-left: 4px;
+
+}
+
+.right-wrapper {
+    width: 84.5vw;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.right-wrapper .page-title {
+    font-size: 0.75rem;
+    padding-bottom: 0.625rem;
+}
+
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Create 4 equal-width columns */
+    gap: 1.25rem;
+    /* Gap between each child */
+}
+
+.resource-page .cards-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.resource-page.water-page .cards-list {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.resource-page.waste-page .cards-list {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cards-list .cards {
+    color: white;
+    padding: 0.625rem 2.5rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(69deg,
+            rgba(0, 215, 237, 0.12) 0%,
+            rgba(63, 111, 165, 0.17) 43%,
+            rgba(96, 51, 210, 0.17) 54%,
+            rgba(116, 14, 238, 0.17) 59%,
+            rgba(124, 0, 249, 0.17) 62%,
+            rgba(124, 0, 249, 0.12) 100%) 0% 0% no-repeat padding-box;
+}
+
+.resource-page .cards-list .cards {
+    background: #0F001E 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0px 1.6px 0px #1E72D0;
+
+}
+
+.resource-page .cards-list .cards.active-card {
+    background: #2F9342 0% 0% no-repeat padding-box;
+    /* box-shadow: 0px 3px 6px rgb(40, 163, 183); */
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+
+}
+
+.resource-page .cards-list .cards::before,
+.resource-page .cards-list .cards::after {
+    display: none;
+}
+
+.cards-list .cards.country-card img {
+    width: 34px;
+    height: 43px;
+}
+
+.country-card>span {
+    position: relative;
+}
+
+.cards>span::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.country-card>span::before {
+    background: url('./images/icons/country-icon.svg') no-repeat;
+    width: 64px;
+    height: 73px;
+    left: -1.875rem;
+}
+
+.building-card>span::before {
+    background: url('./images/icons/apartment-icon.svg') no-repeat;
+    width: 65px;
+    height: 72px;
+    left: 1.5rem;
+}
+
+.area-card>span::before {
+    background: url('./images/icons/area-icon.svg') no-repeat;
+    width: 66px;
+    height: 39px;
+    left: 1.5rem;
+}
+
+.profile-card>span::before {
+    background: url('./images/icons/profile-icon.svg') no-repeat;
+    width: 66px;
+    height: 39px;
+    left: 1.5rem;
+}
+
+.cards-list .cards.building-card img {
+    width: 37px;
+    height: 44px;
+}
+
+.cards-list .cards::before,
+.cards-list .cards::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: transparent linear-gradient(90deg, #000000 -8%, #1C6196 15%, #2A7C39 49%, #2A7D39 49%, #2C813C 50%, #1A5B8D 78%, #000000 108%) 0% 0% no-repeat padding-box;
+    width: 100%;
+    display: block;
+    height: 0.25rem;
+    opacity: 0.0106px;
+}
+
+.cards-list .cards::after {
+    top: unset;
+    bottom: 0;
+}
+
+.cards-list>.cards:first-child {
+    margin-left: 0;
+    /* No left gap for the first child */
+}
+
+.cards-list>.cards:last-child {
+    margin-right: 0;
+    /* No right gap for the last child */
+}
+
+.cards .card-info {
+    display: block;
+    align-items: center;
+    line-height: normal;
+    margin-right: -20px;
+
+
+}
+
+.cards .card-info span {
+    display: block;
+    text-align: right;
+}
+
+.cards .card-info .card-amt {
+    font-size: 1.875rem;
+    /* font-weight: bold; */
+    display: inline;
+}
+
+
+.cards .card-info .card-unit {
+    font-size: 1.25rem;
+    /* font-weight: bold; */
+    display: inline;
+    margin-left: 0.28rem;
+
+}
+
+.cards .card-info .card-text {
+    font-size: 0.875rem;
+    opacity: 0.89;
+
+}
+
+.section-wrapper {
+    height: calc(100vh - 181px);
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 66% 34%;
+    /* 70% width for the left div, 30% for the right div */
+    gap: 10px;
+    /* Gap between the two divs */
+    width: calc(100% - 10px);
+    /* Full width */
+}
+
+.water-page .section-wrapper {
+    height: calc(100vh - 166px);
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 66% 34%;
+    /* 70% width for the left div, 30% for the right div */
+    gap: 10px;
+    /* Gap between the two divs */
+    width: calc(100% - 10px);
+    /* Full width */
+}
+
+.unity-section {
+    height: calc(100vh - 181px);
+}
+
+.unity-section-graphs {
+    height: calc(100vh - 228px);
+    padding-top: 27px;
+}
+
+.section-wrapper .left-section,
+.section-wrapper .right-section {
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.section-wrapper .left-section {
+    text-align: left;
+    /* background: transparent linear-gradient(317deg, #448080 0%, #38727C 3%, #215775 12%, #114370 20%, #07376D 28%, #04346D 37%, #27254A 72%, #29234C 81%, #331C54 87%, #431263 93%, #5A0376 98%, #60007C 99%) 0% 0% no-repeat padding-box;
+    opacity: 0.25; */
+}
+
+.graph-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* Arrange children in a column */
+    height: 100%;
+    /* Full viewport height */
+}
+
+.graph-section-one {
+    /* height: 26%; */
+    height: 120px;
+    padding: 2% 1% 20px 20px;
+    /* background-color: #114370;*/
+}
+
+.graph-section-two,
+.graph-section-three,
+.resource-page .graph-section-one,
+.resource-page .graph-section-two {
+    height: calc(50% - 4rem);
+    /* background-color: #1C6196; */
+    /*background: transparent linear-gradient(40deg, #00000015 0%, #1BB37215 37%, #3F6FA515 46%, #6033D215 54%, #740EEE25 59%, #7C00F925 62%, #7C00F925 100%) 0% 0% no-repeat padding-box;*/
+    margin-top: 0.5rem;
+    position: relative;
+    background: linear-gradient(40deg, rgba(0, 0, 0, 0.19) 0%, rgba(27, 179, 114, 0.12) -10%, rgba(63, 111, 165, 0.19) 8%, rgba(96, 51, 210, 0.15) 34%, rgba(116, 14, 238, 0.15) 60%, rgba(124, 0, 249, 0.10) 82%, rgba(124, 0, 249, 0) 100%) 0% 0% no-repeat padding-box;
+    /* opacity: 0.19; */
+
+}
+
+.resource-page .graph-section-one,
+.resource-page .graph-section-two {
+    height: calc(50% - 0.5rem);
+    position: relative;
+}
+
+.resource-page .section-wrapper .left-section {
+    background: linear-gradient(40deg, rgba(0, 0, 0, 0.19) 0%, rgba(27, 179, 114, 0.12) -10%, rgba(63, 111, 165, 0.19) 8%, rgba(96, 51, 210, 0.15) 34%, rgba(116, 14, 238, 0.15) 60%, rgba(124, 0, 249, 0.10) 82%, rgba(124, 0, 249, 0) 100%) 0% 0% no-repeat padding-box;
+}
+
+.graph-section-three {
+    /* background-color: #2A7C39; */
+}
+
+
+.graph-section-two {
+    /* padding:2% 1% 20px 20px; */
+}
+
+.bar-position-center {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* topnav dropdown styles starts here */
+.dropdown-list .ant-select-show-search:where(.css-dev-only-do-not-override-1v613y0).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    cursor: pointer;
+}
+
+.dropdown-list .ant-select {
+    width: 98%;
+    top: 7px;
+}
+
+.ant-select-selector {
+    background-color: transparent !important;
+    color: #717171 !important;
+    border-radius: 0px !important;
+    border: 0px solid #40b97a !important;
+
+    .ant-select-selection-wrap>.ant-select-selection-placeholder {
+        color: rgb(104, 104, 104) !important;
+    }
+
+    .ant-select-selection-wrap>.ant-select-selection-search>input {
+        color: rgb(107, 105, 105) !important;
+    }
+
+
+}
+
+.ant-select-arrow {
+    display: none !important;
+}
+
+.dropdown-list .ant-select-selector {
+
+    .ant-select-selection-wrap>.ant-select-selection-placeholder,
+    .ant-select-selection-item {
+        color: #fff !important;
+        font-family: Arial, sans-serif !important;
+        text-align: left !important;
+        font-weight: bold;
+        font-size: 0.8125rem;
+    }
+}
+
+/* .dropdown-list .ant-select-show-search:where(.css-dev-only-do-not-override-1v613y0).ant-select:not(.ant-select-customize-input) .ant-select-selector input, 
+.ant-select-show-search:where(.css-dev-only-do-not-override-240cud).ant-select:not(.ant-select-customize-input) .ant-select-selector input, */
+.dropdown-list .ant-select-selector input {
+    color: #fff !important;
+    font-family: Arial, sans-serif !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    font-size: 0.8125rem;
+}
+
+.dropdown-list .ant-select-selector {
+    border: none !important;
+    background-color: #0A8120 !important;
+}
+
+.ant-select-selector {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-radius: 0px !important;
+    border: 0px solid #40b97a !important;
+
+    .ant-select-selection-wrap>.ant-select-selection-placeholder {
+        color: #ffffff !important;
+    }
+
+    .ant-select-selection-wrap>.ant-select-selection-search>input {
+        color: #ffffff !important;
+    }
+}
+
+.dropdown-list .ant-select-selector {
+    border: none !important;
+    background-color: #0A8120 !important;
+}
+
+.dropdown-list.ant-select-selector {
+    background-color: #0A8120;
+}
+
+.dropdown-list .rc-virtual-list {
+    background-color: #000000 !important;
+}
+
+.dropdown-list :where(.css-dev-only-do-not-override-1v613y0).ant-select .ant-select-arrow {
+    display: none;
+}
+
+.dropdown-list :where(.css-dev-only-do-not-override-1v613y0).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-list .ant-select .ant-select-selector::before,
+.left-sidebar button::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    top: -8px;
+    bottom: 0;
+    background: url('./images//icons/dropdown-icon.svg') no-repeat;
+    right: 8px;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.dropdown-list .ant-select-item-option-content {
+    font-size: 0.8125rem;
+    font-family: Arial, sans-serif !important;
+}
+
+.dropdown-list .drop-name {
+    font-size: 0.75rem;
+    position: absolute;
+    left: 13px;
+    top: -0.25rem;
+    z-index: 1;
+}
+
+.ant-select-show-search:where(.css-dev-only-do-not-override-1v613y0).ant-select:not(.ant-select-customize-input) .ant-select-selector input {
+    cursor: pointer;
+}
+
+/* topnav dropdown styles ends here */
+
+/* left sidebar styles starts here */
+
+.left-sidebar button {
+    background-color: transparent;
+    min-height: 3.5rem;
+    border-top: 0.001rem solid rgba(112, 112, 112, 0.5);
+    padding: 0 0.5rem 0 2.5rem;
+    text-align: left;
+    position: relative;
+}
+
+.left-sidebar button::after {
+    right: 10px;
+    top: 5px;
+}
+
+.left-sidebar .active-menu button {
+    color: #00FFFF;
+}
+
+.left-sidebar .active-menu button::after {
+    background: url('./images/icons/dropdown-icon-active.svg') no-repeat;
+    transform: rotate(180deg);
+}
+
+.left-sidebar button span {
+    /* font-size: 0.85rem; */
+    font-size: 0.73rem;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.left-sidebar .sub-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 11px;
+    position: relative;
+}
+
+.left-sidebar .sub-menu a {
+    min-height: 2.7rem;
+    cursor: pointer;
+    padding: 0 1rem 0 2.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.left-sidebar .sub-menu a.active-link {
+    background-color: rgba(3, 244, 244, 0.24);
+    border-left: 0.25rem solid #03F4F4;
+    padding-left: 2.25rem;
+}
+
+.left-sidebar div button>span::before,
+.left-sidebar .sub-menu a::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 8px;
+}
+
+.left-sidebar .sub-menu a::before {
+    left: 13px;
+}
+
+.left-sidebar .sub-menu a.active-link::before {
+    left: 9px;
+}
+
+.left-sidebar .operations-menu::before {
+    background: url('./images/icons/operations-icon.svg') no-repeat;
+    width: 25px;
+    height: 21px;
+}
+
+.left-sidebar .resource-menu::before {
+    background: url('./images/icons/resource-icon.svg') no-repeat;
+    width: 34px;
+    height: 25px;
+    left: 0px;
+
+}
+
+.left-sidebar .integrated-menu::before {
+    background: url('./images/icons/integrated-icon.svg') no-repeat;
+    width: 25px;
+    height: 19px;
+
+}
+
+.left-sidebar .aianalysis-menu::before {
+    background: url('./images/icons/aianalysis-icon.svg') no-repeat;
+    width: 25px;
+    height: 25px;
+
+}
+
+.left-sidebar .cmms-menu::before {
+    background: url('./images/icons/cmms-icon.svg') no-repeat;
+    width: 25px;
+    height: 24px;
+
+}
+
+.left-sidebar .safetynsecurity-menu::before {
+    background: url('./images/icons/safety-icon.svg') no-repeat;
+    width: 22px;
+    height: 28px;
+    left: 10px;
+
+}
+
+.left-sidebar .benchmarking-menu::before {
+    background: url('./images/icons/benchmarking-icon.svg') no-repeat;
+    width: 25px;
+    height: 25px;
+
+
+}
+
+.left-sidebar .sustainability-menu::before {
+    background: url('./images/icons/sustain-icon.svg') no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.left-sidebar .workflow-menu::before {
+    background: url('./images/icons/workflow-icon.svg') no-repeat;
+    width: 25px;
+    height: 22px;
+}
+
+.left-sidebar .resourceforecasting-menu::before {
+    background: url('./images/icons/resourceforecasting-icon.svg') no-repeat;
+    width: 25px;
+    height: 22px;
+}
+
+.left-sidebar .energyconservation-menu::before {
+    background: url('./images/icons/energyconservation-icon.svg') no-repeat;
+    width: 25px;
+    height: 23px;
+}
+
+.left-sidebar .reports-menu::before {
+    background: url('./images/icons/reports-icon.svg') no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.left-sidebar .sub-menu a.realtime-alarm::before {
+    background: url('./images/icons/realtime-alarm-icon.svg') no-repeat;
+    width: 16px;
+    height: 18px;
+}
+
+.left-sidebar .sub-menu a.dynamic-control::before {
+    background: url('./images/icons/dynamic-control-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.energy::before {
+    background: url('./images/icons/energy-icon.svg') no-repeat;
+    width: 10px;
+    height: 18px;
+}
+
+.left-sidebar .sub-menu a.water::before {
+    background: url('./images/icons/water-icon.svg') no-repeat;
+    width: 9px;
+    height: 14px;
+}
+
+.left-sidebar .sub-menu a.waste::before {
+    background: url('./images/icons/waste-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.space::before {
+    background: url('./images/icons/space-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.parking::before {
+    background: url('./images/icons/parking-icon.svg') no-repeat;
+    width: 14px;
+    height: 11px;
+}
+
+.left-sidebar .sub-menu a.aqi::before {
+    background: url('./images/icons/aqi-icon.svg') no-repeat;
+    width: 14px;
+    height: 8px;
+}
+
+.left-sidebar .sub-menu a.occupancy::before {
+    background: url('./images/icons/occupancy-icon.svg') no-repeat;
+    width: 14px;
+    height: 8px;
+}
+
+.left-sidebar .sub-menu a.predictive-analytics::before {
+    background: url('./images/icons/predictiveanalytics-icon.svg') no-repeat;
+    width: 14px;
+    height: 13px;
+}
+
+.left-sidebar .sub-menu a.ai-simulation::before {
+    background: url('./images/icons/aisimulation-icon.svg') no-repeat;
+    width: 14px;
+    height: 15px;
+}
+
+.left-sidebar .sub-menu a.ai-inference::before {
+    background: url('./images/icons/aiinference-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.ppm::before {
+    background: url('./images/icons/ppm-icon.svg') no-repeat;
+    width: 14px;
+    height: 13px;
+}
+
+.left-sidebar .sub-menu a.fdd::before {
+    background: url('./images/icons/fdd-icon.svg') no-repeat;
+    width: 14px;
+    height: 13px;
+}
+
+.left-sidebar .sub-menu a.mtbf::before {
+    background: url('./images/icons/mtbf-icon.svg') no-repeat;
+    width: 14px;
+    height: 17px;
+}
+
+.left-sidebar .sub-menu a.mttr::before {
+    background: url('./images/icons/mttr-icon.svg') no-repeat;
+    width: 14px;
+    height: 17px;
+}
+
+.left-sidebar .sub-menu a.rul::before {
+    background: url('./images/icons/rul-icon.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+
+.left-sidebar .sub-menu a.firealaram-system::before {
+    background: url('./images/icons/firealarm-icon.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.left-sidebar .sub-menu a.fire-fighting::before {
+    background: url('./images/icons/firefighting-icon.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.left-sidebar .sub-menu a.elevator::before {
+    background: url('./images/icons/elivator-icon.svg') no-repeat;
+    width: 14px;
+    height: 22px;
+    left: 10px;
+}
+
+.left-sidebar .sub-menu a.accesscontrol-system::before {
+    background: url('./images/icons/accesscontrol-icon.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+
+}
+
+.left-sidebar .sub-menu a.epi::before {
+    background: url('./images/icons/epi-icon.svg') no-repeat;
+    width: 14px;
+    height: 11px;
+
+}
+
+.left-sidebar .sub-menu a.waterper-person::before {
+    background: url('./images/icons/waterperperson-icon.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.left-sidebar .sub-menu a.ikw::before {
+    background: url('./images/icons/ik-icon.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.left-sidebar .sub-menu a.renewable-energy::before {
+    background: url('./images/icons/renewable-icon.svg') no-repeat;
+    width: 14px;
+    height: 16px;
+}
+
+.left-sidebar .sub-menu a.scope-1::before {
+    background: url('./images/icons/scope1-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.scope-2::before {
+    background: url('./images/icons/scope2-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.scope-3::before {
+    background: url('./images/icons/scope3-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.renewable-energy-percentage::before {
+    background: url('./images/icons/renewablepercentage-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.task-management::before {
+    background: url('./images/icons/taskmgmt-icon.svg') no-repeat;
+    width: 14px;
+    height: 15px;
+}
+
+.left-sidebar .sub-menu a.asset-management::before {
+    background: url('./images/icons/assetmgmt-icon.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+
+.left-sidebar .sub-menu a.cost::before {
+    background: url('./images/icons/cost-icon.svg') no-repeat;
+    width: 14px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.mrv-table::before {
+    background: url('./images/icons/mrv-icon.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.left-sidebar .sub-menu a.issues::before {
+    background: url('./images/icons/issues-icon.svg') no-repeat;
+    width: 12px;
+    height: 15px;
+}
+
+.left-sidebar .sub-menu a.saving-summary::before {
+    background: url('./images/icons/savingsummary-icon.svg') no-repeat;
+    width: 14px;
+    height: 11px;
+}
+
+.left-sidebar .sub-menu a.energyncost::before {
+    background: url('./images/icons/energycost-icon.svg') no-repeat;
+    width: 14px;
+    height: 15px;
+}
+
+.left-sidebar .sub-menu a.ecm-reports::before {
+    background: url('./images/icons/ecmreports-icon.svg') no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+.left-sidebar .sub-menu a.kpi-reports::before {
+    background: url('./images/icons/kpireports-icon.svg') no-repeat;
+    width: 15px;
+    height: 12px;
+}
+
+.left-sidebar .sub-menu a.operational-reports::before {
+    background: url('./images/icons/operationalreports-icon.svg') no-repeat;
+    width: 14px;
+    height: 16px;
+}
+
+/* left sidebar styles starts here */
+.unity-wrapper {
+    position: relative;
+}
+
+.unity-wrapper.expand-icon .expand-icon,
+.graph-section-two .expand-icon,
+.resource-page .unity-wrapper.expand-icon,
+.graph-section-three .expand-icon,
+.resource-page .graph-section-one .expand-icon {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.graph-section-two .expand-icon,
+.graph-section-three .expand-icon,
+.resource-page .graph-section-one .expand-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.unity-wrapper.expand-icon .expand-icon::before,
+.resource-page .unity-wrapper.expand-icon::before,
+.resource-page .graph-section-one .expand-icon::before,
+.graph-section-two .expand-icon::before,
+.graph-section-three .expand-icon::before {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    background: url('./images/icons/unity-expand-icon.svg') no-repeat;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    right: -2px;
+    z-index: 1;
+
+}
+
+.graph-section-two .expand-icon::before,
+.graph-section-three .expand-icon::before,
+.resource-page .graph-section-one .expand-icon::before {
+    width: 12px;
+    height: 12px;
+    background: url('./images/icons/expand-small-icon.svg') no-repeat;
+}
+
+.graph-section-one .circle-container {
+    position: relative;
+}
+
+.graph-section-one .label-container {
+    font-size: 0.375rem;
+    color: white;
+    position: relative;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.waterLabel{
+    bottom: -30px !important;
+}
+
+.graph-section-one .dashboard>div:last-child .label-container {
+     width: 100%;
+}
+
+.graph-section-one .label-container.renewable-energy {
+     width: 90%;
+}
+
+.progress-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    line-height: 6px;
+}
+
+.progress-content span {
+    font-size: 0.4375rem;
+}
+
+.unity-digitaltwin,
+.unity-chatbot {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.unity-chatbot {
+    right: 0;
+    left: unset;
+}
+
+.unity-digitaltwin::before,
+.unity-chatbot::before {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('./images/digitaltwin.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    bottom: -16px;
+    left: -20px;
+}
+
+.unity-chatbot::before {
+    background: url('./images/chatbot.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    left: unset;
+    right: -20px;
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 106px;
+    padding-right: 0.5rem;
+}
+
+.graph-big-arrow {
+    position: relative;
+    cursor: pointer;
+}
+
+.graph-big-arrow::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url('./images/icons/big-arrow.svg') no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 11px;
+}
+
+
+.graphTypeDropdown {
+    color: white;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 0px;
+    right: 32px;
+}
+
+
+.energy-card>span::before {
+    background: url('./images/energy-sub1.svg') no-repeat;
+    width: 28.54px;
+    height: 51.35px;
+    top: 10%;
+    bottom: 10%;
+    background-size: contain;
+    left: 3.75rem;
+}
+
+.energy-card.active-card>span::before {
+    background: url('./images/Energy-submenu_highlighted.svg') no-repeat;
+    width: 28.54px;
+    height: 51.35px;
+    top: 10%;
+    bottom: 10%;
+    background-size: contain;
+    left: 3.75rem;
+}
+
+.water-card>span::before {
+    background: url('./images/water.svg') no-repeat;
+    width: 34.1px;
+    height: 48.96px;
+    top: 10%;
+    bottom: 10%;
+    background-size: contain;
+    left: 3.875rem;
+}
+
+.water-card.active-card>span::before {
+    background: url('./images/water_white.svg') no-repeat;
+    width: 34.1px;
+    height: 48.96px;
+    top: 10%;
+    bottom: 10%;
+    background-size: contain;
+    left: 3.875rem;
+}
+
+.waste-card>span::before {
+    background: url('./images/waste-sub%20(2).svg') no-repeat;
+    width: 42.48px;
+    height: 46.91px;
+    top: 10%;
+    bottom: 10%;
+    background-size: contain;
+    left: 3.875rem;
+}
+
+.waste-card.active-card>span::before {
+    background: url('./images/waste_white.svg') no-repeat;
+    width: 42.48px;
+    height: 46.91px;
+    top: 10%;
+    bottom: 10%;
+    background-size: contain;
+    left: 3.875rem;
+}
+
+.custom-modal-wrapper .ant-modal {
+    width: 90% !important;
+    height: 80%;
+}
+
+.custom-modal-wrapper .ant-modal-content {
+    left: 11vw;
+    width: 93% !important;
+    height: calc(100vh - 13vh) !important;
+    border: 1px solid #707070;
+    border-radius: 8px !important;
+    background-color: #000000;
+}
+
+.custom-modal-wrapper .ant-modal-body {
+    height: 90% !important;
+    align-items: center;
+    display: flex;
+    margin: 0 !important;
+}
+
+.custom-modal-wrapper .ant-modal-body .canvasjs-chart-container {
+    height: 427px !important;
+}
+
+.custom-modal-wrapper.unity-modal-wrapper .ant-modal-content {
+    padding: 0;
+}
+
+.custom-modal-wrapper .ant-modal-header,
+.custom-modal-wrapper .ant-modal-title {
+    color: #FFFFFF;
+    background-color: #000;
+}
+
+.custom-modal-wrapper .ant-modal-close,
+.custom-modal-wrapper .ant-modal-close:focus,
+.custom-modal-wrapper .ant-modal-close:hover {
+    color: #FFFFFF;
+}
+
+.custom-modal-wrapper.unity-modal-wrapper .ant-modal-header {
+    margin: 0 !important;
+}
+
+.custom-modal-wrapper.unity-modal-wrapper .unity-section,
+.custom-modal-wrapper.unity-modal-wrapper .ant-modal-body {
+    height: 100% !important;
+}
+
+.custom-modal-wrapper {
+    overflow: hidden !important;
+}
+
+.bldgElectricity-card>span::before {
+    background: url('./images/bldgElectricity.svg') no-repeat;
+    height: 56.78px;
+    width: 36.39px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.bldgElectricity-card.active-card>span::before {
+    background: url('./images/bldgElectricity_white.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    height: 56.78px;
+    width: 36.39px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.bldgEnergy-card>span::before {
+    background: url('./images/buildingenergy-icon.svg') no-repeat;
+    width: 39.9px;
+    height: 46.89px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.bldgEnergy-card.active-card>span::before {
+    background: url('./images/buildingenergy-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 39.9px;
+    height: 46.89px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.ev-card>span::before {
+    background: url('./images/electricalvehicle-icon.svg') no-repeat;
+    width: 44.73px;
+    height: 49.04px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.ev-card.active-card>span::before {
+    background: url('./images/electricalvehicle-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 44.73px;
+    height: 49.04px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.municipal-card>span::before {
+    background: url('./images/municipal-icon.svg') no-repeat;
+    height: 45.61px;
+    width: 41.04px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.municipal-card.active-card>span::before {
+    background: url('./images/municipal-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    height: 45.61px;
+    width: 41.04px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.treated-card>span::before {
+    background: url('./images/treated-icon.svg') no-repeat;
+    width: 42.95px;
+    height: 40.74px;
+
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.treated-card.active-card>span::before {
+    background: url('./images/treated-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 42.95px;
+    height: 40.74px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.borewell-card>span::before {
+    background: url('./images/borewell-icon.svg') no-repeat;
+    width: 42.64px;
+    height: 40.99px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.borewell-card.active-card>span::before {
+    background: url('./images/borewell-light-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 42.64px;
+    height: 40.99px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.alternative-card>span::before {
+    background: url('./images/alternative-icon.svg') no-repeat;
+    width: 54.26px;
+    height: 41.11px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.alternative-card.active-card>span::before {
+    background: url('./images/alternative-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 54.26px;
+    height: 41.11px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.tanker-card>span::before {
+    background: url('./images/tanker-icon.svg') no-repeat;
+    width: 51.94px;
+    height: 31.61px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.tanker-card.active-card>span::before {
+    background: url('./images/tanker-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 51.94px;
+    height: 31.61px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.constructionWaste-card>span::before {
+    background: url('./images/construction-icon.svg') no-repeat;
+    width: 58.39px;
+    height: 47.61px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.constructionWaste-card.active-card>span::before {
+    background: url('./images/construction-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 58.39px;
+    height: 47.61px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.wetWaste-card>span::before {
+    background: url('./images/wetwaste-icon.svg') no-repeat;
+    width: 32.66px;
+    height: 47.61px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.0275rem;
+}
+
+.wetWaste-card.active-card>span::before {
+    background: url('./images/wetwaste-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 32.66px;
+    height: 47.61px;
+    background-size: contain;
+    left: 1.0275rem;
+}
+
+.organicWaste-card>span::before {
+    background: url('./images/organic-icon.svg') no-repeat;
+    width: 45.42px;
+    height: 47.61px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.organicWaste-card.active-card>span::before {
+    background: url('./images/organic-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 45.42px;
+    height: 47.61px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+
+.eWaste-card>span::before {
+    background: url('./images/ewaste-icon.svg') no-repeat;
+    width: 32.55px;
+    height: 47.61px;
+    top: 15%;
+    bottom: 15%;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+.eWaste-card.active-card>span::before {
+    background: url('./images/ewaste-white-icon.svg') no-repeat;
+    top: 10%;
+    bottom: 10%;
+    width: 32.55px;
+    height: 47.61px;
+    background-size: contain;
+    left: 1.875rem;
+}
+
+
+.water-page .cards .card-info .card-amt {
+    /* font-size: 1.875rem; */
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+    display: inline;
+}
+
+
+.water-page .cards .card-info .card-unit {
+    font-size: 1rem;
+    /* font-weight: bold; */
+    display: inline;
+    margin-left: 0.28rem;
+
+}
+
+.water-page .cards-list {
+    gap: 0.75rem;
+}
+
+
+.datePickerWrapperModal :where(.css-dev-only-do-not-override-1v613y0).ant-picker .ant-picker-separator {
+    display: flex;
+    justify-content: center;
+}
+
+.datePickerWrapperModal :where(.css-dev-only-do-not-override-1v613y0).ant-picker-range .ant-picker-range-separator {
+    padding-left: 0;
+}
+
+.locationFilterDropdowns {
+
+    input {
+        color: #ffffff;
+    }
+}
+
+.datapickersClassLandingPage {
+    display: flex;
+    flex-direction: row;
+
+    div {
+        background-color: #ffffff;
+
+        div {
+            background-color: #ffffff;
+
+            input {
+                background-color: #ffffff;
+            }
+
+            .ant-picker .ant-picker-input {
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+
+.border-gray-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+}
+
+.bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0);
+}
+
+
+.DateRangePickerHeader {
+    background-color: #0a8120;
+    padding: 5px;
+    font-family: arial;
+    width: 359px;
+}
+
+.selectedInBetweenElementsDatePicker {
+    background-color: #00ff0055;
+}
+
+
+.label2Class {
+    font-size: 0.8rem;
+    text-align: center;
+    color:white;
+}
+
+.label2ClassLandingPage {
+    font-size: 0.6rem;
+    text-align: center;
+    color:white;
+    top: -5px;
+}
+
+
+.label2ClassViewGRaph{top: -4px;
+    position: relative;
+    text-align: center;
+    font-size: 0.7rem;}

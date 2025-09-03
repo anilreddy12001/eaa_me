@@ -1,0 +1,137 @@
+#unityAndChartOverlayWrapper #menuPages {
+  display: flex;
+    width: 84vw;
+    height: 88.84vh;
+    border: 1px solid #ffffff;
+}
+
+.watergraph-container{
+  background-image:url('/src/images/bargraph-bg.svg');
+    width: 38vw;
+    /* border: 1px solid red; */
+    /* display: grid; */
+    float: right;
+   
+    margin-top: 23px;
+    height: 38vh;
+    margin-left: 31px;
+    padding-top: 45px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+}
+.Energygraph-container{
+  /* width: 29vw; */
+  background-image:url('/src/images/bargraph-bg.svg');
+  width: 38vw;
+    /* border: 1px solid red; */
+    height:38vh;
+   
+    margin-left: 31px;
+    margin-top: 23px;
+    padding-top: 45px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    /* display: grid; */
+}
+.renewablegraph-container{
+  background-image:url('/src/images/bargraph-bg.svg');
+  width: 38vw;
+    /* border: 1px solid red; */
+    height:38vh;
+    /* display: grid; */
+    float:left;
+    margin-left: 31px;
+    margin-top: 23px;
+    padding-top: 45px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+}
+.emissionreductiongraph-container{
+  /* background-image: url('./images/bargraph-bg.svg'); */
+  background-image:url('/src/images/bargraph-bg.svg');
+  width: 38vw;
+    /* border: 1px solid red; */
+    height:38vh;
+    /* display: grid; */
+    float:left;
+    margin-left: 31px;
+    margin-top: 23px;
+    padding-top: 45px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+}
+.wrapper-graphoptions{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto auto;}
+    /* width: 54vw; */
+    .graph-title{
+      text-align: center;
+  font-size: 14px;
+  position: relative;
+  /* left: -163px;
+  top: 10px; */
+  left: -158px;
+  top: 50px;
+  color: #d0c4c4;
+
+    }
+    .viewgraph-expand-icon{
+     content: '';
+    cursor: pointer;
+    position: absolute;
+  
+    background: url('/src/images/icons/unity-expand-icon.svg') no-repeat;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    right: -145px;
+    z-index: 1;
+    }
+
+   /* Custom styles for the modal */
+/* Custom styles for the modal */
+
+
+.viewgraph-modal-wrapper .ant-modal {
+  width: 90% !important;
+  height: 80%;
+}
+.viewgraph-modal-wrapper .ant-modal-content {
+  width: 90% !important;
+  height: calc(100vh - 13vh) !important;
+  border: 1px solid #707070;
+  border-radius: 8px !important;
+  background-color: #000000;
+  margin-left: 147px;
+}
+.viewgraph-modal-wrapper .ant-modal-body {
+  height: 90% !important;
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  margin: 0 !important;
+}
+.viewgraph-modal-wrapper .ant-modal-body .canvasjs-chart-container {
+  height: 427px !important;
+}
+.viewgraph-modal-wrapper.unity-modal-wrapper .ant-modal-content {
+  padding: 0;
+}
+.viewgraph-modal-wrapper .ant-modal-header, .viewgraph-modal-wrapper .ant-modal-title {
+  color: #FFFFFF !important;
+  background-color: #000;
+}
+.viewgraph-modal-wrapper .ant-modal-close, .viewgraph-modal-wrapper .ant-modal-close:focus, .viewgraph-modal-wrapper .ant-modal-close:hover {
+  color: #FFFFFF;
+}
+.viewgraph-modal-wrapper.unity-modal-wrapper .ant-modal-header {
+  margin: 0!important;
+}
+.viewgraph-modal-wrapper.unity-modal-wrapper .unity-section,
+.viewgraph-modal-wrapper.unity-modal-wrapper .ant-modal-body {
+  height: 100% !important;
+}
+.viewgraph-modal-wrapper {
+  overflow: hidden !important;
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="11.755" viewBox="0 0 14 11.755">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.003" y1="0.498" x2="1" y2="0.498" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#55bf9b"/>
+      <stop offset="0.33" stop-color="#2dabb0"/>
+      <stop offset="0.74" stop-color="#2786c1"/>
+      <stop offset="1" stop-color="#3b68b0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0" y1="0.506" x2="1" y2="0.506" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="0" y1="0.497" x2="1" y2="0.497" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="0" y1="0.496" x2="1" y2="0.496" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_5323" data-name="Group 5323" transform="translate(0 0)">
+    <g id="Group_5225" data-name="Group 5225" transform="translate(0 0)">
+      <g id="Group_5224" data-name="Group 5224" transform="translate(0)">
+        <path id="Path_27974" data-name="Path 27974" d="M183.7,125.384h0v-.591h0a14.032,14.032,0,0,0,10.278-5.523l.473.354a14.5,14.5,0,0,1-10.78,5.759Z" transform="translate(-183.02 -119.004)" fill="url(#linear-gradient)"/>
+        <path id="Path_27975" data-name="Path 27975" d="M189.2,122.429l-.059-2.658H186.16v-.591h3.574l.059,3.249Z" transform="translate(-178.156 -119.18)" fill="url(#linear-gradient-2)"/>
+        <path id="Path_27976" data-name="Path 27976" d="M187.522,126.233H183.83v-4.9h3.692Zm-3.1-.591h2.511v-3.721h-2.511Z" transform="translate(-182.708 -114.98)" fill="url(#linear-gradient-3)"/>
+        <path id="Path_27977" data-name="Path 27977" d="M188.9,126.819H185.21V121.06H188.9Zm-3.1-.591h2.511v-4.578H185.8Z" transform="translate(-180.012 -115.507)" fill="url(#linear-gradient-4)"/>
+        <path id="Path_27978" data-name="Path 27978" d="M190.272,128.245H186.58V120.33h3.692Zm-3.1-.591h2.51v-6.734h-2.51Z" transform="translate(-177.335 -116.933)" fill="url(#linear-gradient-5)"/>
+        <rect id="Rectangle_2783" data-name="Rectangle 2783" width="14" height="0.591" transform="translate(0 11.164)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>

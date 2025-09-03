@@ -1,0 +1,561 @@
+import React , { useCallback, useState, useEffect } from 'react';
+import { UnityLoader } from './components/UnityLoader';
+import Widgets from "./components/widgets/index.tsx";
+import { Gamepad2 } from 'lucide-react';
+import { UnityProvider, useUnity } from './contexts/UnityContext';
+import dayjs from 'dayjs';
+import dropdownOptionsBackup from './dropdownOptions.js';
+import logo from './logo.png';
+import _ from 'lodash';
+import {
+  DesktopOutlined,
+  PieChartOutlined,
+  FileOutlined,
+  TeamOutlined,
+  UserOutlined,
+  CaretDownFilled,  
+  CaretDownOutlined,
+  DownOutlined,
+} from '@ant-design/icons';
+import { Select, Button, Input, message, Spin, DatePicker,Space,Avatar, Tooltip } from "antd";
+import keycloak, {logout} from "./components/utils/keycloak.js";
+import Charts from "./components/charts/index.tsx";
+import LeftSidebar from "./components/sidebar/index.tsx";
+import axios from "axios";
+
+import "./index.css";
+import menuClickAudioFile from "./menu-click.mp3";
+import ClockComponent from './components/clock/index.tsx';
+const { RangePicker } = DatePicker;
+function App() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [spinning, setSpinning] = useState(false);
+  const [login,setLogin]=useState(false);
+  const [regionValue, setRegionValue]=useState('ALL');
+  const [countryValue, setCountryValue]=useState('ALL');
+  const [cityValue, setCityValue]=useState('ALL');
+  const [campusValue, setCampusValue]=useState('ALL');
+  const [buildingValue, setBuildingValue]=useState('ALL');
+  const[regionList, setRegionList]=useState('');
+  const[countryList, setCountryList]=useState('');
+  const [cityList, setCityList]=useState('');
+  const [campusList, setCampusList]=useState('');
+  const [buildingList, setBuildingList]=useState('');
+  const [dropdownOptions,setDropdownOptions]=useState([]);
+  const [unityMessageObject,setUnityMessageObject]=useState({});
+  const [viewMode, setViewMode]=useState('landingPageView');
+ 
+  // const { unityProvider, isLoaded, loadingProgression, isError, errorMessage, sendMessage } =
+  //     useUnity();
+  const [openIndexes, setOpenIndexes] = useState({});
+ 
+  const handleIconClick = (index) => {
+    setOpenIndexes((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+ 
+  const handleDropdownClose = (index) => {
+    setOpenIndexes((prev) => ({ ...prev, [index]: false }));
+  };
+  const handleDropdownVisibleChange = (visible, index) => {
+    setOpenIndexes((prev) => ({ ...prev, [index]: visible }));
+  };
+
+
+
+    const [co2Data, setCo2Data]=useState('');
+  
+  const menuClickAudio = new Audio(menuClickAudioFile);
+
+  console.log("dropdownOptions: ",dropdownOptions);
+  if(dropdownOptions && dropdownOptions.length>0){
+
+//      Array.from(new Set(a))
+    let regionList=Array.from(new Set(dropdownOptions.map(item => item.region)));
+
+var regionListOptions=regionList.map(item=>({label:item,value:'region::'+item}));
+console.log('regionlist: ',regionList, 'regionListOptions:',regionListOptions);
+//console.log('region details: ',dropdownOptions.filter(item => item.region=='France')[0]);
+    var countryListOptions=Array.from(new Set(dropdownOptions.map(item => item.country))).map(item=>({label:item,value:'country::'+item}));
+    var cityListOptions=Array.from(new Set(dropdownOptions.map(item => item.city))).map(item=>({label:item,value:'city::'+item}));
+    var campusListOptions=Array.from(new Set(dropdownOptions.map(item => item.campus))).map(item=>({label:item,value:'campus::'+item}));
+    var buildingListOptions=Array.from(new Set(dropdownOptions.map(item => item.building))).map(item=>({label:item,value:'building::'+item}));
+
+  }
+  const dropdownList=[{title:'Region', name:'Region', options: regionListOptions},{title:'Country', name:'Country', options:countryListOptions},{title:'City', name:'City', options:cityListOptions},{title:'Campus', name:'Campus', options: campusListOptions},{title:'Building', name:'Building', options: buildingListOptions}];
+  //window.env=import.meta.env;
+  let chartWidgetList=[{name:'Consumption', title:'', type:'bar', content:{}},{name:'Energy Generation', title:'', type:'doughnut', content:{}},{name:'Consumption', title:'', type:'line', content:{}}];
+
+  const onclickFn=(e)=>{
+    console.log("menuclick audio: ",menuClickAudio);
+    menuClickAudio.play();
+  }
+  useEffect(() => {
+    loginFn();
+	getOnloadData();
+  }, []);
+  
+ 
+  
+  
+    const getOnloadData = () => {
+
+var locationList=[{region:'ALL',country:'ALL',city:'ALL',campus:'ALL',building:'ALL'}];
+var locationFilterURL=window.config.CG_LOCATION_FILTER_API;
+  setSpinning(true);
+var widgetDataURL=window.config.CG_WIDGET_API;
+axios({method:'POST',url:locationFilterURL,headers:{"Content-Type":"application/json"},
+  data:{
+    "countryName": "All",
+      "cityName":  "ALL",
+      "campusName": "ALL",
+      "buildingName": "ALL",
+      "equipmentName": "ALL"
+     }
+
+}).then(response=>{
+setSpinning(false);
+console.log('response: ', response)
+response.data.countryList.forEach(country => {
+  country.cityList.forEach(city => {
+    city.campusList.forEach(campus => {
+      campus.buildingList.forEach(building => {
+        console.log("building: ",building.buildingname,"campus",campus.campusname,"city:",city.cityname, "country:",country.countryname);
+        locationList.push({region:'ALL',country:country.countryname,city:city.cityname,campus:campus.campusname,building:building.buildingname});
+        // locationList.push({region:'Europe',country:country.countryname,city:city.cityname,campus:campus.campusname,building:building.buildingname});
+      });
+    });
+  })
+});
+console.log("locationList:",locationList)
+setDropdownOptions(locationList);
+}).catch(e=>{
+  setSpinning(false);
+  message.error('Network Error');
+  setDropdownOptions(locationList);
+  console.log('e:',e)
+});
+
+axios({method:'POST',url:widgetDataURL,headers:{"Content-Type":"application/json"},
+  data:{
+ "countryName": "All",
+   "cityName":  "ALL",
+   "campusName": "ALL",
+   "buildingName": "ALL",
+   "equipmentName": "ALL",
+   "startDate": "2024-05-15",
+   "endDate": "2024-05-15"
+  }
+
+}).then(response=>{
+console.log('response:', response);
+setCo2Data(response.data.Co2Avoided);
+}).catch(e=>{
+  console.log('error:', e);
+})
+
+}
+
+const onChange=(e)=>{
+  console.log('onchange e:',e);
+  
+  let type='';
+  if(e.split('::')[0]=='region'){
+    type='region';
+  }
+  else if(e.split('::')[0]=='country'){
+    type='country';
+  }
+  else if(e.split('::')[0]=='city'){
+    type='city';
+  }
+  else if(e.split('::')[0]=='campus'){
+    type='campus';
+  }
+  else if(e.split('::')[0]=='building'){
+    type='building';
+  }
+  setUnityMessageObject({type:type, value:e.split('::')[1]});
+  var regionVar='All';
+	var countryVar='All';
+	var cityVar='ALL';
+	var campusVar='ALL';
+	var buildingVar='ALL';
+	
+  dropdownOptions.filter(item=>item[type]==e.split('::')[1]).map(item=>{
+    //console.log('item:',item);
+    setRegionValue(item.region);
+    setCountryValue(item.country);
+    setCityValue(item.city);
+    setCampusValue(item.campus);
+    setBuildingValue(item.building);
+	
+	regionVar=item.region;
+	countryVar=item.country;
+	cityVar=item.city;
+	campusVar=item.campus;
+	buildingVar=item.building;
+    //setRegionList([]);
+    //setCountryList([]);
+
+  });
+
+  if (type == 'region') {
+    //setCountryList([...new Set(dropdownOptions.filter(item=>item.region==e.split('::')[1]).map(item=>({label:item.country,value:'country::'+item.country})).map(item=>({label:item.country,value:'country::'+item.country})))]);
+
+
+    let filteredCountryList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.country, value: 'country::' + item.country })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.region == e.split('::')[1]).map(item => ({ label: item.country, value: 'country::' + item.country })), 'value');
+    if(JSON.stringify(filteredCountryList).indexOf('ALL')==-1){
+      filteredCountryList.unshift({ label: 'ALL', value: 'country::ALL' });
+
+    }
+    let filteredCityList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.city, value: 'city::' + item.city })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.country == e.split('::')[1]).map(item => ({ label: item.city, value: 'city::' + item.city })), 'value');
+    if(JSON.stringify(filteredCityList).indexOf('ALL')==-1){
+      filteredCityList.unshift({ label: 'ALL', value: 'city::ALL' });
+
+    }
+    let filteredCampusList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.campus, value: 'campus::' + item.campus })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.country == e.split('::')[1]).map(item => ({ label: item.campus, value: 'campus::' + item.campus })), 'value');
+    if(JSON.stringify(filteredCampusList).indexOf('ALL')==-1){
+      filteredCampusList.unshift({ label: 'ALL', value: 'campus::ALL' });
+
+    }
+    let filteredBuildingList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.building, value: 'building::' + item.building })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.country == e.split('::')[1]).map(item => ({ label: item.building, value: 'building::' + item.building })), 'value');
+    if(JSON.stringify(filteredBuildingList).indexOf('ALL')==-1){
+      filteredBuildingList.unshift({ label: 'ALL', value: 'building::ALL' });
+
+    }
+    setCountryList(filteredCountryList);
+    setCityList(filteredCityList);
+    setCampusList(filteredCampusList);
+    setBuildingList(filteredBuildingList);
+
+    setCountryValue('All');
+    setCityValue('All');
+    setCampusValue('All');
+    setBuildingValue('All');
+  } else if (type == 'country') {
+    let filteredCityList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.city, value: 'city::' + item.city })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.country == e.split('::')[1]).map(item => ({ label: item.city, value: 'city::' + item.city })), 'value');
+    if(JSON.stringify(filteredCityList).indexOf('ALL')==-1){
+      filteredCityList.unshift({ label: 'ALL', value: 'city::ALL' });
+
+    }
+    let filteredCampusList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.campus, value: 'campus::' + item.campus })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.country == e.split('::')[1]).map(item => ({ label: item.campus, value: 'campus::' + item.campus })), 'value');
+    if(JSON.stringify(filteredCampusList).indexOf('ALL')==-1){
+      filteredCampusList.unshift({ label: 'ALL', value: 'campus::ALL' });
+
+    }
+
+    let filteredBuildingList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.building, value: 'building::' + item.building })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.country == e.split('::')[1]).map(item => ({ label: item.building, value: 'building::' + item.building })), 'value');
+    if(JSON.stringify(filteredBuildingList).indexOf('ALL')==-1){
+      filteredBuildingList.unshift({ label: 'ALL', value: 'building::ALL' });
+
+    }
+    setCityList(filteredCityList);
+    setCampusList(filteredCampusList);
+    setBuildingList(filteredBuildingList);
+    setCityValue('All');
+    setCampusValue('All');
+    setBuildingValue('All');
+  } else if (type == 'city') {
+    let filteredCampusList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.campus, value: 'campus::' + item.campus })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.city == e.split('::')[1]).map(item => ({ label: item.campus, value: 'campus::' + item.campus })), 'value');
+    if(JSON.stringify(filteredCampusList).indexOf('ALL')==-1){
+      filteredCampusList.unshift({ label: 'ALL', value: 'campus::ALL' });
+
+    }
+
+    let filteredBuildingList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.building, value: 'building::' + item.building })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.city == e.split('::')[1]).map(item => ({ label: item.building, value: 'building::' + item.building })), 'value');
+    if(JSON.stringify(filteredBuildingList).indexOf('ALL')==-1){
+      filteredBuildingList.unshift({ label: 'ALL', value: 'building::ALL' });
+
+    }
+    setCampusList(filteredCampusList);
+    setBuildingList(filteredBuildingList);
+
+    setCampusValue('All');
+    setBuildingValue('All');
+  } else if (type == 'campus') {
+    let filteredBuildingList = e.split('::')[1] == 'ALL' ? _.uniqBy(dropdownOptions.map(item => ({ label: item.building, value: 'building::' + item.building })), 'value') : _.uniqBy(dropdownOptions.filter(item => item.campus == e.split('::')[1]).map(item => ({ label: item.building, value: 'building::' + item.building })), 'value');
+    if(JSON.stringify(filteredBuildingList).indexOf('ALL')==-1){
+      filteredBuildingList.unshift({ label: 'ALL', value: 'building::ALL' });
+
+    }
+    
+    setBuildingList(filteredBuildingList);
+
+    setBuildingValue('All');
+  }
+
+  var widgetDataURL="http://10.51.109.90:5000/energyanalytics/api/v1/data";
+axios({method:'POST',url:widgetDataURL,headers:{"Content-Type":"application/json"},
+  data:{
+ "countryName": countryVar,
+   "cityName":  cityVar,
+   "campusName": campusVar,
+   "buildingName": buildingVar,
+   "equipmentName": "ALL",
+   "startDate": "2024-05-15",
+   "endDate": "2024-05-15"
+  }
+
+}).then(response=>{
+console.log('response:', response);
+setCo2Data(response.data.Co2Avoided);
+
+}).catch(e=>{
+  console.log('error:', e);
+})
+  
+}
+
+const onSearch=(e)=>{
+console.log('e:',e); 
+}
+/*
+Last 24 Hrs
+Yestday
+Last Week
+Month to date
+Last Month
+Year to Date
+Last Year
+Till Date
+Custom Date
+
+*/
+const rangePresets = [
+  {
+    label: 'Last 24 Hours',
+    value: [dayjs().add(-1, 'd'), dayjs()],
+  },
+  {
+    label: 'Yesterday',
+    value: [dayjs().add(-14, 'd'), dayjs()],
+  },
+  {
+    label: 'Last Week',
+    value: [dayjs().add(-30, 'd'), dayjs()],
+  },
+  {
+    label: 'Month to date',
+    value: [dayjs().add(-90, 'd'), dayjs()],
+  },
+  
+  {
+    label: 'Last Month',
+    value: [dayjs().add(-90, 'd'), dayjs()],
+  },
+  
+  {
+    label: 'Year to date',
+    value: [dayjs().add(-90, 'd'), dayjs()],
+  },
+  
+  {
+    label: 'Last Year',
+    value: [dayjs().add(-90, 'd'), dayjs()],
+  },
+  
+  {
+    label: 'Till date',
+    value: [dayjs().add(-90, 'd'), dayjs()],
+  }
+];
+
+const onChangeOfDate = (date) => {
+  if (date) {
+    console.log('Date: ', date);
+  } else {
+    console.log('Clear');
+  }
+};
+const onRangeChange = (dates, dateStrings) => {
+  if (dates) {
+    console.log('From: ', dates[0], ', to: ', dates[1]);
+    console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);
+  } else {
+    console.log('Clear');
+    
+  }
+};
+const rangeSelector = ()=>{
+  return <RangePicker/>
+}
+
+const onChangeDateDropdown=(e)=>{
+  console.log(e);
+}
+  const getUnityApp=()=>{
+
+    var dateDropdownOptions=[{label:'Last 24 Hours',value:'Last 24 Hours', title:"last 24 hrs"},{label:'Yesterday',value:'Yesterday',title:'Yesterday'},{label:'Last Week',value:'Last Week',title:'Last Week'},{label:'Month to date',value:'Month to date',title:'Month to date'},{label:'Last Month',value:'Last Month', title:'Last Month'},{label:'Year to date',value:'Year to date'},{label:'Last Year',value:'Last Year'},{label:'Till date',value:'Till date'},{label:<RangePicker/>,value:'Custom Date', title:'Custom Date'}];
+    var widgetList=[{type:'co2', data:co2Data, label:'Carbon Emissions'},{type:'renewableEnergy', data:'27%',  label:'Carbon Emissions'}, {type:'energyConsumption', data:'2122'}, {type:'waterConsumption', data:'2122'},];
+    return (
+      <>
+       
+      <div style={{display:'flex',backgroundColor: '#000000',color:'#b4ffac',justifyContent:'Space-Between'}}> <div></div><div style={{    display: 'inline-flex',padding: '4px;'}}></div></div>
+      <div style={{display:'flex',paddingTop:'1px',backgroundColor: '#000000', borderBottom:'2.5px solid #B4FFAC',color:'#b4ffac',justifyContent:'Space-Between'}}>
+      <div  className="energyAnalytics" style={{width:'34%',paddingTop: '5px',fontSize: '17px'}}></div>
+      {/* Energy Analytics */}
+          
+      {/* height:'64.5px', */}
+
+{dropdownList.map((item,i)=>(
+ <div className="dropdownDiv" style={{width:'25%',position:'relative'}}key={i}> <div className='filterLabel'>{item.name}</div><Select open={!!openIndexes[i]} // Dynamically control dropdown open state
+ onDropdownVisibleChange={(visible) => handleDropdownVisibleChange(visible, i)} style={{width:'80%'}} value={item.name=='Region'?regionValue:item.name=='Country'?countryValue:item.name=='City'?cityValue:item.name=='Campus'?campusValue:item.name=='Building'?buildingValue:'Select '+item.name} key={i} id={item.name} showSearch={true} title={item.title}
+  dropdownStyle={{ border: '1px solid #50bc3d',
+  backgroundColor: '#000000', color:'#ffffff'}}  placeholder={'ALL'} defaultValue={'ALL'} options={item.name=='Region'&&regionList.length!=0?regionList:item.name=='Country'&&countryList.length!=0?countryList:item.name=='City'&&cityList.length!=0?cityList:item.name=='Campus'&&campusList.length!=0?campusList:item.name=='Building'&&buildingList.length!=0?buildingList:item.options} onChange={onChange}
+  onSearch={onSearch} optionFilterProp="label" /> 
+ 
+  {/* <div className='placeholder'>country</div> */}
+  {/* placeholder={'ALL'} */}
+  <div
+            className="dropdownIcon"
+            style={{
+              position: 'absolute',
+              right: '10%',
+              top: '53%',
+              fontSize: ' 20px',
+              transform: 'translateY(-50%)',
+              cursor: 'pointer',
+              zIndex: 10,
+              color:' #B4FFAC',
+            }}
+            onClick={() => handleIconClick(i)} // Toggle dropdown on icon click
+>
+<CaretDownOutlined />
+</div>
+ </div>
+))}
+
+<div className='dropdownDiv'  style={{width:'25%',position:'relative',border: '2px solid #0c4215'
+}}><div className='filterLabel' >{'Date Range'}</div>
+  <Select  style={{width:'80%'}} value={'Last 6 Months'} id={'dateDropdownId'} showSearch={true} title={'Date Range'}
+  dropdownStyle={{ border: '1px solid #50bc3d',
+  backgroundColor: '#000000', color:'#ffffff'}}  placeholder={'ALL'} defaultValue={'ALL'} options={dateDropdownOptions} onChange={onChangeDateDropdown}
+  onSearch={onSearch} optionFilterProp="label" /> 
+
+<div
+            className="dropdownIcon"
+            style={{
+              position: 'absolute',
+              right: '10%',
+              top: '53%',
+              fontSize: ' 20px',
+              transform: 'translateY(-50%)',
+              cursor: 'pointer',
+              zIndex: 10,
+              color:' #B4FFAC',
+            }}
+            
+>
+<CaretDownOutlined />
+</div>
+  </div>
+
+
+ 
+
+    
+
+<div className='logo'></div>
+<div className="avatarClass"><Tooltip placement="bottomRight" title={'Supervisor'}><Avatar
+      style={{
+        backgroundColor: '#fde3cf',
+        color: '#f56a00', 
+      }}
+      size={40}
+    >
+      SU
+    </Avatar></Tooltip></div>
+<p className='timeCurrent'>  <ClockComponent/></p>
+      </div>
+      <div style={{display:'flex',backgroundImage: 'linear-gradient(to top, #30cfd0 0%, #330867 100%)'}}>
+        <div className="leftSideBar"><LeftSidebar setViewMode={setViewMode}/></div>
+<div className="unityWrapper"  >        
+{viewMode=='landingPageView'?<UnityProvider>
+       <UnityLoader unityMessageObject={unityMessageObject} />
+       
+      </UnityProvider>:viewMode=='resourcePageView'?<><div className="resourcePageClass">{'Resource page'}</div></>:<></>}
+	  </div>
+        <div id="overLayWidget" onClick={e=>onclickFn(e)}>{chartWidgetList.map(e=><>{e.name}<div className="chartWrapper"><Charts progress='.465' name={e.name} type={e.type}/>
+          </div></>)}</div>
+          <Widgets listOfwidgets={widgetList}/> 
+      
+      </div>
+      <div></div>
+      </>
+      
+    );
+  }
+  const loginFn=(e)=>{
+  if ((!localStorage.getItem("loggedInUser") &&e)|| (localStorage.getItem("loggedInUser") == '' && e)) {
+    setSpinning(true);
+    if(!e){
+
+    }
+    keycloak
+    .init({ onLoad: "login-required" })
+      .then((authenticated) => {
+        console.log('authenticated..', authenticated);
+        if (authenticated) {
+          setLogin(true);
+          
+          console.log("login success", keycloak);
+          localStorage.setItem("react-token", keycloak.token);
+          localStorage.setItem("react-refresh-token", keycloak.refreshToken);
+          localStorage.setItem("loggedInUser", keycloak.idTokenParsed.name);
+          localStorage.setItem(
+            "loggedInUserName",
+            keycloak.idTokenParsed.preferred_username
+          );
+          localStorage.setItem(
+            "loggedInUserRole",
+            keycloak.realmAccess.roles.toString()
+          );
+          localStorage.setItem(
+            "projectList",
+            keycloak.idTokenParsed.projects.toString()
+          );
+          //root.render(<App/>);
+          var role =
+            localStorage.getItem("loggedInUserRole").indexOf("manager") !== -1
+              ? "manager"
+              : localStorage
+                .getItem("loggedInUserRole")
+                .indexOf("designEngineer") !== -1
+                ? "designEngineer"
+                : localStorage
+                  .getItem("loggedInUserRole")
+                  .indexOf("stressEngineer") !== -1
+                  ? "stressEngineer"
+                  : " ";
+
+          //code to render only if authenticated:
+          if (localStorage.getItem("loggedInUser") && localStorage.getItem("loggedInUser") != '') {
+            return (
+              <></>
+            );
+          }
+
+
+        }
+      }).catch( e=>{
+          console.log('e:',e);
+          setSpinning(false);
+          setLogin(false);
+          //alert('unable to connect to keycloak');
+          message.error('Unable to connect to Keycloak');
+        }
+      )
+  }
+  else{
+console.log("else: env variables : ",import.meta.env);
+  location.hash='dashboard';
+  //setSpinning(false);
+  setLogin(true);
+  return (<>getUnityApp()</>)
+}
+}
+console.log('login:', login)
+return(<><Spin spinning={spinning} size="large" fullscreen />{login?getUnityApp():''}</>)
+}
+
+export default App;

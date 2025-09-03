@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.297" height="25.297" viewBox="0 0 25.297 25.297">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33d4a3"/>
+      <stop offset="0.304" stop-color="#2dacb1"/>
+      <stop offset="1" stop-color="#2986c0"/>
+      <stop offset="1" stop-color="#2466cf"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_5789" data-name="Group 5789" transform="translate(-8 -324)">
+    <path id="memory_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M186.914-756.243v-2.582h-3.162a2.626,2.626,0,0,1-1.935-.776,2.626,2.626,0,0,1-.776-1.935V-764.7H178.46v-1.678h2.581v-5.034H178.46v-1.678h2.581v-3.162a2.626,2.626,0,0,1,.776-1.935,2.626,2.626,0,0,1,1.935-.776h3.162v-2.581h1.678v2.581h5.034v-2.581H195.3v2.581h3.162a2.626,2.626,0,0,1,1.935.776,2.626,2.626,0,0,1,.776,1.935v3.162h2.581v1.678h-2.581v5.034h2.581v1.678h-2.581v3.162a2.626,2.626,0,0,1-.776,1.935,2.626,2.626,0,0,1-1.935.776H195.3v2.582h-1.678v-2.582h-5.034v2.582Zm11.551-4.259a.987.987,0,0,0,.71-.322.987.987,0,0,0,.323-.71v-14.713a.986.986,0,0,0-.323-.71.987.987,0,0,0-.71-.323H183.752a.986.986,0,0,0-.71.323.986.986,0,0,0-.323.71v14.713a.987.987,0,0,0,.323.71.987.987,0,0,0,.71.322Z" transform="translate(-170.46 1105.54)" fill="url(#linear-gradient)"/>
+    <text id="AI" transform="translate(16 340)" fill="#7cbae6" font-size="9" font-family="Helvetica"><tspan x="0" y="0">AI</tspan></text>
+  </g>
+</svg>

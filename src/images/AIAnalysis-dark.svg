@@ -1,0 +1,12 @@
+<svg id="Group_2932" data-name="Group 2932" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="79" viewBox="0 0 79 79">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33d4a3"/>
+      <stop offset="0.304" stop-color="#2dacb1"/>
+      <stop offset="1" stop-color="#2986c0"/>
+      <stop offset="1" stop-color="#2466cf"/>
+    </linearGradient>
+  </defs>
+  <path id="memory_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M204.861-702.54V-710.6h-9.874a8.2,8.2,0,0,1-6.041-2.423,8.2,8.2,0,0,1-2.423-6.041v-9.874H178.46v-5.24h8.061V-749.9H178.46v-5.24h8.061v-9.874a8.2,8.2,0,0,1,2.423-6.042,8.2,8.2,0,0,1,6.041-2.423h9.874v-8.062h5.24v8.062H225.82v-8.062h5.24v8.062h9.874a8.2,8.2,0,0,1,6.041,2.423,8.2,8.2,0,0,1,2.423,6.042v9.874h8.061v5.24H249.4v15.719h8.061v5.24H249.4v9.874a8.2,8.2,0,0,1-2.423,6.041,8.2,8.2,0,0,1-6.041,2.423h-9.874v8.062h-5.24V-710.6H210.1v8.062Zm36.073-13.3a3.082,3.082,0,0,0,2.218-1.007,3.082,3.082,0,0,0,1.007-2.218v-45.947a3.082,3.082,0,0,0-1.007-2.218,3.082,3.082,0,0,0-2.218-1.007H194.986a3.082,3.082,0,0,0-2.218,1.007,3.082,3.082,0,0,0-1.007,2.218v45.947a3.082,3.082,0,0,0,1.007,2.218,3.081,3.081,0,0,0,2.218,1.007Z" transform="translate(-178.46 781.54)" fill="url(#linear-gradient)"/>
+  <text id="AI" transform="translate(23.185 48.75)" fill="#7cbae6" font-size="31" font-family="Helvetica"><tspan x="0" y="0">AI</tspan></text>
+</svg>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script src="%PUBLIC_URL%/config.js" type="text/javascript"></script>
+    <script src="%PUBLIC_URL%/multiplierConfig.js" type="text/javascript"></script>
+  <script src="%PUBLIC_URL%/manifest.js" type="text/javascript"></script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/capgemini-logo.jpg">
+  <!-- <link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png" /> -->
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+<script>
+
+  //config for development: config_dev
+  //config for qa: config_qa
+  //config for prod: config_prod
+
+  //worker.postMessage("hellooooooooo");
+
+
+  window.config = config
+  window.env = env;
+  window.config.manifest = manifest;
+  window.multiplierConfig= multiplierConfig ;
+  console.log("env inside index.html", env, "config: ", window.config," multiplierConfig :",window.multiplierConfig , "builtAt:", window.config.manifest.metaData.builtAt);
+  //window.addEventListener('message', receiveMessage, false);
+
+
+
+  window.addEventListener('setTarget', receiveMessage, false);
+
+  function receiveMessage(event) {
+    console.log('event:', event);
+    //if (event.origin === 'https://origin1.com') {
+    // alert('Received message: ' + event.data);
+    if (typeof (event.data) == 'string') {
+      // console.log("post message from bcp: ",event, event.data);
+    }
+
+    //}
+  }
+
+
+  function setSessionItem(setKey, setValue) {
+    return sessionStorage.setItem(setKey, setValue);
+  }
+
+  function getSessionItem(getKey) {
+    return sessionStorage.getItem(getKey);
+
+  }
+
+  window.addEventListener("keydown", (event) => {
+  if (event.key === "F11") {
+    console.log("F11 pressed. Reloading page...");
+    window.location.reload(); // Reload the page
+  }
+});
+</script>
+
+</html>

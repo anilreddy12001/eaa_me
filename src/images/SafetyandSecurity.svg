@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="529.309" height="138.5" viewBox="0 0 529.309 138.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33d4a3"/>
+      <stop offset="0.304" stop-color="#2dacb1"/>
+      <stop offset="1" stop-color="#2986c0"/>
+      <stop offset="1" stop-color="#2466cf"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2941" data-name="Group 2941" transform="translate(-14.422 -1007)">
+    <line id="Line_1581" data-name="Line 1581" x2="529.309" transform="translate(14.422 1144.5)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="encrypted_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M233.748-772.462h11.5L242.115-789.9a8.5,8.5,0,0,0,4.118-3.06,8.03,8.03,0,0,0,1.622-4.894,8.047,8.047,0,0,0-2.448-5.908,8.048,8.048,0,0,0-5.908-2.448,8.047,8.047,0,0,0-5.908,2.448,8.047,8.047,0,0,0-2.448,5.908,8.03,8.03,0,0,0,1.622,4.894,8.5,8.5,0,0,0,4.118,3.06ZM239.5-736q-17-5.046-28.252-20.6A58.352,58.352,0,0,1,200-791.647v-30.515l39.5-14.758L279-822.163v30.515A58.353,58.353,0,0,1,267.752-756.6Q256.5-741.047,239.5-736Zm0-5.99q14.671-4.655,24.264-18.621a53.6,53.6,0,0,0,9.593-31.036V-818.31L239.5-830.9,205.643-818.31v26.662a53.6,53.6,0,0,0,9.593,31.036Q224.829-746.646,239.5-741.991ZM239.5-786.46Z" transform="translate(-165 1843.92)" fill="url(#linear-gradient)"/>
+    <text id="Safety_Security" data-name="Safety &amp; Security" transform="translate(261 1068)" fill="#fff" font-size="31" font-family="Helvetica"><tspan x="-118.884" y="0">Safety &amp; Security</tspan></text>
+    <path id="chevron_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24_1_" data-name="chevron_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 (1)" d="M329.815-707.2,320-717.013,322.987-720l12.8,12.8-12.8,12.8L320-697.384Z" transform="translate(-196 729) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

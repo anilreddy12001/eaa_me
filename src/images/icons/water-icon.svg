@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.451" height="13.862" viewBox="0 0 9.451 13.862">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1bc384"/>
+      <stop offset="0.271" stop-color="#1c9ba9"/>
+      <stop offset="0.597" stop-color="#1f54ed"/>
+      <stop offset="1" stop-color="#680080"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_5903" data-name="Group 5903" transform="translate(-21.659 -153.219)">
+    <path id="Path_17024" data-name="Path 17024" d="M.517,3.285A.517.517,0,0,1,0,2.776a.524.524,0,0,1,.517-.517A1.748,1.748,0,0,0,2.259.517.517.517,0,0,1,2.768,0a.524.524,0,0,1,.517.517A2.771,2.771,0,0,1,.517,3.285h0Zm0,0" transform="translate(26.811 161.695) rotate(77)" fill="#1f61e1"/>
+    <path id="water-resources-svgrepo-com" d="M167.635,2.722c.46.747.945,1.43,1.4,2.07,1.153,1.619,2.063,2.9,2.063,4.344a3.465,3.465,0,0,1-6.931,0c0-1.446.91-2.725,2.063-4.344.454-.63.945-1.323,1.4-2.07m0-2.722c-1.575,3.78-4.726,5.986-4.726,9.136a4.726,4.726,0,0,0,9.451,0C172.36,5.986,169.21,3.78,167.635,0Z" transform="translate(-141.25 153.219)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

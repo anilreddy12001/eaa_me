@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="249.099" height="66.942" viewBox="0 0 249.099 66.942">
+  <g id="Group_929" data-name="Group 929" transform="translate(-16.206 -756.277)">
+    <path id="Path_580" data-name="Path 580" d="M0,0V64.412H96.293l11.425-11.386h69.157V0Z" transform="translate(17.206 757.277)" fill="rgba(180,255,172,0.06)" stroke="#b4ffac" stroke-width="2"/>
+    <path id="Path_581" data-name="Path 581" d="M79.164,40.458l-8.4,8.358h62.324l8.4-8.358Z" transform="translate(48.61 774.403)" fill="#b4ffac"/>
+    <text id="Work_Flow_Management" data-name="Work Flow 
+Management" transform="translate(104.58 782.837)" fill="#b4ffac" font-size="16" font-family="Helvetica"><tspan x="-39" y="0">Work Flow </tspan><tspan x="-46" y="19">Management</tspan></text>
+    <g id="Rectangle_147" data-name="Rectangle 147" transform="translate(200.365 757.352)" fill="rgba(180,255,172,0.06)" stroke="#b4ffac" stroke-width="2">
+      <rect width="64.94" height="53.768" stroke="none"/>
+      <rect x="1" y="1" width="62.94" height="51.768" fill="none"/>
+    </g>
+    <path id="account_tree_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M124.471-788v-5.647h-7.529v-18.824h-5.647v5.647H100V-820h11.294v5.647h13.176V-820h11.294v13.177H124.471v-5.647h-5.647v16.941h5.647v-5.647h11.294V-788Zm-22.588-30.118v0Zm24.471,18.824v0Zm0-18.824v0Zm0,9.412h7.529v-9.412h-7.529Zm0,18.824h7.529v-9.412h-7.529Zm-24.471-18.824h7.529v-9.412h-7.529Z" transform="translate(114.953 1590.837)" fill="#b4ffac"/>
+  </g>
+</svg>

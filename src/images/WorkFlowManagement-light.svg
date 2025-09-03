@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="70.684" viewBox="0 0 79 70.684">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33d4a3"/>
+      <stop offset="0.304" stop-color="#2dacb1"/>
+      <stop offset="1" stop-color="#2986c0"/>
+      <stop offset="1" stop-color="#2466cf"/>
+    </linearGradient>
+  </defs>
+  <path id="account_tree_24dp_5F6368_FILL0_wght200_GRAD0_opsz24" d="M154.053-749.316V-761.79H137.421v-41.579H124.947v12.474H100V-820h24.947v12.474h29.105V-820H179v29.105H154.053v-12.474H141.579v37.421h12.474v-12.474H179v29.105Zm-49.895-66.526v0Zm54.053,41.579v0Zm0-41.579v0Zm0,20.789h16.632v-20.789H158.211Zm0,41.579h16.632v-20.789H158.211Zm-54.053-41.579h16.632v-20.789H104.158Z" transform="translate(-100 820)" opacity="0.54" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,1022 @@
+#unityAndChartOverlayWrapper #menuPages {
+    display: flex;
+      width: 84vw;
+      height: 88.84vh;
+      border: 1px solid #ffffff;
+  }
+  .submenu-container{
+    
+    display: flex;
+    height: 20vh;
+    width: 54vw;
+    /* border:1px solid red; */
+    /* float:right; */
+  }
+  .water-submenu-container{
+    display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 0.25rem;
+    /* display: flex;
+    height: 20vh;
+    width: 88vw;
+    margin-top: -18px; */
+  }
+
+  #menuPages{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+
+  .resource-submenu-container{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    /* display: flex;
+    height: 20vh;
+    width: 88vw;
+    margin-top: -18px; */
+  }
+
+  .water-graph-container{
+    background-image:url('/src/images/bargraph-bg.svg');
+    display: flex ;
+    flex-direction: column;
+        position: relative;
+        top: -37px;
+        height: 75vh;
+        padding-top: 47px;
+    padding-right: 33px;
+    padding-bottom: 15px;
+        /* position: relative; */
+        /* left: -6px; */
+        /* right: 10px; */
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 3px;
+        /* border: 1px solid red; */
+  }
+.water-donutWrapper{
+  margin-top: 96px;
+  height: 67vh;
+}
+.water-donut-container{
+  padding: 3px;
+    text-align: left;
+  background-image:url('/src/images/bargraph-bg.svg');
+  width: 29vw;
+  /* border: 1px solid red; */
+  float: right;
+  margin-top: -7px;
+  height: 38vh;
+  padding-top:-8px;
+}
+.water-donut-container2{
+  padding: 3px;
+    text-align: left;
+  background-image:url('/src/images/bargraph-bg.svg');
+  width: 29vw;
+  /* border: 1px solid red; */
+  float: right;
+  margin-top: 5px;
+  height: 37vh;
+  padding-top:-8px;
+}
+
+  .donutgraphcontainer{
+  margin-right:10px;
+ 
+  }
+  .donut-container{
+    padding: 3px;
+    text-align: left;
+    background-image:url('/src/images/bargraph-bg.svg');
+    width: 29vw;
+    /* border: 1px solid red; */
+    float: right;
+    margin-top: 15px;
+    height: 41vh;
+  
+  }
+
+  .donut-containersecond{
+    padding: 3px;
+    text-align: left;
+    background-image:url('/src/images/bargraph-bg.svg');
+    width: 29vw;
+    /* border: 1px solid red; */
+    float: right;
+    margin-top: 14px;
+    height: 41vh;
+
+  }
+  .graph-container{
+    background-image:url('/src/images/bargraph-bg.svg');
+    display: flex ;
+    flex-direction: column;
+        position: relative;
+        
+    height: 67vh;
+        padding-top: 47px;
+    padding-right: 33px;
+    padding-bottom: 15px;
+        /* position: relative; */
+        /* left: -6px; */
+        /* right: 10px; */
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        /* border: 1px solid red; */
+  }
+  .graph-label{
+    text-align: left;
+    position: relative;
+    left: 10px;
+
+  }
+  .wrapper-submenuoptions{
+    display: flex;
+      flex-direction: column;
+      width: 54vw;
+  }
+  .energySubmenu{
+    width:100px;
+    border:1px solid green;
+  }
+.widget-Construction-Waste{
+  position: relative;
+    background: #161625; 
+    padding: 4px 20px;
+    display: flex;
+    height: 65px;
+    top: 16px;
+    right: -8px;
+    align-items: center;
+    border:0px;
+    /* color: white; */
+    width: 250px;
+    border-radius: 0; 
+    border-top: 3.4px solid transparent;
+    border-bottom: 3.4px solid transparent;
+}
+
+.widget-Wet-Waste{
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -16px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-Organic-Waste{
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -26px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-Ewaste-Waste{
+
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -40px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+
+   .widget-Energy{
+   cursor: pointer;
+    position: relative;
+    /* backdrop-filter: blur(5px); */
+    background: #161625; ; 
+    padding: 4px 20px;
+    border-bottom: 2px solid #696EF3EB;
+    display: flex;
+    height: 65px;
+    top: 16px;
+    right: -8px;
+    align-items: center;
+    border:0px;
+    /* color: white; */
+    width: 250px;
+    border-radius: 0; 
+    border-top: 3.4px solid transparent;
+    border-bottom: 3.4px solid transparent;
+  }
+.widget-water{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -16px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-waste{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -26px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+
+.widget-building-Electricity{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -8px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-building-Energy{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -16px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-building-ElectricVehicle{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -26px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-Municipal-Water{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -8px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-Tanker-Water{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -16px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-Treated-Water{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -26px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-Borewell-Water{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -36px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.widget-Alternative-Water{
+  cursor: pointer;
+  position: relative;
+  background: #161625; 
+  padding: 4px 20px;
+  display: flex;
+  height: 65px;
+  top: 16px;
+  right: -45px;
+  align-items: center;
+  border:0px;
+  /* color: white; */
+  width: 250px;
+  border-radius: 0; 
+  border-top: 3.4px solid transparent;
+  border-bottom: 3.4px solid transparent;
+}
+.activeWidgetlarge{
+  /* background-color: blue; */
+  /* background-image:url('/src/images/background-image-submenu.png'); */
+  background-color: green;
+  background-size: cover;
+  /* border:1px solid white; */
+background-repeat: no-repeat;
+/* background:url('/src/images/background-image-submenu.png') repeat,
+ linear-gradient(to bottom,  #FFFFFF 2%,#045a2f 100%,#0f4502 30%); */
+ scale:1;
+background: radial-gradient(circle at 50% 50%, #0a8120 0%, #28713c 92%, #25d108 110%);
+box-shadow: inset 0px 6px 22px 5px #00ff0088 !important;
+}
+
+.activeWidgetlarge:hover{
+  /* background-color: blue; */
+  /* background-image:url('/src/images/background-image-submenu.png'); */
+  background-color: green;
+  background-size: cover;
+  /* border:1px solid white; */
+background-repeat: no-repeat;
+/* background:url('/src/images/background-image-submenu.png') repeat,
+ linear-gradient(to bottom,  #FFFFFF 2%,#045a2f 100%,#0f4502 30%); */
+
+background: radial-gradient(circle at 50% 50%, #0a8120 0%, #28713c 92%, #25d108 110%);
+box-shadow: inset 0px 6px 22px 5px #00ff0088, 0px 6px 22px 5px #00ff0088 !important;
+
+}
+  .widgets {
+   
+    height: 12vh;
+    /* background-color: #0f001e; */
+    border-radius: 4px;
+    /* border: 1px solid #d1d1d1; */
+    display: flex
+;
+    flex-direction: column;
+    /* border-bottom: #696EF3EB; */
+    /* border-bottom: 2px solid #696EF3EB; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .widgets:hover{
+    cursor:pointer;
+    background-color: #252530;
+  }
+.graphAreaSpinnerClass{
+  background-color: #0f001e00;
+}
+
+
+.ant-spin-fullscreen-show {
+  opacity:0.05 !important;
+}
+  .widget1{
+    cursor:pointer;
+    height: 12vh;
+    background-color: #0f001e;
+    border-radius: 4px;
+    /* border: 1px solid #d1d1d1; */
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: #696EF3EB; */
+    border-bottom: 2px solid #696EF3EB;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+  }
+  .widget1:hover{
+    cursor:pointer;
+    background-color: #252530;
+
+  }
+
+  .widget2{
+
+cursor:pointer;
+
+    height: 10vh;
+    background-color: #0f001e;
+    border-radius: 4px;
+    /* border: 1px solid #d1d1d1; */
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: #696EF3EB; */
+    border-bottom: 2px solid #696EF3EB;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .widget2:hover{
+
+    cursor:pointer;
+    background-color: #252530;
+      }
+  /* .submenu-widget-icon{
+    height:30px;
+    position:relative;
+
+  } */
+/* General Widget Card */
+/* .submenu-widget-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+} */
+
+/* Icon Section - Dynamically based on widgetType */
+.submenu-widget-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.submenu-widget-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Styles based on Widget Type for Icon */
+.icon-energy {
+  /* Energy icon styling */
+  filter: grayscale(0%);
+  position: relative;
+  top: 18px;
+  left: -38px;
+  height: 51px;
+  width: 130px;
+}
+
+.icon-water {
+  /* Water icon styling */
+  filter: grayscale(0%);
+  position: relative;
+  top: 18px;
+  left: -35px;
+  height: 47px;
+  width: 130px;
+}
+
+.icon-waste {
+  /* Waste icon styling */
+  filter: grayscale(0%);
+  position: relative;
+  top: 18px;
+  left: -33px;
+  height: 45px;
+  width: 130px;
+}
+.icon-BuildingElectricity{
+  filter: grayscale(0%);
+    position: relative;
+    top: 18px;
+    left: -33px;
+    height: 43px;
+    width: 130px;
+}
+
+
+
+.icon-BuildingEnergy{
+  filter: grayscale(0%);
+    position: relative;
+    top: 18px;
+    left: -36px;
+    height: 47px;
+    width: 130px;
+}
+.icon-ElectricVehicle{
+  filter: grayscale(0%);
+  position: relative;
+  top: 19px;
+  left: -38px;
+  height: 51px;
+  width: 130px;
+}
+.icon-Municipal{
+  filter: grayscale(0%);
+  position: relative;
+  top: 18px;
+  left: -31px;
+  height: 44px;
+  width: 130px;
+}
+.icon-Tanker{
+  filter: grayscale(0%);
+  position: relative;
+  top: 17px;
+  left: -28px;
+  height: 37px;
+  width: 130px;
+}
+.icon-Treated{
+  filter: grayscale(0%);
+    position: relative;
+    top: 18px;
+    left: -32px;
+    height: 35px;
+    width: 130px;
+}
+.icon-Borewell{
+  filter: grayscale(0%);
+  position: relative;
+  top: 16px;
+  left: -32px;
+  height: 43px;
+  width: 130px;
+}
+.icon-Alternative{
+  filter: grayscale(0%);
+  position: relative;
+  top: 18px;
+  left: -32px;
+  height: 39px;
+  width: 130px;
+}
+.label-Municipal{
+  color: #fefdfb;
+  position: relative;
+  top: -19px;
+  left: 21px;
+  font-size: 18px;
+
+}
+.label-Tanker{
+  color: #fefdfb;
+  position: relative;
+  top: -17px;
+  left: 27px;
+}
+.label-Alternative{
+  color: #fefdfb;
+  position: relative;
+  top: -18px;
+  left: 21px;
+}
+.label-Borewell{
+
+  color: #fefdfb;
+  position: relative;
+  top: -19px;
+  left: 24px;
+}
+.label-Treated{
+  color: #fefdfb;
+  position: relative;
+  top: -17px;
+  left: 25px;
+}
+
+
+/* Value Section - Dynamically based on widgetType */
+/* .submenu-widget-value-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+} */
+
+.submenu-widget-value {
+  font-size: 24px;
+  /* font-weight: bold; */
+  color: #333;
+}
+
+/* Value based on Widget Type */
+.value-energy {
+  color: #faf8f4;
+  position: relative;
+  top: -24px;
+  left: 28px;
+}
+
+.value-water {
+  color: #faf8f4;
+  position: relative;
+  top: -26px;
+  left: 33px;
+}
+
+.value-waste {
+  color: #faf8f4;
+  position: relative;
+  top: -24px;
+  left: 33px;
+}
+.value-BuildingElectricity{
+  color: #faf8f4;
+  position: relative;
+  top: -25px;
+  left: 39px;
+
+}
+
+.value-BuildingEnergy{
+  color: #faf8f4;
+    position: relative;
+    top: -27px;
+    left: 29px;
+
+}
+.value-ElectricVehicle{
+  color: #faf8f4;
+  position: relative;
+  top: -27px;
+  left: 37px;
+
+}
+
+
+
+/* Unit Section - Dynamically based on widgetType */
+.submenu-widget-unit {
+  font-size: 14px;
+  color: #888;
+  margin-left: 5px;
+}
+
+/* Unit based on Widget Type */
+.unit-energy {
+  color: #f9f6f2;
+  position: relative;
+  top: -25px;
+  font-size: 16px;
+  left: 31px;
+
+}
+
+.unit-water {
+  color: #f9f6f2;
+  position: relative;
+  top: -29px;
+  font-size: 16px;
+  left: 41px;
+
+}
+
+.unit-waste {
+  color: #f9f6f2;
+  position: relative;
+  top: -28px;
+  font-size: 16px;
+  left: 37px;
+}
+
+/* Label Section - Dynamically based on widgetType */
+.submenu-widget-label-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submenu-widget-label {
+  font-size: 16px;
+  /* font-weight: 600; */
+  text-transform: capitalize;
+}
+
+/* Label based on Widget Type */
+.label-energy {
+  color: #fefdfb;
+  position: relative;
+  top: -18px;
+  left: 31px;
+}
+
+.label-water {
+  color: #fefdfb;
+  position: relative;
+  top: -18px;
+  left: 34px;
+}
+
+.label-waste {
+  color: #fefdfb;
+  position: relative;
+  top: -18px;
+  left: 33px;
+}
+.label-ElectricVehicle{
+
+  color: #fefdfb;
+  position: relative;
+  top: -20px;
+  left: 20px;
+  font-size: 18px;
+}
+.label-BuildingElectricity{
+  color: #fefdfb;
+  position: relative;
+  top: -19px;
+  left: 15px;
+  font-size: 18px;
+}
+ .label-BuildingEnergy{
+  color: #fefdfb;
+  position: relative;
+  top: -20px;
+  left: 17px;
+  font-size: 18px;
+ }
+ .unit-ElectricVehicle{
+  color: #f9f6f2;
+  position: relative;
+  top: -28px;
+  font-size: 16px;
+  left: 40px;
+ }
+ .unit-BuildingElectricity{
+  color: #f9f6f2;
+    position: relative;
+    top: -26px;
+    font-size: 16px;
+    left: 47px;
+
+ }
+ .unit-BuildingEnergy{
+  color: #f9f6f2;
+  position: relative;
+  top: -27px;
+  font-size: 16px;
+  left: 40px;
+ }
+ .unit-Municipal {
+  color: #f9f6f2;
+  position: relative;
+  top: -23px;
+  font-size: 16px;
+  left: 38px;
+}
+.unit-Alternative {
+  color: #f9f6f2;
+  position: relative;
+  top: -19px;
+  font-size: 16px;
+  left: 39px;
+
+}
+.unit-Treated {
+  color: #f9f6f2;
+  position: relative;
+  top: -17px;
+  font-size: 16px;
+  left: 37px;
+}
+.unit-Borewell{
+  color: #f9f6f2;
+  position: relative;
+  top: -23px;
+  font-size: 16px;
+  left: 37px;
+}
+.unit-Tanker{
+  color: #f9f6f2;
+    position: relative;
+    top: -19px;
+    font-size: 16px;
+    left: 37px;
+
+}
+
+.value-Borewell {
+  color: #faf8f4;
+    position: relative;
+    top: -20px;
+    left: 33px;
+}
+.value-Treated {
+  color: #faf8f4;
+  position: relative;
+  top: -17px;
+  left: 33px;
+}
+.value-Alternative {
+  color: #faf8f4;
+  position: relative;
+  top: -18px;
+  left: 33px;
+}
+.value-Municipal {
+  color: #faf8f4;
+  position: relative;
+  top: -23px;
+  left: 33px;
+}
+.value-Tanker {
+  color: #faf8f4;
+    position: relative;
+    top: -17px;
+    left: 33px;
+}
+.icon-ConstructionWaste{
+  filter: grayscale(0%);
+  position: relative;
+  top: 18px;
+  left: -38px;
+  height: 45px;
+  width: 130px;
+}
+
+
+.icon-WetWaste{
+  filter: grayscale(0%);
+    position: relative;
+    top: 18px;
+    left: -45px;
+    height: 47px;
+    width: 130px;
+}
+.icon-EWaste{
+  filter: grayscale(0%);
+  position: relative;
+  top: 19px;
+  left: -45px;
+  height: 46px;
+  width: 130px;
+}
+.icon-OrganicWaste{
+  filter: grayscale(0%);
+  position: relative;
+  top: 18px;
+  left: -44px;
+  height: 43px;
+  width: 130px;
+}
+.label-ConstructionWaste{
+  color: #fefdfb;
+    position: relative;
+    top: -16px;
+    left: 15px;
+
+}
+.label-OrganicWaste{
+  color: #fefdfb;
+  position: relative;
+  top: -15px;
+  left: 23px;
+}
+.label-WetWaste{
+  color: #fefdfb;
+  position: relative;
+  top: -16px;
+  left: 26px;
+}
+.label-EWaste{
+  color: #fefdfb;
+  position: relative;
+  top: -17px;
+  left: 39px;
+}
+
+.unit-ConstructionWaste{
+  color: #f9f6f2;
+    position: relative;
+    top: -20px;
+    font-size: 16px;
+    left: 57px;
+}
+.unit-OrganicWaste{
+  color: #f9f6f2;
+  position: relative;
+  top: -17px;
+  font-size: 16px;
+  left: 58px;
+}
+.unit-WetWaste{
+  color: #f9f6f2;
+    position: relative;
+    top: -19px;
+    font-size: 16px;
+    left: 52px;
+}
+.unit-EWaste{
+  color: #f9f6f2;
+  position: relative;
+  top: -20px;
+  font-size: 16px;
+  left: 57px;
+}
+
+
+.value-ConstructionWaste{
+  color: #faf8f4;
+  position: relative;
+  top: -19px;
+  left: 41px;
+}
+.value-OrganicWaste{
+  color: #faf8f4;
+  position: relative;
+  top: -16px;
+  left: 45px;
+}
+.value-WetWaste{
+  color: #faf8f4;
+  position: relative;
+  top: -18px;
+  left: 48px;
+
+}
+.value-EWaste{
+  color: #faf8f4;
+  position: relative;
+  top: -19px;
+  left: 58px;
+}
