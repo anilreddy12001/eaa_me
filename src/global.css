@@ -24,7 +24,7 @@ body {
     /* Full viewport width */
     height: 3.125rem;
     /* Fixed header height */
-    background-color: #0A8120;
+    background-color: #272727;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -530,7 +530,7 @@ body {
 
 .dropdown-list .ant-select-selector {
     border: none !important;
-    background-color: #0A8120 !important;
+    background-color: #272727 !important;
 }
 
 .dropdown-list.ant-select-selector {

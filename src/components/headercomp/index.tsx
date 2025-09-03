@@ -1589,7 +1589,7 @@ console.log("locationtype:", locationType);
   return (
     <header className="header-wrapper">
       <div className="left-header">
-        <div className='app-title'>Energy Analytics</div>
+        <div className='app-title'>Green <br/> Hub</div>
       </div>
 
       <div className="middle-header">
@@ -1604,7 +1604,7 @@ console.log("locationtype:", locationType);
 
       <div className="right-header">
         <div className='app-logo'>
-          <img src={Logo} alt="capgemini-logo" />
+          
           <ClockComponent />
         </div>
         <span className='app-avatar'>SU</span>
